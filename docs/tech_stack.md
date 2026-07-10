@@ -4,7 +4,7 @@
 |------------|----------|
 | Azure Data Lake Storage | Raw Data Landing Zone |
 | Azure Databricks | Data Processing |
-| Snowflake | Data Warehouse |
+| Snowflake | Data Warehouse for Analytics |
 | dbt | Data Modeling & Testing |
 | Airflow | Workflow Orchestration |
 | Tableau | Executive Dashboards |
