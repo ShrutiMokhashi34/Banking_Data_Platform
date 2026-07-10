@@ -1,6 +1,6 @@
 # Enterprise Banking Data Platform
 
-## Porject Overview
+## Project Overview
 
 This project demonstrates the design and implementation of an enterprise-scale Banking Data Platform using modern cloud and data engineering technologies.
 
