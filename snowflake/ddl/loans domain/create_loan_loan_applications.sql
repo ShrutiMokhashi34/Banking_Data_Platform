@@ -1,0 +1,36 @@
+CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOAN_APPLICATIONS
+(
+    APPLICATION_ID          VARCHAR(20)        NOT NULL,
+
+    CUSTOMER_ID             VARCHAR(20)        NOT NULL,
+
+    APPLICATION_DATE        DATE               NOT NULL,
+
+    REQUESTED_AMOUNT        NUMBER(15,2)       NOT NULL,
+
+    APPROVAL_STATUS         VARCHAR(20)        NOT NULL,
+
+    CREATED_AT              TIMESTAMP_NTZ      DEFAULT CURRENT_TIMESTAMP(),
+    UPDATED_AT              TIMESTAMP_NTZ,
+    SOURCE_SYSTEM           VARCHAR(50)        DEFAULT 'Loan Management System',
+    BATCH_ID                VARCHAR(50),
+
+    CONSTRAINT PK_LOAN_APPLICATIONS
+        PRIMARY KEY (APPLICATION_ID),
+
+    CONSTRAINT FK_LOAN_APPLICATION_CUSTOMER
+        FOREIGN KEY (CUSTOMER_ID)
+        REFERENCES CUST_CUSTOMERS(CUSTOMER_ID),
+
+    CONSTRAINT CHK_REQUESTED_AMOUNT
+        CHECK (REQUESTED_AMOUNT > 0),
+
+    CONSTRAINT CHK_APPROVAL_STATUS
+        CHECK (APPROVAL_STATUS IN
+        (
+            'Pending',
+            'Approved',
+            'Rejected',
+            'Cancelled'
+        ))
+);
