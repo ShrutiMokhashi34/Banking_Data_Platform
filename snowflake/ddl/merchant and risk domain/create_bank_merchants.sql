@@ -38,29 +38,29 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.BANK_MERCHANTS
         REFERENCES ABC_BANK.STG.BANK_ACCOUNTS (ACCOUNT_ID),
 
     CONSTRAINT CHK_MERCHANT_STATUS
-        CHECK (MERCHANT_STATUS IN
+        CHECK (UPPER(MERCHANT_STATUS) IN
         (
-            'Active',
-            'Inactive',
-            'Suspended',
-            'Closed'
+            'ACTIVE',
+            'INACTIVE',
+            'SUSPENDED',
+            'CLOSED'
         )),
 
     CONSTRAINT CHK_MERCHANT_CATEGORY
-        CHECK (MERCHANT_CATEGORY IN
+        CHECK (UPPER(MERCHANT_CATEGORY) IN
         (
-            'Retail',
-            'Grocery',
-            'Fuel',
-            'Healthcare',
-            'Restaurant',
-            'Travel',
-            'Entertainment',
-            'Education',
-            'Utilities',
-            'E-Commerce',
-            'Government',
-            'Telecom',
-            'Other'
+            'RETAIL',
+            'GROCERY',
+            'FUEL',
+            'HEALTHCARE',
+            'RESTAURANT',
+            'TRAVEL',
+            'ENTERTAINMENT',
+            'EDUCATION',
+            'UTILITIES',
+            'E-COMMERCE',
+            'GOVERNMENT',
+            'TELECOM',
+            'OTHER'
         ))
 );

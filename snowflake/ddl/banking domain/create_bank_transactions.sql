@@ -40,37 +40,43 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.BANK_TRANSACTIONS
         REFERENCES BANK_MERCHANTS(MERCHANT_ID),
 
     CONSTRAINT CHK_TRANSACTION_TYPE
-        CHECK (TRANSACTION_TYPE IN
+        CHECK (UPPER(TRANSACTION_TYPE) IN
         (
-            'Debit',
-            'Credit'
+			'CREDIT',
+			'DEBIT',
+			'TRANSFER',
+			'WITHDRAWAL',
+			'DEPOSIT',
+			'POS PURCHASE',
+			'ONLINE PAYMENT',
+			'BILL PAYMENT'
         )),
 
     CONSTRAINT CHK_TRANSACTION_STATUS
-        CHECK (TRANSACTION_STATUS IN
+        CHECK (UPPER(TRANSACTION_STATUS) IN
         (
-            'Pending',
-            'Completed',
-            'Failed',
-            'Reversed',
-            'Cancelled'
+            'PENDING',
+            'COMPLETED',
+            'FAILED',
+            'REVERSED',
+            'CANCELLED'
         )),
 
     CONSTRAINT CHK_CHANNEL
-        CHECK (CHANNEL IN
+        CHECK (UPPER(CHANNEL) IN
         (
             'UPI',
             'ATM',
             'POS',
-            'Online Banking',
-            'Mobile Banking',
-            'Branch',
+            'ONLINE BANKING',
+            'MOBILE BANKING',
+            'BRANCH',
             'NEFT',
             'RTGS',
             'IMPS',
             'ECS',
-            'Cheque',
-            'Auto Debit'
+            'CHEQUE',
+            'AUTO DEBIT'
         )),
 
     CONSTRAINT CHK_AMOUNT

@@ -26,16 +26,16 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOAN_REPAYMENTS
         CHECK (AMOUNT_PAID > 0),
 
     CONSTRAINT CHK_PAYMENT_MODE
-        CHECK (PAYMENT_MODE IN
+        CHECK (UPPER(PAYMENT_MODE) IN
         (
             'UPI',
             'NEFT',
             'RTGS',
             'IMPS',
-            'Cash',
-            'Cheque',
-            'Auto Debit',
-            'Net Banking',
-            'Mobile Banking'
+            'CASH',
+            'CHEQUE',
+            'AUTO DEBIT',
+            'NET BANKING',
+            'MOBILE BANKING'
         ))
 );

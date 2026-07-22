@@ -34,32 +34,32 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.BANK_CARDS
         REFERENCES BANK_ACCOUNTS(ACCOUNT_ID),
 
     CONSTRAINT CHK_CARD_TYPE
-        CHECK (CARD_TYPE IN
+        CHECK (UPPER(CARD_TYPE) IN
         (
-            'Debit',
-            'Credit',
-            'Prepaid',
-            'Charge'
+            'DEBIT',
+            'CREDIT',
+            'PREPAID',
+            'CHARGE'
         )),
 
     CONSTRAINT CHK_NETWORK
-        CHECK (NETWORK IN
+        CHECK (UPPER(NETWORK) IN
         (
-            'Visa',
-            'Mastercard',
-            'RuPay',
-            'American Express'
+            'VISA',
+            'MASTERCARD',
+            'RUPAY',
+            'AMERICAN EXPRESS'
         )),
 
     CONSTRAINT CHK_CARD_STATUS
-        CHECK (CARD_STATUS IN
+        CHECK (UPPER(CARD_STATUS) IN
         (
-            'Active',
-            'Blocked',
-            'Expired',
-            'Lost',
-            'Stolen',
-            'Closed'
+            'ACTIVE',
+            'BLOCKED',
+            'EXPIRED',
+            'LOST',
+            'STOLEN',
+            'CLOSED'
         )),
 
     CONSTRAINT CHK_EXPIRY_DATE

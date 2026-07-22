@@ -36,24 +36,24 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.BANK_ACCOUNTS
         REFERENCES ORG_BRANCHES(BRANCH_ID),
 
     CONSTRAINT CHK_ACCOUNT_TYPE
-        CHECK (ACCOUNT_TYPE IN
+        CHECK (UPPER(ACCOUNT_TYPE) IN
         (
-            'Savings',
-            'Current',
-            'Salary',
-            'Fixed Deposit',
-            'Recurring Deposit',
+            'SAVINGS',
+            'CURRENT',
+            'SALARY',
+            'FIXED DEPOSIT',
+            'RECURRING DEPOSIT',
             'NRE',
             'NRO'
         )),
 
     CONSTRAINT CHK_ACCOUNT_STATUS
-        CHECK (ACCOUNT_STATUS IN
+        CHECK (UPPER(ACCOUNT_STATUS) IN
         (
-            'Active',
-            'Dormant',
-            'Closed',
-            'Frozen'
+            'ACTIVE',
+            'DORMANT',
+            'CLOSED',
+            'FROZEN'
         )),
 
     CONSTRAINT CHK_CURRENT_BALANCE

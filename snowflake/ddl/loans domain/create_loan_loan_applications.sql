@@ -26,11 +26,11 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOAN_APPLICATIONS
         CHECK (REQUESTED_AMOUNT > 0),
 
     CONSTRAINT CHK_APPROVAL_STATUS
-        CHECK (APPROVAL_STATUS IN
+        CHECK (UPPER(APPROVAL_STATUS) IN
         (
-            'Pending',
-            'Approved',
-            'Rejected',
-            'Cancelled'
+            'PENDING',
+            'APPROVED',
+            'REJECTED',
+            'CANCELLED'
         ))
 );

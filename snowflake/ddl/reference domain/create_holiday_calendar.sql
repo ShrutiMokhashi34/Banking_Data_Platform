@@ -37,13 +37,13 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.HOLIDAY_CALENDAR
     CONSTRAINT CHK_HOLIDAY_TYPE
         CHECK
         (
-            HOLIDAY_TYPE IN
+            UPPER(HOLIDAY_TYPE) IN
             (
-                'National',
-                'State',
-                'Bank',
-                'Religious',
-                'Optional'
+                'NATIONAL',
+                'STATE',
+                'BANK',
+                'RELIGIOUS',
+                'OPTIONAL'
             )
         )
 );

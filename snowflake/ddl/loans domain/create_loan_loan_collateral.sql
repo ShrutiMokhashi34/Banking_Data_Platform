@@ -23,14 +23,14 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOAN_COLLATERAL
         REFERENCES LOAN_LOANS(LOAN_ID),
 
     CONSTRAINT CHK_ASSET_TYPE
-        CHECK (ASSET_TYPE IN
+        CHECK (UPPER(ASSET_TYPE) IN
         (
-            'Property',
-            'Vehicle',
-            'Gold',
-            'Fixed Deposit',
-            'Shares',
-            'Mutual Funds'
+            'PROPERTY',
+            'VEHICLE',
+            'GOLD',
+            'FIXED DEPOSIT',
+            'SHARES',
+            'MUTUAL FUNDS'
         )),
 
     CONSTRAINT CHK_ASSET_VALUE

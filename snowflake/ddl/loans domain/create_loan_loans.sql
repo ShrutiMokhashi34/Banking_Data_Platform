@@ -33,14 +33,14 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOANS
         REFERENCES CUST_CUSTOMERS(CUSTOMER_ID),
 
     CONSTRAINT CHK_LOAN_TYPE
-        CHECK (LOAN_TYPE IN
+        CHECK (UPPER(LOAN_TYPE) IN
         (
-            'Home Loan',
-            'Personal Loan',
-            'Auto Loan',
-            'Education Loan',
-            'Business Loan',
-            'Gold Loan'
+            'HOME LOAN',
+            'PERSONAL LOAN',
+            'AUTO LOAN',
+            'EDUCATION LOAN',
+            'BUSINESS LOAN',
+            'GOLD LOAN'
         )),
 
     CONSTRAINT CHK_PRINCIPAL_AMOUNT
@@ -56,12 +56,12 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOANS
         CHECK (EMI_AMOUNT > 0),
 
     CONSTRAINT CHK_LOAN_STATUS
-        CHECK (LOAN_STATUS IN
+        CHECK (UPPER(LOAN_STATUS) IN
         (
-            'Pending',
-            'Active',
-            'Closed',
-            'Defaulted',
-            'Written Off'
+            'PENDING',
+            'ACTIVE',
+            'CLOSED',
+            'DEFAULTED',
+            'WRITTEN OFF'
         ))
 );

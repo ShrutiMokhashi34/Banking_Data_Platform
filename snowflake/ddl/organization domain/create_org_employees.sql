@@ -34,13 +34,13 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.ORG_EMPLOYEES
         CHECK (SALARY > 0),
 
     CONSTRAINT CHK_EMPLOYEE_STATUS
-        CHECK (EMPLOYEE_STATUS IN
+        CHECK (UPPER(EMPLOYEE_STATUS) IN
         (
-            'Active',
-            'On Leave',
-            'Suspended',
-            'Resigned',
-            'Retired',
-            'Terminated'
+            'ACTIVE',
+            'ON LEAVE',
+            'SUSPENDED',
+            'RESIGNED',
+            'RETIRED',
+            'TERMINATED'
         ))
 );

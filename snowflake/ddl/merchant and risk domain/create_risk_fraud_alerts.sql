@@ -41,12 +41,12 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.RISK_FRAUD_ALERTS
         CHECK (FRAUD_SCORE BETWEEN 0 AND 100),
 
     CONSTRAINT CHK_ALERT_STATUS
-        CHECK (ALERT_STATUS IN
+        CHECK (UPPER(ALERT_STATUS) IN
         (
-            'Open',
-            'Under Investigation',
-            'Resolved',
-            'False Positive',
-            'Closed'
+            'OPEN',
+            'UNDER INVESTIGATION',
+            'RESOLVED',
+            'FALSE POSITIVE',
+            'CLOSED'
         ))
 );
