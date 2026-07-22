@@ -410,3 +410,116 @@ PermissionError: [Errno 13] Permission denied: 'C:\\Documents\\Banking_Data_Plat
 2026-07-23 00:08:26 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
 2026-07-23 00:08:26 | INFO     | __main__ | Execution Time : 4.30 seconds
 2026-07-23 00:08:26 | INFO     | __main__ | ================================================================================
+2026-07-23 01:41:41 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:41:41 | INFO     | __main__ | ================================================================================
+2026-07-23 01:41:41 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:41:41 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:41:41 | ERROR    | __main__ | 'OrganizationGenerator' object has no attribute 'batch_id'
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 802, in run
+    self.generate_branches()
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 229, in generate_branches
+    batch_id=self.batch_id,
+             ^^^^^^^^^^^^^
+AttributeError: 'OrganizationGenerator' object has no attribute 'batch_id'
+2026-07-23 01:42:16 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:42:16 | INFO     | __main__ | ================================================================================
+2026-07-23 01:42:16 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:42:16 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:42:16 | ERROR    | __main__ | Branch.__init__() missing 1 required positional argument: 'batch_id'
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 798, in run
+    self.generate_branches()
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 202, in generate_branches
+    branch = Branch(
+             ^^^^^^^
+TypeError: Branch.__init__() missing 1 required positional argument: 'batch_id'
+2026-07-23 01:43:52 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:43:52 | INFO     | __main__ | ================================================================================
+2026-07-23 01:43:52 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:43:52 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:43:52 | ERROR    | __main__ | Branch.__init__() missing 2 required positional arguments: 'branch_id' and 'batch_id'
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 796, in run
+    self.generate_branches()
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 202, in generate_branches
+    branch = Branch(
+             ^^^^^^^
+TypeError: Branch.__init__() missing 2 required positional arguments: 'branch_id' and 'batch_id'
+2026-07-23 01:45:12 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:45:12 | INFO     | __main__ | ================================================================================
+2026-07-23 01:45:12 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:45:12 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:45:12 | INFO     | __main__ | 50 branches generated successfully.
+2026-07-23 01:45:12 | INFO     | __main__ | Generating Employees...
+2026-07-23 01:45:12 | ERROR    | __main__ | The number of weights does not match the population
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 800, in run
+    self.generate_employees()
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 501, in generate_employees
+    employee_status=self._generate_employee_status(),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 384, in _generate_employee_status
+    return random.choices(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\random.py", line 480, in choices
+    raise ValueError('The number of weights does not match the population')
+ValueError: The number of weights does not match the population
+2026-07-23 01:47:57 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:47:57 | INFO     | __main__ | ================================================================================
+2026-07-23 01:47:57 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:47:57 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:47:57 | INFO     | __main__ | 50 branches generated successfully.
+2026-07-23 01:47:57 | INFO     | __main__ | Generating Employees...
+2026-07-23 01:47:57 | INFO     | __main__ | 350 employees generated successfully.
+2026-07-23 01:47:57 | INFO     | __main__ | Assigning Branch Managers...
+2026-07-23 01:47:57 | INFO     | __main__ | Branch Managers assigned successfully.
+2026-07-23 01:47:57 | INFO     | __main__ | ============================================================
+2026-07-23 01:47:57 | INFO     | __main__ | Organization Generation Summary
+2026-07-23 01:47:57 | INFO     | __main__ | Branches Generated  : 50
+2026-07-23 01:47:57 | INFO     | __main__ | Employees Generated : 350
+2026-07-23 01:47:57 | INFO     | __main__ | ============================================================
+2026-07-23 01:47:57 | INFO     | __main__ | Running Validation...
+2026-07-23 01:47:57 | INFO     | __main__ | Validating Branches...
+2026-07-23 01:47:57 | INFO     | __main__ | Branch validation completed successfully.
+2026-07-23 01:47:57 | INFO     | __main__ | Validating Employees...
+2026-07-23 01:47:57 | ERROR    | __main__ | 'OrganizationGenerator' object has no attribute 'employees_df'
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 806, in run
+    if not self.validate_all():
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 723, in validate_all
+    self.validate_employees(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\org_generator.py", line 530, in validate_employees
+    df = self.employees_df()
+         ^^^^^^^^^^^^^^^^^
+AttributeError: 'OrganizationGenerator' object has no attribute 'employees_df'. Did you mean: 'employees'?
+2026-07-23 01:49:23 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-07-23 01:49:23 | INFO     | __main__ | ================================================================================
+2026-07-23 01:49:23 | INFO     | __main__ | Starting Organization Generator...
+2026-07-23 01:49:23 | INFO     | __main__ | Generating Branches...
+2026-07-23 01:49:24 | INFO     | __main__ | 50 branches generated successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | Generating Employees...
+2026-07-23 01:49:24 | INFO     | __main__ | 350 employees generated successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | Assigning Branch Managers...
+2026-07-23 01:49:24 | INFO     | __main__ | Branch Managers assigned successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | ============================================================
+2026-07-23 01:49:24 | INFO     | __main__ | Organization Generation Summary
+2026-07-23 01:49:24 | INFO     | __main__ | Branches Generated  : 50
+2026-07-23 01:49:24 | INFO     | __main__ | Employees Generated : 350
+2026-07-23 01:49:24 | INFO     | __main__ | ============================================================
+2026-07-23 01:49:24 | INFO     | __main__ | Running Validation...
+2026-07-23 01:49:24 | INFO     | __main__ | Validating Branches...
+2026-07-23 01:49:24 | INFO     | __main__ | Branch validation completed successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | Validating Employees...
+2026-07-23 01:49:24 | INFO     | __main__ | Employee validation completed successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | Validation Successful.
+2026-07-23 01:49:24 | INFO     | __main__ | Exporting datasets...
+2026-07-23 01:49:24 | INFO     | __main__ | Exporting Branches...
+2026-07-23 01:49:24 | INFO     | __main__ | Branches exported successfully to C:\Documents\Banking_Data_Platform\python\output\branches.csv
+2026-07-23 01:49:24 | INFO     | __main__ | Exporting Employees...
+2026-07-23 01:49:24 | INFO     | __main__ | Employees exported successfully to C:\Documents\Banking_Data_Platform\python\output\employees.csv
+2026-07-23 01:49:24 | INFO     | __main__ | Export completed successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | Organization Generator completed successfully.
+2026-07-23 01:49:24 | INFO     | __main__ | ================================================================================

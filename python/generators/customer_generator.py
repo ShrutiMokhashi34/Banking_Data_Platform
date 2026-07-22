@@ -7,8 +7,7 @@ Generates synthetic data for:
     - Customers
     - Customer Addresses
     - KYC
-
-Author : Shruti Mokhashi
+    
 ===============================================================================
 """
 
