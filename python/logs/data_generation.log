@@ -1,0 +1,412 @@
+2026-07-22 20:03:39 | INFO     | banking_data_platform | Application started.
+2026-07-22 20:03:39 | WARNING  | banking_data_platform | This is a warning.
+2026-07-22 20:03:39 | ERROR    | banking_data_platform | This is an error.
+2026-07-22 22:25:58 | INFO     | __main__ | ======================================================================
+2026-07-22 22:25:58 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:25:58 | INFO     | __main__ | ======================================================================
+2026-07-22 22:27:45 | INFO     | __main__ | ======================================================================
+2026-07-22 22:27:45 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:27:45 | INFO     | __main__ | ======================================================================
+2026-07-22 22:27:45 | INFO     | __main__ | ================================================================================
+2026-07-22 22:27:45 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-22 22:27:45 | INFO     | __main__ | ================================================================================
+2026-07-22 22:27:45 | INFO     | __main__ | Generating 5000 customers...
+2026-07-22 22:27:45 | ERROR    | __main__ | Customer Domain Pipeline Failed.
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 1138, in run
+    self.generate_customers()
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 245, in generate_customers
+    customer = self._build_customer()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 306, in _build_customer
+    batch_id=self._generate_batch_id()
+             ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'CustomerGenerator' object has no attribute '_generate_batch_id'
+2026-07-22 22:28:20 | INFO     | __main__ | ======================================================================
+2026-07-22 22:28:20 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:28:20 | INFO     | __main__ | ======================================================================
+2026-07-22 22:28:20 | INFO     | __main__ | ================================================================================
+2026-07-22 22:28:20 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-22 22:28:20 | INFO     | __main__ | ================================================================================
+2026-07-22 22:28:20 | INFO     | __main__ | Generating 5000 customers...
+2026-07-22 22:28:20 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-22 22:28:20 | INFO     | __main__ | Generating customer addresses...
+2026-07-22 22:28:20 | ERROR    | __main__ | Customer Domain Pipeline Failed.
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 1139, in run
+    self.generate_addresses()
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 431, in generate_addresses
+    current_address = self._build_address(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 492, in _build_address
+    address_line2=self.fake.secondary_address(),
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\faker\proxy.py", line 130, in __getattr__
+    return getattr(self._factories[0], attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Generator' object has no attribute 'secondary_address'
+2026-07-22 22:35:12 | INFO     | __main__ | ======================================================================
+2026-07-22 22:35:12 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:35:12 | INFO     | __main__ | ======================================================================
+2026-07-22 22:35:12 | INFO     | __main__ | ================================================================================
+2026-07-22 22:35:12 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-22 22:35:12 | INFO     | __main__ | ================================================================================
+2026-07-22 22:35:12 | INFO     | __main__ | Generating 5000 customers...
+2026-07-22 22:35:13 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-22 22:35:13 | INFO     | __main__ | Generating customer addresses...
+2026-07-22 22:35:13 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-22 22:35:13 | INFO     | __main__ | Generating KYC records...
+2026-07-22 22:35:13 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-22 22:35:13 | INFO     | __main__ | ======================================================================
+2026-07-22 22:35:13 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-22 22:35:13 | INFO     | __main__ | ======================================================================
+2026-07-22 22:35:13 | ERROR    | __main__ | Customer Domain Pipeline Failed.
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 1169, in run
+    if not self.validate_all():
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 963, in validate_all
+    self.validate_customers(),
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 371, in validate_customers
+    df = self.customers_df()
+         ^^^^^^^^^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 216, in customers_df
+    [c.to_dict() for c in self.customers]
+     ^^^^^^^^^^^
+  File "C:\Documents\Banking_Data_Platform\python\models\cust_customer.py", line 51, in to_dict
+    return self.__dict__
+           ^^^^^^^^^^^^^
+AttributeError: 'Customer' object has no attribute '__dict__'. Did you mean: '__dir__'?
+2026-07-22 22:38:44 | INFO     | __main__ | ======================================================================
+2026-07-22 22:38:44 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:38:44 | INFO     | __main__ | ======================================================================
+2026-07-22 22:38:44 | INFO     | __main__ | ================================================================================
+2026-07-22 22:38:44 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-22 22:38:44 | INFO     | __main__ | ================================================================================
+2026-07-22 22:38:44 | INFO     | __main__ | Generating 5000 customers...
+2026-07-22 22:38:44 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-22 22:38:44 | INFO     | __main__ | Generating customer addresses...
+2026-07-22 22:38:45 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-22 22:38:45 | INFO     | __main__ | Generating KYC records...
+2026-07-22 22:38:45 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-22 22:38:45 | INFO     | __main__ | ======================================================================
+2026-07-22 22:38:45 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-22 22:38:45 | INFO     | __main__ | ======================================================================
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | Customer Validation Results
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Emails
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Phones
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Income Positive
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | Address Validation Results
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Unique Address IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Address IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Customer Exists
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | KYC Validation Results
+2026-07-22 22:38:45 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null PAN
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Customer Exists
+2026-07-22 22:38:45 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-07-22 22:38:45 | INFO     | __main__ | All validations passed.
+2026-07-22 22:38:45 | ERROR    | __main__ | Customer Domain Pipeline Failed.
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 1179, in run
+    print(OUTPUT_DIR)
+          ^^^^^^^^^^
+NameError: name 'OUTPUT_DIR' is not defined
+2026-07-22 22:41:00 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:00 | INFO     | __main__ | Customer Generator Initialized
+2026-07-22 22:41:00 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:00 | INFO     | __main__ | ================================================================================
+2026-07-22 22:41:00 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-22 22:41:00 | INFO     | __main__ | ================================================================================
+2026-07-22 22:41:00 | INFO     | __main__ | Generating 5000 customers...
+2026-07-22 22:41:00 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-22 22:41:00 | INFO     | __main__ | Generating customer addresses...
+2026-07-22 22:41:01 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-22 22:41:01 | INFO     | __main__ | Generating KYC records...
+2026-07-22 22:41:01 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-22 22:41:01 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:01 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-22 22:41:01 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | Customer Validation Results
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Emails
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Phones
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Income Positive
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | Address Validation Results
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Unique Address IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Address IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Customer Exists
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | KYC Validation Results
+2026-07-22 22:41:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null PAN
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Customer Exists
+2026-07-22 22:41:01 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-07-22 22:41:01 | INFO     | __main__ | All validations passed.
+2026-07-22 22:41:01 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:01 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-07-22 22:41:01 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:01 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\python\output\customers.csv
+2026-07-22 22:41:01 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\python\output\customer_addresses.csv
+2026-07-22 22:41:01 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\python\output\kyc.csv
+2026-07-22 22:41:01 | INFO     | __main__ | Export completed.
+2026-07-22 22:41:02 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:02 | INFO     | __main__ | Customer Domain Summary
+2026-07-22 22:41:02 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:02 | INFO     | __main__ | total_customers                          : 5000
+2026-07-22 22:41:02 | INFO     | __main__ | active_customers                         : 4261
+2026-07-22 22:41:02 | INFO     | __main__ | blocked_customers                        : 256
+2026-07-22 22:41:02 | INFO     | __main__ | closed_customers                         : 137
+2026-07-22 22:41:02 | INFO     | __main__ | average_income                           : 911780.0
+2026-07-22 22:41:02 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-07-22 22:41:02 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-07-22 22:41:02 | INFO     | __main__ | total_addresses                          : 6260
+2026-07-22 22:41:02 | INFO     | __main__ | current_addresses                        : 5000
+2026-07-22 22:41:02 | INFO     | __main__ | historical_addresses                     : 1260
+2026-07-22 22:41:02 | INFO     | __main__ | customers_with_multiple_addresses        : 1260
+2026-07-22 22:41:02 | INFO     | __main__ | total_kyc_records                        : 5000
+2026-07-22 22:41:02 | INFO     | __main__ | verified                                 : 285
+2026-07-22 22:41:02 | INFO     | __main__ | pending                                  : 4613
+2026-07-22 22:41:02 | INFO     | __main__ | rejected                                 : 102
+2026-07-22 22:41:02 | INFO     | __main__ | pan_verified                             : 2628
+2026-07-22 22:41:02 | INFO     | __main__ | aadhaar_verified                         : 2590
+2026-07-22 22:41:02 | INFO     | __main__ | address_verified                         : 2582
+2026-07-22 22:41:02 | INFO     | __main__ | ======================================================================
+2026-07-22 22:41:02 | INFO     | __main__ | ================================================================================
+2026-07-22 22:41:02 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-07-22 22:41:02 | INFO     | __main__ | Execution Time : 1.72 seconds
+2026-07-22 22:41:02 | INFO     | __main__ | ================================================================================
+2026-07-23 00:02:23 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:23 | INFO     | __main__ | Customer Generator Initialized
+2026-07-23 00:02:23 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:23 | INFO     | __main__ | ================================================================================
+2026-07-23 00:02:23 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-23 00:02:23 | INFO     | __main__ | ================================================================================
+2026-07-23 00:02:23 | INFO     | __main__ | Generating 5000 customers...
+2026-07-23 00:02:23 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-23 00:02:23 | INFO     | __main__ | Generating customer addresses...
+2026-07-23 00:02:26 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-23 00:02:26 | INFO     | __main__ | Generating KYC records...
+2026-07-23 00:02:26 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-23 00:02:26 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:26 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-23 00:02:26 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | Customer Validation Results
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Emails
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Phones
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Income Positive
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | Address Validation Results
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Unique Address IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Address IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | KYC Validation Results
+2026-07-23 00:02:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null PAN
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:02:26 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-07-23 00:02:26 | INFO     | __main__ | All validations passed.
+2026-07-23 00:02:26 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:26 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-07-23 00:02:26 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:26 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\python\output\customers.csv
+2026-07-23 00:02:26 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\python\output\customer_addresses.csv
+2026-07-23 00:02:26 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\python\output\kyc.csv
+2026-07-23 00:02:26 | INFO     | __main__ | Export completed.
+2026-07-23 00:02:27 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:27 | INFO     | __main__ | Customer Domain Summary
+2026-07-23 00:02:27 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:27 | INFO     | __main__ | total_customers                          : 5000
+2026-07-23 00:02:27 | INFO     | __main__ | active_customers                         : 4261
+2026-07-23 00:02:27 | INFO     | __main__ | blocked_customers                        : 256
+2026-07-23 00:02:27 | INFO     | __main__ | closed_customers                         : 137
+2026-07-23 00:02:27 | INFO     | __main__ | average_income                           : 911780.0
+2026-07-23 00:02:27 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-07-23 00:02:27 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-07-23 00:02:27 | INFO     | __main__ | total_addresses                          : 6260
+2026-07-23 00:02:27 | INFO     | __main__ | current_addresses                        : 5000
+2026-07-23 00:02:27 | INFO     | __main__ | historical_addresses                     : 1260
+2026-07-23 00:02:27 | INFO     | __main__ | customers_with_multiple_addresses        : 1260
+2026-07-23 00:02:27 | INFO     | __main__ | total_kyc_records                        : 5000
+2026-07-23 00:02:27 | INFO     | __main__ | verified                                 : 285
+2026-07-23 00:02:27 | INFO     | __main__ | pending                                  : 4613
+2026-07-23 00:02:27 | INFO     | __main__ | rejected                                 : 102
+2026-07-23 00:02:27 | INFO     | __main__ | pan_verified                             : 2628
+2026-07-23 00:02:27 | INFO     | __main__ | aadhaar_verified                         : 2590
+2026-07-23 00:02:27 | INFO     | __main__ | address_verified                         : 2582
+2026-07-23 00:02:27 | INFO     | __main__ | ======================================================================
+2026-07-23 00:02:27 | INFO     | __main__ | ================================================================================
+2026-07-23 00:02:27 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-07-23 00:02:27 | INFO     | __main__ | Execution Time : 4.32 seconds
+2026-07-23 00:02:27 | INFO     | __main__ | ================================================================================
+2026-07-23 00:07:08 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:08 | INFO     | __main__ | Customer Generator Initialized
+2026-07-23 00:07:08 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:08 | INFO     | __main__ | ================================================================================
+2026-07-23 00:07:08 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-23 00:07:08 | INFO     | __main__ | ================================================================================
+2026-07-23 00:07:08 | INFO     | __main__ | Generating 5000 customers...
+2026-07-23 00:07:08 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-23 00:07:08 | INFO     | __main__ | Generating customer addresses...
+2026-07-23 00:07:11 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-23 00:07:11 | INFO     | __main__ | Generating KYC records...
+2026-07-23 00:07:11 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-23 00:07:11 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:11 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-23 00:07:11 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | Customer Validation Results
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Emails
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Phones
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Income Positive
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | Address Validation Results
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Unique Address IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Address IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | KYC Validation Results
+2026-07-23 00:07:11 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null PAN
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:07:11 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-07-23 00:07:11 | INFO     | __main__ | All validations passed.
+2026-07-23 00:07:11 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:11 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-07-23 00:07:11 | INFO     | __main__ | ======================================================================
+2026-07-23 00:07:11 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\python\output\customers.csv
+2026-07-23 00:07:11 | ERROR    | __main__ | Customer Domain Pipeline Failed.
+Traceback (most recent call last):
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 1189, in run
+    self.export_all()
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 945, in export_all
+    self.export_addresses()
+  File "C:\Documents\Banking_Data_Platform\python\generators\customer_generator.py", line 897, in export_addresses
+    df.to_csv(
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\util\_decorators.py", line 333, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\generic.py", line 3967, in to_csv
+    return DataFrameRenderer(formatter).to_csv(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\format.py", line 1014, in to_csv
+    csv_formatter.save()
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\formats\csvs.py", line 251, in save
+    with get_handle(
+         ^^^^^^^^^^^
+  File "C:\Users\hp\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\common.py", line 873, in get_handle
+    handle = open(
+             ^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Documents\\Banking_Data_Platform\\python\\output\\customer_addresses.csv'
+2026-07-23 00:08:21 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:21 | INFO     | __main__ | Customer Generator Initialized
+2026-07-23 00:08:21 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:21 | INFO     | __main__ | ================================================================================
+2026-07-23 00:08:21 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-07-23 00:08:21 | INFO     | __main__ | ================================================================================
+2026-07-23 00:08:21 | INFO     | __main__ | Generating 5000 customers...
+2026-07-23 00:08:21 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-07-23 00:08:21 | INFO     | __main__ | Generating customer addresses...
+2026-07-23 00:08:25 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-07-23 00:08:25 | INFO     | __main__ | Generating KYC records...
+2026-07-23 00:08:25 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | Running Customer Domain Validations
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | Customer Validation Results
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Emails
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Phones
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Income Positive
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | Address Validation Results
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Unique Address IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Address IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | KYC Validation Results
+2026-07-23 00:08:25 | INFO     | __main__ | ------------------------------------------------------------
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null PAN
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Customer Exists
+2026-07-23 00:08:25 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-07-23 00:08:25 | INFO     | __main__ | All validations passed.
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\python\output\customers.csv
+2026-07-23 00:08:25 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\python\output\customer_addresses.csv
+2026-07-23 00:08:25 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\python\output\kyc.csv
+2026-07-23 00:08:25 | INFO     | __main__ | Export completed.
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | Customer Domain Summary
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:25 | INFO     | __main__ | total_customers                          : 5000
+2026-07-23 00:08:25 | INFO     | __main__ | active_customers                         : 4261
+2026-07-23 00:08:25 | INFO     | __main__ | blocked_customers                        : 256
+2026-07-23 00:08:25 | INFO     | __main__ | closed_customers                         : 137
+2026-07-23 00:08:25 | INFO     | __main__ | average_income                           : 911780.0
+2026-07-23 00:08:25 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-07-23 00:08:25 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-07-23 00:08:25 | INFO     | __main__ | total_addresses                          : 6260
+2026-07-23 00:08:25 | INFO     | __main__ | current_addresses                        : 5000
+2026-07-23 00:08:25 | INFO     | __main__ | historical_addresses                     : 1260
+2026-07-23 00:08:25 | INFO     | __main__ | customers_with_multiple_addresses        : 1260
+2026-07-23 00:08:25 | INFO     | __main__ | total_kyc_records                        : 5000
+2026-07-23 00:08:25 | INFO     | __main__ | verified                                 : 285
+2026-07-23 00:08:25 | INFO     | __main__ | pending                                  : 4613
+2026-07-23 00:08:25 | INFO     | __main__ | rejected                                 : 102
+2026-07-23 00:08:25 | INFO     | __main__ | pan_verified                             : 2628
+2026-07-23 00:08:25 | INFO     | __main__ | aadhaar_verified                         : 2590
+2026-07-23 00:08:25 | INFO     | __main__ | address_verified                         : 2582
+2026-07-23 00:08:25 | INFO     | __main__ | ======================================================================
+2026-07-23 00:08:26 | INFO     | __main__ | ================================================================================
+2026-07-23 00:08:26 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-07-23 00:08:26 | INFO     | __main__ | Execution Time : 4.30 seconds
+2026-07-23 00:08:26 | INFO     | __main__ | ================================================================================
