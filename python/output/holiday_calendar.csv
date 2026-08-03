@@ -1,0 +1,25 @@
+holiday_id,holiday_date,country,state,holiday_name,holiday_type
+HOL00000001,2025-01-26,India,All,Republic Day,National
+HOL00000002,2025-03-14,India,All,Holi,National
+HOL00000003,2025-04-14,India,All,Ambedkar Jayanti,National
+HOL00000004,2025-05-01,India,All,Labour Day,National
+HOL00000005,2025-08-15,India,All,Independence Day,National
+HOL00000006,2025-10-02,India,All,Gandhi Jayanti,National
+HOL00000007,2025-10-31,India,All,Diwali,National
+HOL00000008,2025-12-25,India,All,Christmas,National
+HOL00000009,2026-01-26,India,All,Republic Day,National
+HOL00000010,2026-03-14,India,All,Holi,National
+HOL00000011,2026-04-14,India,All,Ambedkar Jayanti,National
+HOL00000012,2026-05-01,India,All,Labour Day,National
+HOL00000013,2026-08-15,India,All,Independence Day,National
+HOL00000014,2026-10-02,India,All,Gandhi Jayanti,National
+HOL00000015,2026-10-31,India,All,Diwali,National
+HOL00000016,2026-12-25,India,All,Christmas,National
+HOL00000017,2027-01-26,India,All,Republic Day,National
+HOL00000018,2027-03-14,India,All,Holi,National
+HOL00000019,2027-04-14,India,All,Ambedkar Jayanti,National
+HOL00000020,2027-05-01,India,All,Labour Day,National
+HOL00000021,2027-08-15,India,All,Independence Day,National
+HOL00000022,2027-10-02,India,All,Gandhi Jayanti,National
+HOL00000023,2027-10-31,India,All,Diwali,National
+HOL00000024,2027-12-25,India,All,Christmas,National
