@@ -1,0 +1,101 @@
+merchant_id,merchant_name,merchant_category,merchant_type,merchant_city,merchant_state,merchant_country,merchant_status,accepts_upi,accepts_cards,average_ticket_size,onboarding_date,created_at,updated_at,source_system
+MER00001001,National Sachdeva Cafe,Restaurant,Local,HYDERABAD,TELANGANA,India,Active,Yes,Yes,3287.6,2016-07-01,2026-08-03 12:14:01.372331,,Enterprise System
+MER00001002,Sri Mani Authority,Government,Local,PATHANAMTHITTA,KERALA,India,Active,Yes,Yes,13585.38,2020-05-02,2026-08-03 12:14:01.373413,,Enterprise System
+MER00001003,New Kannan Supermarket,Grocery,Local,TENKASI,TAMIL NADU,India,Active,Yes,Yes,1268.71,2019-02-19,2026-08-03 12:14:01.373413,,Enterprise System
+MER00001004,Royal Shanker Municipality,Government,Local,CHENGALPATTU,TAMIL NADU,India,Active,Yes,Yes,43296.54,2020-07-31,2026-08-03 12:14:01.374416,,Enterprise System
+MER00001005,Modern Savant Stores,Grocery,Local,MURSHIDABAD,WEST BENGAL,India,Active,Yes,No,2804.53,2020-12-18,2026-08-03 12:14:01.375421,,Enterprise System
+MER00001006,New Nori Provision Store,Grocery,Regional,SRIKAKULAM,ANDHRA PRADESH,India,Active,Yes,No,2182.12,2025-08-20,2026-08-03 12:14:01.375421,,Enterprise System
+MER00001007,Modern Sarin Communications,Telecom,Local,JAJAPUR,ODISHA,India,Active,Yes,Yes,3594.56,2015-06-04,2026-08-03 12:14:01.376413,,Enterprise System
+MER00001008,Shree Bora Multiplex,Entertainment,Local,SIMDEGA,JHARKHAND,India,Active,Yes,No,6973.61,2021-02-16,2026-08-03 12:14:01.376413,,Enterprise System
+MER00001009,Sri Sibal Fashion,Retail,Regional,KODAGU,KARNATAKA,India,Active,Yes,Yes,24745.64,2016-01-29,2026-08-03 12:14:01.377416,,Enterprise System
+MER00001010,Prime Hegde Online,E-Commerce,Local,VIZIANAGARAM,ANDHRA PRADESH,India,Active,Yes,Yes,14871.71,2022-09-28,2026-08-03 12:14:01.377416,,Enterprise System
+MER00001011,Om Solanki Clinic,Healthcare,Regional,HOOGHLY,WEST BENGAL,India,Active,Yes,Yes,70657.92,2022-03-11,2026-08-03 12:14:01.378447,,Enterprise System
+MER00001012,Sri Bath Traders,Retail,Local,PURBI CHAMPARAN,BIHAR,India,Active,Yes,No,6995.53,2015-12-15,2026-08-03 12:14:01.378447,,Enterprise System
+MER00001013,Royal Chowdhury Academy,Education,Local,DHANBAD,JHARKHAND,India,Active,Yes,Yes,101791.91,2014-04-18,2026-08-03 12:14:01.378447,,Enterprise System
+MER00001014,Om Wadhwa Kitchen,Restaurant,Local,THIRUVARUR,TAMIL NADU,India,Active,Yes,No,2502.93,2024-02-13,2026-08-03 12:14:01.380211,,Enterprise System
+MER00001015,Royal Deshmukh Fuel Station,Fuel,Local,HOOGHLY,WEST BENGAL,India,Active,Yes,Yes,1384.38,2025-02-26,2026-08-03 12:14:01.380211,,Enterprise System
+MER00001016,Shree Dash Water Supply,Utilities,Local,Ariyalur,TAMIL NADU,India,Active,Yes,Yes,10394.66,2013-12-01,2026-08-03 12:14:01.381139,,Enterprise System
+MER00001017,National Palla Store,Retail,Local,JEHANABAD,BIHAR,India,Active,Yes,Yes,14570.97,2017-11-02,2026-08-03 12:14:01.381139,,Enterprise System
+MER00001018,National Peri Kitchen,Restaurant,Local,KARIMNAGAR,TELANGANA,India,Active,Yes,Yes,4184.9,2022-02-03,2026-08-03 12:14:01.382136,,Enterprise System
+MER00001019,Sai Kashyap Online,E-Commerce,Local,HAMIRPUR,HIMACHAL PRADESH,India,Active,Yes,No,26253.26,2026-05-29,2026-08-03 12:14:01.382136,,Enterprise System
+MER00001020,National Kari Gas Services,Utilities,Local,NAGAUR,RAJASTHAN,India,Active,Yes,Yes,7633.77,2018-05-11,2026-08-03 12:14:01.383137,,Enterprise System
+MER00001021,New Sengupta Clinic,Healthcare,Local,CHURU,RAJASTHAN,India,Active,Yes,Yes,25466.96,2019-09-08,2026-08-03 12:14:01.383137,,Enterprise System
+MER00001022,Om Bedi Arcade,Entertainment,Local,SITAMARHI,BIHAR,India,Active,Yes,Yes,2360.87,2023-06-28,2026-08-03 12:14:01.384138,,Enterprise System
+MER00001023,National Dua Online,E-Commerce,Regional,MANDYA,KARNATAKA,India,Active,Yes,Yes,2452.03,2024-07-03,2026-08-03 12:14:01.384138,,Enterprise System
+MER00001024,Shree Bail Supermarket,Grocery,Local,KODAGU,KARNATAKA,India,Suspended,Yes,Yes,839.86,2024-11-05,2026-08-03 12:14:01.385142,,Enterprise System
+MER00001025,Shree Natt Communications,Telecom,Local,Y.S.R.,ANDHRA PRADESH,India,Active,Yes,Yes,2699.87,2015-11-05,2026-08-03 12:14:01.385142,,Enterprise System
+MER00001026,Prime Nagarajan Outlet,Retail,Local,SALEM,TAMIL NADU,India,Suspended,Yes,Yes,14827.11,2024-07-26,2026-08-03 12:14:01.386138,,Enterprise System
+MER00001027,Sri Madan Online,E-Commerce,National,SOLAPUR,MAHARASHTRA,India,Active,Yes,Yes,19286.52,2011-09-22,2026-08-03 12:14:01.386138,,Enterprise System
+MER00001028,Om Gera Travels,Travel,Local,KOTA,RAJASTHAN,India,Active,Yes,Yes,6724.19,2024-02-13,2026-08-03 12:14:01.387136,,Enterprise System
+MER00001029,Prime Sani Online,E-Commerce,Local,KOLLAM,KERALA,India,Active,Yes,No,27981.63,2012-11-01,2026-08-03 12:14:01.387136,,Enterprise System
+MER00001030,Sai Lad Restaurant,Restaurant,National,WANAPARTHY,TELANGANA,India,Active,Yes,Yes,3754.02,2020-11-23,2026-08-03 12:14:01.388137,,Enterprise System
+MER00001031,Sri Andra Electricity,Utilities,Local,DURG,CHHATTISGARH,India,Active,Yes,Yes,4339.89,2014-09-09,2026-08-03 12:14:01.388137,,Enterprise System
+MER00001032,Prime Edwin Stores,Grocery,Local,PATHANAMTHITTA,KERALA,India,Active,Yes,No,2294.17,2021-05-02,2026-08-03 12:14:01.388137,,Enterprise System
+MER00001033,Sri Yogi Restaurant,Restaurant,Local,ANANTAPUR,ANDHRA PRADESH,India,Active,Yes,Yes,1734.91,2018-12-12,2026-08-03 12:14:01.389731,,Enterprise System
+MER00001034,Shree Sani Medical Centre,Healthcare,Local,JANJGIR-CHAMPA,CHHATTISGARH,India,Active,Yes,Yes,23039.54,2013-10-29,2026-08-03 12:14:01.389904,,Enterprise System
+MER00001035,Sai Varty Gas Services,Utilities,Regional,24 PARAGANAS SOUTH,WEST BENGAL,India,Active,Yes,Yes,2263.1,2024-07-25,2026-08-03 12:14:01.389904,,Enterprise System
+MER00001036,New Saini Provision Store,Grocery,Local,HOSHANGABAD,MADHYA PRADESH,India,Active,Yes,Yes,295.28,2024-03-10,2026-08-03 12:14:01.390834,,Enterprise System
+MER00001037,Sri Naidu Electricity,Utilities,Local,BOKARO,JHARKHAND,India,Active,Yes,Yes,8152.54,2015-05-24,2026-08-03 12:14:01.391792,,Enterprise System
+MER00001038,Shree Khanna Gas Services,Utilities,Local,TIRUNELVELI,TAMIL NADU,India,Active,Yes,Yes,6867.38,2016-08-24,2026-08-03 12:14:01.391792,,Enterprise System
+MER00001039,Sai Pant Dhaba,Restaurant,Local,PASCHIM BARDHAMAN,WEST BENGAL,India,Active,Yes,Yes,3651.22,2014-11-24,2026-08-03 12:14:01.391792,,Enterprise System
+MER00001040,Sai Prabhakar Store,Retail,Local,IDUKKI,KERALA,India,Active,Yes,Yes,5356.41,2021-05-27,2026-08-03 12:14:01.392844,,Enterprise System
+MER00001041,Sai Ahluwalia Electricity,Utilities,Local,MOKOKCHUNG,NAGALAND,India,Active,Yes,Yes,5333.89,2016-10-07,2026-08-03 12:14:01.393842,,Enterprise System
+MER00001042,National Bhattacharyya Cinema,Entertainment,Local,SAGAR,MADHYA PRADESH,India,Active,Yes,Yes,3348.01,2016-02-23,2026-08-03 12:14:01.393842,,Enterprise System
+MER00001043,Sai Mani Multiplex,Entertainment,National,MIRZAPUR,UTTAR PRADESH,India,Active,Yes,No,4185.33,2019-04-19,2026-08-03 12:14:01.393842,,Enterprise System
+MER00001044,New Edwin Telecom,Telecom,National,JALGAON,MAHARASHTRA,India,Active,Yes,No,1644.47,2026-05-01,2026-08-03 12:14:01.394849,,Enterprise System
+MER00001045,Shree Deo Stores,Grocery,Local,DHAMTARI,CHHATTISGARH,India,Active,Yes,No,1422.24,2013-11-05,2026-08-03 12:14:01.395739,,Enterprise System
+MER00001046,Prime Chand Digital,E-Commerce,National,CHHINDWARA,MADHYA PRADESH,India,Active,Yes,Yes,32425.36,2016-04-18,2026-08-03 12:14:01.395739,,Enterprise System
+MER00001047,National Sankar Restaurant,Restaurant,Local,KOLAR,KARNATAKA,India,Active,Yes,Yes,3129.8,2021-09-05,2026-08-03 12:14:01.396838,,Enterprise System
+MER00001048,Royal Ranganathan Dhaba,Restaurant,Regional,GUNTUR,ANDHRA PRADESH,India,Active,Yes,Yes,1907.8,2022-08-03,2026-08-03 12:14:01.396838,,Enterprise System
+MER00001049,Om Prakash Dhaba,Restaurant,Local,PRAKASAM,ANDHRA PRADESH,India,Active,Yes,Yes,4177.72,2020-11-15,2026-08-03 12:14:01.397738,,Enterprise System
+MER00001050,Sri Buch Tours,Travel,Local,PRATAPGARH,UTTAR PRADESH,India,Active,Yes,Yes,22475.07,2024-12-15,2026-08-03 12:14:01.397738,,Enterprise System
+MER00001051,Sai Ray Kitchen,Restaurant,Local,YAVATMAL,MAHARASHTRA,India,Active,Yes,Yes,1467.17,2014-03-02,2026-08-03 12:14:01.398824,,Enterprise System
+MER00001052,Shree Gaba Mart,Retail,Local,PAURI GARHWAL,UTTARAKHAND,India,Active,Yes,No,3759.94,2025-11-15,2026-08-03 12:14:01.398824,,Enterprise System
+MER00001053,Om Swamy Clinic,Healthcare,Local,SANGLI,MAHARASHTRA,India,Active,Yes,Yes,98076.6,2026-05-23,2026-08-03 12:14:01.399821,,Enterprise System
+MER00001054,New Sunder Online,E-Commerce,Local,SALEM,TAMIL NADU,India,Active,Yes,Yes,20039.4,2022-04-02,2026-08-03 12:14:01.400415,,Enterprise System
+MER00001055,Royal Memon Learning Centre,Education,National,AZAMGARH,UTTAR PRADESH,India,Active,Yes,Yes,62940.36,2019-09-16,2026-08-03 12:14:01.400415,,Enterprise System
+MER00001056,Modern Narayanan Mart,Grocery,Local,Mulugu,TELANGANA,India,Active,Yes,Yes,3953.43,2025-09-23,2026-08-03 12:14:01.400415,,Enterprise System
+MER00001057,Sri Thaman Electricity,Utilities,Regional,S.A.S Nagar,PUNJAB,India,Active,Yes,Yes,3212.91,2025-11-19,2026-08-03 12:14:01.401923,,Enterprise System
+MER00001058,Sai Mukherjee Marketplace,E-Commerce,Local,NANDED,MAHARASHTRA,India,Active,Yes,Yes,6702.29,2014-02-16,2026-08-03 12:14:01.401923,,Enterprise System
+MER00001059,Sri Soman Transport,Travel,National,DAKSHINA KANNADA,KARNATAKA,India,Active,Yes,No,10106.31,2023-07-23,2026-08-03 12:14:01.403037,,Enterprise System
+MER00001060,Om Bahri Learning Centre,Education,Local,JALANDHAR,PUNJAB,India,Active,Yes,Yes,150745.11,2013-02-21,2026-08-03 12:14:01.403037,,Enterprise System
+MER00001061,Om Gole Petrol Pump,Fuel,Local,NALANDA,BIHAR,India,Active,Yes,Yes,5423.02,2020-06-03,2026-08-03 12:14:01.403037,,Enterprise System
+MER00001062,National Pai Online,E-Commerce,Local,JAMMU,JAMMU AND KASHMIR,India,Active,Yes,Yes,49190.98,2020-09-26,2026-08-03 12:14:01.404046,,Enterprise System
+MER00001063,Shree Balay Dhaba,Restaurant,National,DHOLPUR,RAJASTHAN,India,Active,Yes,Yes,4163.13,2014-07-23,2026-08-03 12:14:01.404046,,Enterprise System
+MER00001064,Sri Lanka Supermarket,Grocery,National,BENGALURU URBAN,KARNATAKA,India,Closed,No,No,4098.17,2023-11-06,2026-08-03 12:14:01.405038,,Enterprise System
+MER00001065,Royal Kala Fresh,Grocery,National,EAST KHASI HILLS,MEGHALAYA,India,Active,Yes,Yes,2131.29,2013-10-30,2026-08-03 12:14:01.405038,,Enterprise System
+MER00001066,Prime Lanka Provision Store,Grocery,Local,CHENGALPATTU,TAMIL NADU,India,Active,Yes,No,990.91,2023-03-18,2026-08-03 12:14:01.406962,,Enterprise System
+MER00001067,Modern Memon Fuel Station,Fuel,Local,BALLIA,UTTAR PRADESH,India,Active,Yes,No,4550.87,2015-09-04,2026-08-03 12:14:01.407957,,Enterprise System
+MER00001068,Royal Muni Traders,Retail,Local,MEDINIPUR EAST,WEST BENGAL,India,Active,Yes,No,1365.38,2025-09-08,2026-08-03 12:14:01.408958,,Enterprise System
+MER00001069,Om Rana Traders,Retail,Regional,CUDDALORE,TAMIL NADU,India,Active,Yes,Yes,19392.31,2014-03-23,2026-08-03 12:14:01.410473,,Enterprise System
+MER00001070,Modern Sahni Multiplex,Entertainment,Local,BALRAMPUR,UTTAR PRADESH,India,Active,Yes,No,6704.11,2013-12-08,2026-08-03 12:14:01.411484,,Enterprise System
+MER00001071,National Thaker Transport,Travel,Local,MADURAI,TAMIL NADU,India,Active,Yes,Yes,66533.9,2016-05-06,2026-08-03 12:14:01.411484,,Enterprise System
+MER00001072,New Chanda Authority,Government,National,AJMER,RAJASTHAN,India,Active,Yes,No,17667.79,2021-03-05,2026-08-03 12:14:01.412485,,Enterprise System
+MER00001073,Sai Walla Marketplace,E-Commerce,National,PURBA BARDHAMAN,WEST BENGAL,India,Active,Yes,Yes,17467.4,2019-08-28,2026-08-03 12:14:01.412485,,Enterprise System
+MER00001074,National Madan Mart,Retail,National,PATNA,BIHAR,India,Active,Yes,Yes,4800.26,2015-05-07,2026-08-03 12:14:01.413484,,Enterprise System
+MER00001075,Prime Kanda Water Supply,Utilities,Local,BALLARI,KARNATAKA,India,Active,Yes,Yes,10605.52,2015-06-14,2026-08-03 12:14:01.414483,,Enterprise System
+MER00001076,Sai Vyas Tours,Travel,Regional,HOOGHLY,WEST BENGAL,India,Active,Yes,Yes,36253.06,2022-03-16,2026-08-03 12:14:01.414483,,Enterprise System
+MER00001077,Prime Raju Online,E-Commerce,National,MYSURU,KARNATAKA,India,Active,Yes,Yes,11074.72,2024-02-13,2026-08-03 12:14:01.415484,,Enterprise System
+MER00001078,Sai Lalla Kitchen,Restaurant,Regional,GUNTUR,ANDHRA PRADESH,India,Active,Yes,Yes,457.36,2015-12-10,2026-08-03 12:14:01.415484,,Enterprise System
+MER00001079,Om Dyal Petrol Pump,Fuel,Local,ANJAW,ARUNACHAL PRADESH,India,Active,Yes,Yes,1107.5,2015-05-10,2026-08-03 12:14:01.416483,,Enterprise System
+MER00001080,New Nori Authority,Government,Local,BELAGAVI,KARNATAKA,India,Active,Yes,Yes,22673.13,2011-09-25,2026-08-03 12:14:01.416483,,Enterprise System
+MER00001081,Prime Minhas Cafe,Restaurant,Regional,JAISALMER,RAJASTHAN,India,Inactive,Yes,Yes,1974.84,2017-09-12,2026-08-03 12:14:01.417483,,Enterprise System
+MER00001082,Om Mand Fuel Station,Fuel,Local,HAVERI,KARNATAKA,India,Active,Yes,No,541.98,2014-05-05,2026-08-03 12:14:01.417483,,Enterprise System
+MER00001083,Prime Raman Fashion,Retail,Local,KAMRUP METRO,ASSAM,India,Active,Yes,Yes,21684.39,2023-11-25,2026-08-03 12:14:01.418483,,Enterprise System
+MER00001084,Shree Rao Kitchen,Restaurant,Local,CHIKKAMAGALURU,KARNATAKA,India,Active,No,No,2738.42,2024-02-24,2026-08-03 12:14:01.418483,,Enterprise System
+MER00001085,Royal Walla Outlet,Retail,Local,PATHANAMTHITTA,KERALA,India,Active,Yes,Yes,2561.53,2013-03-21,2026-08-03 12:14:01.418483,,Enterprise System
+MER00001086,Om Loke Municipality,Government,Local,JHUNJHUNU,RAJASTHAN,India,Active,Yes,No,5127.97,2012-11-14,2026-08-03 12:14:01.420051,,Enterprise System
+MER00001087,Sri Maharaj Mart,Retail,Local,KURNOOL,ANDHRA PRADESH,India,Active,Yes,Yes,23405.34,2022-04-21,2026-08-03 12:14:01.420051,,Enterprise System
+MER00001088,Shree Wason Energy,Fuel,Local,BILASPUR,HIMACHAL PRADESH,India,Active,Yes,No,3491.9,2021-05-10,2026-08-03 12:14:01.421000,,Enterprise System
+MER00001089,Om Devan Gas Services,Utilities,Regional,VIJAYAPURA,KARNATAKA,India,Suspended,Yes,Yes,2570.01,2018-09-16,2026-08-03 12:14:01.421000,,Enterprise System
+MER00001090,Prime Andra Digital,E-Commerce,Local,PRAKASAM,ANDHRA PRADESH,India,Active,Yes,Yes,7257.46,2021-08-06,2026-08-03 12:14:01.421999,,Enterprise System
+MER00001091,Sri Mahajan Transport,Travel,Regional,SIKAR,RAJASTHAN,India,Active,Yes,Yes,57612.69,2020-12-20,2026-08-03 12:14:01.421999,,Enterprise System
+MER00001092,New Prakash Networks,Telecom,Regional,TUTICORIN,TAMIL NADU,India,Active,Yes,Yes,3789.18,2021-07-28,2026-08-03 12:14:01.423000,,Enterprise System
+MER00001093,Om Jha Arcade,Entertainment,Regional,VILLUPURAM,TAMIL NADU,India,Active,Yes,No,5256.57,2026-01-18,2026-08-03 12:14:01.423000,,Enterprise System
+MER00001094,Sri Bhandari Supermarket,Grocery,Local,SALEM,TAMIL NADU,India,Active,Yes,No,1635.38,2016-03-17,2026-08-03 12:14:01.424001,,Enterprise System
+MER00001095,National Lad Fashion,Retail,Local,BHADRAK,ODISHA,India,Active,Yes,Yes,7508.49,2012-04-20,2026-08-03 12:14:01.424001,,Enterprise System
+MER00001096,Sri Dutta Travels,Travel,Regional,PASHCHIM CHAMPARAN,BIHAR,India,Active,Yes,Yes,3100.79,2025-09-05,2026-08-03 12:14:01.425000,,Enterprise System
+MER00001097,National Taneja Mart,Retail,National,BHADRAK,ODISHA,India,Active,Yes,Yes,2769.84,2014-04-21,2026-08-03 12:14:01.426000,,Enterprise System
+MER00001098,Royal Sane Stores,Grocery,Regional,COIMBATORE,TAMIL NADU,India,Active,Yes,Yes,4753.63,2026-04-06,2026-08-03 12:14:01.426000,,Enterprise System
+MER00001099,Om Srinivasan Marketplace,E-Commerce,Regional,THRISSUR,KERALA,India,Active,Yes,Yes,23768.9,2017-10-17,2026-08-03 12:14:01.427000,,Enterprise System
+MER00001100,Royal Vig Cinema,Entertainment,Regional,JANJGIR-CHAMPA,CHHATTISGARH,India,Active,Yes,Yes,6223.93,2019-11-24,2026-08-03 12:14:01.427000,,Enterprise System

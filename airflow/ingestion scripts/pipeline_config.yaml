@@ -1,0 +1,137 @@
+# =============================================================================
+# Pipeline Metadata Configuration
+#
+# This file is the single source of truth for "what tables exist and how
+# do we validate them." Add, remove, or change a table's validation rules
+# here - no code change or redeploy needed.
+#
+# Environment-specific settings (which Snowflake account, which Azure
+# container, email recipients, etc.) do NOT live here - see the Airflow
+# Variable documented in scripts/config.py.
+# =============================================================================
+
+tables:
+
+  - file_name: customers.csv
+    table_name: CUST_CUSTOMERS
+    primary_key: [CUSTOMER_ID]
+    required_columns: [FIRST_NAME, LAST_NAME, CUSTOMER_STATUS]
+
+  - file_name: customer_addresses.csv
+    table_name: CUST_CUSTOMER_ADDRESSES
+    primary_key: [ADDRESS_ID]
+    required_columns: [CUSTOMER_ID, CITY, STATE]
+    foreign_keys:
+      - column: CUSTOMER_ID
+        ref_table: CUST_CUSTOMERS
+        ref_column: CUSTOMER_ID
+
+  - file_name: kyc.csv
+    table_name: CUST_KYC
+    primary_key: [CUSTOMER_ID]
+    required_columns: [KYC_STATUS]
+    foreign_keys:
+      - column: CUSTOMER_ID
+        ref_table: CUST_CUSTOMERS
+        ref_column: CUSTOMER_ID
+
+  - file_name: branches.csv
+    table_name: ORG_BRANCHES
+    primary_key: [BRANCH_ID]
+    required_columns: [BRANCH_NAME, CITY, STATE]
+
+  - file_name: employees.csv
+    table_name: ORG_EMPLOYEES
+    primary_key: [EMPLOYEE_ID]
+    required_columns: [FIRST_NAME, LAST_NAME, EMPLOYEE_STATUS]
+    foreign_keys:
+      - column: BRANCH_ID
+        ref_table: ORG_BRANCHES
+        ref_column: BRANCH_ID
+
+  - file_name: accounts.csv
+    table_name: BANK_ACCOUNTS
+    primary_key: [ACCOUNT_ID]
+    required_columns: [CUSTOMER_ID, ACCOUNT_TYPE, ACCOUNT_STATUS]
+    foreign_keys:
+      - column: CUSTOMER_ID
+        ref_table: CUST_CUSTOMERS
+        ref_column: CUSTOMER_ID
+      - column: BRANCH_ID
+        ref_table: ORG_BRANCHES
+        ref_column: BRANCH_ID
+
+  - file_name: cards.csv
+    table_name: BANK_CARDS
+    primary_key: [CARD_ID]
+    required_columns: [ACCOUNT_ID, CARD_TYPE, CARD_STATUS]
+    foreign_keys:
+      - column: ACCOUNT_ID
+        ref_table: BANK_ACCOUNTS
+        ref_column: ACCOUNT_ID
+
+  - file_name: transactions.csv
+    table_name: BANK_TRANSACTIONS
+    primary_key: [TRANSACTION_ID]
+    required_columns: [ACCOUNT_ID, TRANSACTION_TYPE, AMOUNT]
+    foreign_keys:
+      - column: ACCOUNT_ID
+        ref_table: BANK_ACCOUNTS
+        ref_column: ACCOUNT_ID
+
+  - file_name: merchants.csv
+    table_name: BANK_MERCHANTS
+    primary_key: [MERCHANT_ID]
+    required_columns: [MERCHANT_NAME, MERCHANT_STATUS]
+
+  - file_name: loans.csv
+    table_name: LOAN_LOANS
+    primary_key: [LOAN_ID]
+    required_columns: [CUSTOMER_ID, LOAN_TYPE, LOAN_STATUS]
+    foreign_keys:
+      - column: CUSTOMER_ID
+        ref_table: CUST_CUSTOMERS
+        ref_column: CUSTOMER_ID
+
+  - file_name: loan_applications.csv
+    table_name: LOAN_LOAN_APPLICATIONS
+    primary_key: [APPLICATION_ID]
+    required_columns: [CUSTOMER_ID, APPROVAL_STATUS]
+    foreign_keys:
+      - column: CUSTOMER_ID
+        ref_table: CUST_CUSTOMERS
+        ref_column: CUSTOMER_ID
+
+  - file_name: loan_repayments.csv
+    table_name: LOAN_LOAN_REPAYMENTS
+    primary_key: [REPAYMENT_ID]
+    required_columns: [LOAN_ID, AMOUNT_PAID]
+    foreign_keys:
+      - column: LOAN_ID
+        ref_table: LOAN_LOANS
+        ref_column: LOAN_ID
+
+  - file_name: loan_collateral.csv
+    table_name: LOAN_LOAN_COLLATERAL
+    primary_key: [COLLATERAL_ID]
+    required_columns: [LOAN_ID, ASSET_TYPE]
+    foreign_keys:
+      - column: LOAN_ID
+        ref_table: LOAN_LOANS
+        ref_column: LOAN_ID
+
+  - file_name: fraud_alerts.csv
+    table_name: RISK_FRAUD_ALERTS
+    primary_key: [ALERT_ID]
+    required_columns: [TRANSACTION_ID, ALERT_STATUS]
+    foreign_keys:
+      - column: TRANSACTION_ID
+        ref_table: BANK_TRANSACTIONS
+        ref_column: TRANSACTION_ID
+
+  - file_name: exchange_rates.csv
+    table_name: EXCHANGE_RATES
+    primary_key: [RATE_DATE, CURRENCY]
+    required_columns: [CURRENCY, RATE_TO_INR]
+
+# Holiday Calendar is intentionally excluded - it is not landed in Azure.

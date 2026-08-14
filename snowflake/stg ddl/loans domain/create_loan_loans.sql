@@ -1,0 +1,26 @@
+CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOANS
+(
+    LOAN_ID                 VARCHAR(20)        NOT NULL,
+	LOAN_APPLICATION_ID 	VARCHAR(20),
+    CUSTOMER_ID             VARCHAR(20)        NOT NULL,
+
+    LOAN_TYPE               VARCHAR(30)        NOT NULL,
+
+    PRINCIPAL_AMOUNT        NUMBER(15,2)       NOT NULL,
+
+    INTEREST_RATE           NUMBER(5,2)        NOT NULL,
+
+    TENURE_MONTHS           NUMBER(4,0)        NOT NULL,
+
+    EMI_AMOUNT              NUMBER(15,2)       NOT NULL,
+
+    LOAN_STATUS             VARCHAR(20)        NOT NULL,
+
+    CREATED_AT              TIMESTAMP_NTZ      DEFAULT CURRENT_TIMESTAMP(),
+    UPDATED_AT              TIMESTAMP_NTZ,
+    SOURCE_SYSTEM           VARCHAR(50)        DEFAULT 'Loan Management System',
+    BATCH_ID                TIMESTAMP_NTZ,
+	BATCH_DATE          	DATE,
+	PIPELINE_RUN_ID			VARCHAR(20),
+	DATA_SOURCE				VARCHAR(50)
+);

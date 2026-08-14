@@ -718,3 +718,912 @@ AttributeError: 'MerchantGenerator' object has no attribute 'batch_id'
 2026-07-25 05:53:15 | INFO     | __main__ | Export completed successfully.
 2026-07-25 05:53:15 | INFO     | __main__ | Risk Generator completed successfully.
 2026-07-25 05:53:15 | INFO     | __main__ | ================================================================================
+2026-08-03 11:14:45 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 11:18:57 | INFO     | __main__ | ======================================================================
+2026-08-03 11:18:57 | INFO     | __main__ | Customer Generator Initialized
+2026-08-03 11:18:57 | INFO     | __main__ | ======================================================================
+2026-08-03 11:18:57 | INFO     | __main__ | ================================================================================
+2026-08-03 11:18:57 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-08-03 11:18:57 | INFO     | __main__ | ================================================================================
+2026-08-03 11:18:57 | INFO     | __main__ | Generating 5000 customers...
+2026-08-03 11:18:57 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-08-03 11:18:57 | INFO     | __main__ | Generating customer addresses...
+2026-08-03 11:19:00 | INFO     | __main__ | Successfully generated 6260 addresses.
+2026-08-03 11:19:00 | INFO     | __main__ | Generating KYC records...
+2026-08-03 11:19:00 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-08-03 11:19:00 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:00 | INFO     | __main__ | Running Customer Domain Validations
+2026-08-03 11:19:00 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | Customer Validation Results
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Emails
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Phones
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Income Positive
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | Address Validation Results
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Unique Address IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Address IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | KYC Validation Results
+2026-08-03 11:19:01 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null PAN
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 11:19:01 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-08-03 11:19:01 | INFO     | __main__ | All validations passed.
+2026-08-03 11:19:01 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-08-03 11:19:01 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\datasets\raw\customers_20260801.csv
+2026-08-03 11:19:01 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\datasets\raw\customer_addresses_20260801.csv
+2026-08-03 11:19:01 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\datasets\raw\kyc_20260801.csv
+2026-08-03 11:19:01 | INFO     | __main__ | Export completed.
+2026-08-03 11:19:01 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | Customer Domain Summary
+2026-08-03 11:19:01 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | total_customers                          : 5000
+2026-08-03 11:19:01 | INFO     | __main__ | active_customers                         : 4261
+2026-08-03 11:19:01 | INFO     | __main__ | blocked_customers                        : 256
+2026-08-03 11:19:01 | INFO     | __main__ | closed_customers                         : 137
+2026-08-03 11:19:01 | INFO     | __main__ | average_income                           : 911780.0
+2026-08-03 11:19:01 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-08-03 11:19:01 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-08-03 11:19:01 | INFO     | __main__ | total_addresses                          : 6260
+2026-08-03 11:19:01 | INFO     | __main__ | current_addresses                        : 5000
+2026-08-03 11:19:01 | INFO     | __main__ | historical_addresses                     : 1260
+2026-08-03 11:19:01 | INFO     | __main__ | customers_with_multiple_addresses        : 1260
+2026-08-03 11:19:01 | INFO     | __main__ | total_kyc_records                        : 5000
+2026-08-03 11:19:01 | INFO     | __main__ | verified                                 : 285
+2026-08-03 11:19:01 | INFO     | __main__ | pending                                  : 4613
+2026-08-03 11:19:01 | INFO     | __main__ | rejected                                 : 102
+2026-08-03 11:19:01 | INFO     | __main__ | pan_verified                             : 2628
+2026-08-03 11:19:01 | INFO     | __main__ | aadhaar_verified                         : 2590
+2026-08-03 11:19:01 | INFO     | __main__ | address_verified                         : 2582
+2026-08-03 11:19:01 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | ================================================================================
+2026-08-03 11:19:01 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-08-03 11:19:01 | INFO     | __main__ | Execution Time : 4.57 seconds
+2026-08-03 11:19:01 | INFO     | __main__ | ================================================================================
+2026-08-03 11:19:26 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | ================================================================================
+2026-08-03 11:19:26 | INFO     | __main__ | Starting Organization Generator...
+2026-08-03 11:19:26 | INFO     | __main__ | Generating Branches...
+2026-08-03 11:19:26 | INFO     | __main__ | 50 branches generated successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | Generating Employees...
+2026-08-03 11:19:26 | INFO     | __main__ | 350 employees generated successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | Assigning Branch Managers...
+2026-08-03 11:19:26 | INFO     | __main__ | Branch Managers assigned successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | ============================================================
+2026-08-03 11:19:26 | INFO     | __main__ | Organization Generation Summary
+2026-08-03 11:19:26 | INFO     | __main__ | Branches Generated  : 50
+2026-08-03 11:19:26 | INFO     | __main__ | Employees Generated : 350
+2026-08-03 11:19:26 | INFO     | __main__ | ============================================================
+2026-08-03 11:19:26 | INFO     | __main__ | Running Validation...
+2026-08-03 11:19:26 | INFO     | __main__ | Validating Branches...
+2026-08-03 11:19:26 | INFO     | __main__ | Branch validation completed successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | Validating Employees...
+2026-08-03 11:19:26 | INFO     | __main__ | Employee validation completed successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | Validation Successful.
+2026-08-03 11:19:26 | INFO     | __main__ | Exporting datasets...
+2026-08-03 11:19:26 | INFO     | __main__ | Exporting Branches...
+2026-08-03 11:19:26 | INFO     | __main__ | Branches exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\branches_20260801.csv
+2026-08-03 11:19:26 | INFO     | __main__ | Exporting Employees...
+2026-08-03 11:19:26 | INFO     | __main__ | Employees exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\employees_20260801.csv
+2026-08-03 11:19:26 | INFO     | __main__ | Export completed successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | Organization Generator completed successfully.
+2026-08-03 11:19:26 | INFO     | __main__ | ================================================================================
+2026-08-03 11:19:40 | INFO     | __main__ | Merchant Generator initialized successfully.
+2026-08-03 11:19:40 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:40 | INFO     | __main__ | Merchant Generation Started
+2026-08-03 11:19:40 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:40 | INFO     | __main__ | Generating Merchants...
+2026-08-03 11:19:40 | INFO     | __main__ | 1000 merchants generated successfully.
+2026-08-03 11:19:40 | INFO     | __main__ | Validating Merchants...
+2026-08-03 11:19:41 | INFO     | __main__ | Merchant validation completed successfully.
+2026-08-03 11:19:41 | INFO     | __main__ | Exporting Merchants...
+2026-08-03 11:19:41 | INFO     | __main__ | Merchant dataset exported to C:\Documents\Banking_Data_Platform\datasets\raw\merchants_20260801.csv
+2026-08-03 11:19:41 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:41 | INFO     | __main__ | Merchant Generation Summary
+2026-08-03 11:19:41 | INFO     | __main__ | Merchants Generated : 1000
+2026-08-03 11:19:41 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:41 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:41 | INFO     | __main__ | Merchant Generation Completed Successfully
+2026-08-03 11:19:41 | INFO     | __main__ | ======================================================================
+2026-08-03 11:19:54 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 11:19:54 | INFO     | __main__ | Loaded 5000 customers.
+2026-08-03 11:19:54 | INFO     | __main__ | Loading Branch dataset...
+2026-08-03 11:19:54 | INFO     | __main__ | Loaded 50 branches.
+2026-08-03 11:19:54 | INFO     | __main__ | Loading Merchants dataset...
+2026-08-03 11:19:54 | INFO     | __main__ | Loaded 1000 merchants.
+2026-08-03 11:19:54 | INFO     | __main__ | Banking Generator initialized successfully.
+2026-08-03 11:19:54 | INFO     | __main__ | ================================================================================
+2026-08-03 11:19:54 | INFO     | __main__ | Starting Banking Generator...
+2026-08-03 11:19:54 | INFO     | __main__ | Generating Accounts...
+2026-08-03 11:20:11 | INFO     | __main__ | 7000 Accounts generated successfully.
+2026-08-03 11:20:11 | INFO     | __main__ | Generating Cards...
+2026-08-03 11:20:14 | INFO     | __main__ | 7321 Cards generated successfully.
+2026-08-03 11:20:14 | INFO     | __main__ | Generating Transactions...
+2026-08-03 11:20:14 | INFO     | __main__ | Preparing transaction lookup caches...
+2026-08-03 11:20:15 | INFO     | __main__ | Transaction lookup caches ready (6752 eligible accounts, 6257 active cards, 936 active merchants).
+2026-08-03 11:21:56 | INFO     | __main__ | 250000 Transactions generated successfully.
+2026-08-03 11:21:56 | INFO     | __main__ | ======================================================================
+2026-08-03 11:21:56 | INFO     | __main__ | Banking Generation Summary
+2026-08-03 11:21:56 | INFO     | __main__ | Accounts Generated      : 7000
+2026-08-03 11:21:56 | INFO     | __main__ | Cards Generated         : 7321
+2026-08-03 11:21:56 | INFO     | __main__ | Transactions Generated  : 250000
+2026-08-03 11:21:56 | INFO     | __main__ | ======================================================================
+2026-08-03 11:21:56 | INFO     | __main__ | Running Validation...
+2026-08-03 11:21:56 | INFO     | __main__ | Validating Accounts...
+2026-08-03 11:21:56 | INFO     | __main__ | Account validation completed successfully.
+2026-08-03 11:21:56 | INFO     | __main__ | Validating Cards...
+2026-08-03 11:21:57 | INFO     | __main__ | Card validation successful.
+2026-08-03 11:21:57 | INFO     | __main__ | Validating Transactions...
+2026-08-03 11:22:00 | INFO     | __main__ | Transaction validation completed successfully.
+2026-08-03 11:22:00 | INFO     | __main__ | Validation Successful.
+2026-08-03 11:22:00 | INFO     | __main__ | Exporting datasets...
+2026-08-03 11:22:00 | INFO     | __main__ | Exporting Accounts...
+2026-08-03 11:22:00 | INFO     | __main__ | Accounts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\accounts_20260801.csv
+2026-08-03 11:22:00 | INFO     | __main__ | Exporting Cards...
+2026-08-03 11:22:00 | INFO     | __main__ | Cards exported to C:\Documents\Banking_Data_Platform\datasets\raw\cards_20260801.csv
+2026-08-03 11:22:00 | INFO     | __main__ | Exporting Transactions...
+2026-08-03 11:22:05 | INFO     | __main__ | Transactions exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\transactions_20260801.csv
+2026-08-03 11:22:05 | INFO     | __main__ | Export completed successfully.
+2026-08-03 11:22:05 | INFO     | __main__ | Banking Generator completed successfully.
+2026-08-03 11:22:05 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:17 | INFO     | __main__ | Reference Generator initialized successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:17 | INFO     | __main__ | Starting Reference Generator...
+2026-08-03 11:22:17 | INFO     | __main__ | Generating Exchange Rates...
+2026-08-03 11:22:17 | INFO     | __main__ | Fetched live exchange rates for 12 currencies.
+2026-08-03 11:22:17 | INFO     | __main__ | 4380 Exchange Rate records generated successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | Generating Holiday Calendar...
+2026-08-03 11:22:17 | WARNING  | __main__ | Live holiday fetch failed for 2025 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 11:22:17 | WARNING  | __main__ | Live holiday fetch failed for 2026 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 11:22:17 | WARNING  | __main__ | Live holiday fetch failed for 2027 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 11:22:17 | INFO     | __main__ | 24 Holiday records generated successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:17 | INFO     | __main__ | Reference Generation Summary
+2026-08-03 11:22:17 | INFO     | __main__ | Exchange Rates Generated  : 4380
+2026-08-03 11:22:17 | INFO     | __main__ | Holidays Generated        : 24
+2026-08-03 11:22:17 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:17 | INFO     | __main__ | Running Validation...
+2026-08-03 11:22:17 | INFO     | __main__ | Validating Exchange Rates...
+2026-08-03 11:22:17 | INFO     | __main__ | Exchange Rate validation completed successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | Validating Holiday Calendar...
+2026-08-03 11:22:17 | INFO     | __main__ | Holiday Calendar validation completed successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | Validation Successful.
+2026-08-03 11:22:17 | INFO     | __main__ | Exporting datasets...
+2026-08-03 11:22:17 | INFO     | __main__ | Exporting Exchange Rates...
+2026-08-03 11:22:17 | INFO     | __main__ | Exchange Rates exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\exchange_rates_20260801.csv
+2026-08-03 11:22:17 | INFO     | __main__ | Exporting Holiday Calendar...
+2026-08-03 11:22:17 | INFO     | __main__ | Holiday Calendar exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\holiday_calendar.csv
+2026-08-03 11:22:17 | INFO     | __main__ | Export completed successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | Reference Generator completed successfully.
+2026-08-03 11:22:17 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:26 | INFO     | __main__ | Loading Transaction dataset...
+2026-08-03 11:22:26 | INFO     | __main__ | Loaded 250000 transactions.
+2026-08-03 11:22:26 | INFO     | __main__ | Loading Employee dataset...
+2026-08-03 11:22:26 | INFO     | __main__ | Loaded 350 employees.
+2026-08-03 11:22:26 | INFO     | __main__ | Risk Generator initialized successfully.
+2026-08-03 11:22:26 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:26 | INFO     | __main__ | Starting Risk Generator...
+2026-08-03 11:22:26 | INFO     | __main__ | Generating Fraud Alerts...
+2026-08-03 11:22:29 | INFO     | __main__ | 3000 Fraud Alerts generated successfully.
+2026-08-03 11:22:29 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:29 | INFO     | __main__ | Risk Generation Summary
+2026-08-03 11:22:29 | INFO     | __main__ | Fraud Alerts Generated  : 3000
+2026-08-03 11:22:29 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:29 | INFO     | __main__ | Running Validation...
+2026-08-03 11:22:29 | INFO     | __main__ | Validating Fraud Alerts...
+2026-08-03 11:22:29 | INFO     | __main__ | Fraud Alert validation completed successfully.
+2026-08-03 11:22:29 | INFO     | __main__ | Validation Successful.
+2026-08-03 11:22:29 | INFO     | __main__ | Exporting datasets...
+2026-08-03 11:22:29 | INFO     | __main__ | Exporting Fraud Alerts...
+2026-08-03 11:22:29 | INFO     | __main__ | Fraud Alerts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\fraud_alerts_20260801.csv
+2026-08-03 11:22:29 | INFO     | __main__ | Export completed successfully.
+2026-08-03 11:22:29 | INFO     | __main__ | Risk Generator completed successfully.
+2026-08-03 11:22:29 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:39 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 11:22:39 | INFO     | __main__ | Loaded 5000 customers.
+2026-08-03 11:22:39 | INFO     | __main__ | Loan Generator initialized successfully.
+2026-08-03 11:22:39 | INFO     | __main__ | ================================================================================
+2026-08-03 11:22:39 | INFO     | __main__ | Starting Loan Generator...
+2026-08-03 11:22:39 | INFO     | __main__ | Generating Loans...
+2026-08-03 11:22:39 | INFO     | __main__ | 2500 Loans generated successfully.
+2026-08-03 11:22:39 | INFO     | __main__ | Generating Loan Applications...
+2026-08-03 11:22:40 | INFO     | __main__ | 4000 Loan Applications generated successfully.
+2026-08-03 11:22:40 | INFO     | __main__ | Generating Loan Repayments...
+2026-08-03 11:22:40 | INFO     | __main__ | 35000 Loan Repayments generated successfully.
+2026-08-03 11:22:40 | INFO     | __main__ | Generating Loan Collateral...
+2026-08-03 11:22:40 | INFO     | __main__ | 1617 Loan Collateral records generated successfully.
+2026-08-03 11:22:40 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:40 | INFO     | __main__ | Loan Generation Summary
+2026-08-03 11:22:40 | INFO     | __main__ | Loans Generated              : 2500
+2026-08-03 11:22:40 | INFO     | __main__ | Loan Applications Generated  : 4000
+2026-08-03 11:22:40 | INFO     | __main__ | Loan Repayments Generated    : 35000
+2026-08-03 11:22:40 | INFO     | __main__ | Loan Collateral Generated    : 1617
+2026-08-03 11:22:40 | INFO     | __main__ | ======================================================================
+2026-08-03 11:22:40 | INFO     | __main__ | Running Validation...
+2026-08-03 11:22:40 | INFO     | __main__ | Validating Loans...
+2026-08-03 11:22:40 | INFO     | __main__ | Loan validation completed successfully.
+2026-08-03 11:22:40 | INFO     | __main__ | Validating Loan Applications...
+2026-08-03 11:22:40 | INFO     | __main__ | Loan Application validation completed successfully.
+2026-08-03 11:22:40 | INFO     | __main__ | Validating Loan Repayments...
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Repayment validation completed successfully.
+2026-08-03 11:22:41 | INFO     | __main__ | Validating Loan Collateral...
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Collateral validation completed successfully.
+2026-08-03 11:22:41 | INFO     | __main__ | Validation Successful.
+2026-08-03 11:22:41 | INFO     | __main__ | Exporting datasets...
+2026-08-03 11:22:41 | INFO     | __main__ | Exporting Loans...
+2026-08-03 11:22:41 | INFO     | __main__ | Loans exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loans_20260801.csv
+2026-08-03 11:22:41 | INFO     | __main__ | Exporting Loan Applications...
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Applications exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_applications_20260801.csv
+2026-08-03 11:22:41 | INFO     | __main__ | Exporting Loan Repayments...
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Repayments exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_repayments_20260801.csv
+2026-08-03 11:22:41 | INFO     | __main__ | Exporting Loan Collateral...
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Collateral exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_collateral_20260801.csv
+2026-08-03 11:22:41 | INFO     | __main__ | Export completed successfully.
+2026-08-03 11:22:41 | INFO     | __main__ | Loan Generator completed successfully.
+2026-08-03 11:22:41 | INFO     | __main__ | ================================================================================
+2026-08-03 12:07:22 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:22 | INFO     | __main__ | Customer Generator Initialized
+2026-08-03 12:07:22 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:22 | INFO     | __main__ | ================================================================================
+2026-08-03 12:07:22 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-08-03 12:07:22 | INFO     | __main__ | ================================================================================
+2026-08-03 12:07:22 | INFO     | __main__ | Generating 5000 customers...
+2026-08-03 12:07:22 | INFO     | __main__ | Successfully generated 5000 customers.
+2026-08-03 12:07:22 | INFO     | __main__ | Generating customer addresses...
+2026-08-03 12:07:25 | INFO     | __main__ | Successfully generated 6196 addresses.
+2026-08-03 12:07:25 | INFO     | __main__ | Generating KYC records...
+2026-08-03 12:07:26 | INFO     | __main__ | Successfully generated 5000 KYC records.
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | Running Customer Domain Validations
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | Customer Validation Results
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Emails
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Phones
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Income Positive
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | Address Validation Results
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Unique Address IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Address IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | KYC Validation Results
+2026-08-03 12:07:26 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null PAN
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:07:26 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-08-03 12:07:26 | INFO     | __main__ | All validations passed.
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\datasets\raw\customers_20260802.csv
+2026-08-03 12:07:26 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\datasets\raw\customer_addresses_20260802.csv
+2026-08-03 12:07:26 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\datasets\raw\kyc_20260802.csv
+2026-08-03 12:07:26 | INFO     | __main__ | Export completed.
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | Customer Domain Summary
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | total_customers                          : 5000
+2026-08-03 12:07:26 | INFO     | __main__ | active_customers                         : 4239
+2026-08-03 12:07:26 | INFO     | __main__ | blocked_customers                        : 260
+2026-08-03 12:07:26 | INFO     | __main__ | closed_customers                         : 142
+2026-08-03 12:07:26 | INFO     | __main__ | average_income                           : 908120.0
+2026-08-03 12:07:26 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-08-03 12:07:26 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-08-03 12:07:26 | INFO     | __main__ | total_addresses                          : 6196
+2026-08-03 12:07:26 | INFO     | __main__ | current_addresses                        : 5000
+2026-08-03 12:07:26 | INFO     | __main__ | historical_addresses                     : 1196
+2026-08-03 12:07:26 | INFO     | __main__ | customers_with_multiple_addresses        : 1196
+2026-08-03 12:07:26 | INFO     | __main__ | total_kyc_records                        : 5000
+2026-08-03 12:07:26 | INFO     | __main__ | verified                                 : 301
+2026-08-03 12:07:26 | INFO     | __main__ | pending                                  : 4593
+2026-08-03 12:07:26 | INFO     | __main__ | rejected                                 : 106
+2026-08-03 12:07:26 | INFO     | __main__ | pan_verified                             : 2609
+2026-08-03 12:07:26 | INFO     | __main__ | aadhaar_verified                         : 2590
+2026-08-03 12:07:26 | INFO     | __main__ | address_verified                         : 2555
+2026-08-03 12:07:26 | INFO     | __main__ | ======================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | ================================================================================
+2026-08-03 12:07:26 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-08-03 12:07:26 | INFO     | __main__ | Execution Time : 4.35 seconds
+2026-08-03 12:07:26 | INFO     | __main__ | ================================================================================
+2026-08-03 12:09:22 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:22 | INFO     | __main__ | Customer Generator Initialized
+2026-08-03 12:09:22 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:22 | INFO     | __main__ | ================================================================================
+2026-08-03 12:09:22 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-08-03 12:09:22 | INFO     | __main__ | ================================================================================
+2026-08-03 12:09:22 | INFO     | __main__ | Generating 1000 customers...
+2026-08-03 12:09:22 | INFO     | __main__ | Successfully generated 1000 customers.
+2026-08-03 12:09:22 | INFO     | __main__ | Generating customer addresses...
+2026-08-03 12:09:23 | INFO     | __main__ | Successfully generated 1261 addresses.
+2026-08-03 12:09:23 | INFO     | __main__ | Generating KYC records...
+2026-08-03 12:09:23 | INFO     | __main__ | Successfully generated 1000 KYC records.
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | Running Customer Domain Validations
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | Customer Validation Results
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Emails
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Phones
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Income Positive
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | Address Validation Results
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Unique Address IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Address IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | KYC Validation Results
+2026-08-03 12:09:23 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null PAN
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:09:23 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-08-03 12:09:23 | INFO     | __main__ | All validations passed.
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\datasets\raw\customers_20260802.csv
+2026-08-03 12:09:23 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\datasets\raw\customer_addresses_20260802.csv
+2026-08-03 12:09:23 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\datasets\raw\kyc_20260802.csv
+2026-08-03 12:09:23 | INFO     | __main__ | Export completed.
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | Customer Domain Summary
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | total_customers                          : 1000
+2026-08-03 12:09:23 | INFO     | __main__ | active_customers                         : 848
+2026-08-03 12:09:23 | INFO     | __main__ | blocked_customers                        : 51
+2026-08-03 12:09:23 | INFO     | __main__ | closed_customers                         : 34
+2026-08-03 12:09:23 | INFO     | __main__ | average_income                           : 883900.0
+2026-08-03 12:09:23 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-08-03 12:09:23 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-08-03 12:09:23 | INFO     | __main__ | total_addresses                          : 1261
+2026-08-03 12:09:23 | INFO     | __main__ | current_addresses                        : 1000
+2026-08-03 12:09:23 | INFO     | __main__ | historical_addresses                     : 261
+2026-08-03 12:09:23 | INFO     | __main__ | customers_with_multiple_addresses        : 261
+2026-08-03 12:09:23 | INFO     | __main__ | total_kyc_records                        : 1000
+2026-08-03 12:09:23 | INFO     | __main__ | verified                                 : 74
+2026-08-03 12:09:23 | INFO     | __main__ | pending                                  : 903
+2026-08-03 12:09:23 | INFO     | __main__ | rejected                                 : 23
+2026-08-03 12:09:23 | INFO     | __main__ | pan_verified                             : 511
+2026-08-03 12:09:23 | INFO     | __main__ | aadhaar_verified                         : 520
+2026-08-03 12:09:23 | INFO     | __main__ | address_verified                         : 490
+2026-08-03 12:09:23 | INFO     | __main__ | ======================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | ================================================================================
+2026-08-03 12:09:23 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-08-03 12:09:23 | INFO     | __main__ | Execution Time : 0.90 seconds
+2026-08-03 12:09:23 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:08 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:08 | INFO     | __main__ | Customer Generator Initialized
+2026-08-03 12:12:08 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:08 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:08 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-08-03 12:12:08 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:08 | INFO     | __main__ | Generating 1000 customers...
+2026-08-03 12:12:08 | INFO     | __main__ | Successfully generated 1000 customers.
+2026-08-03 12:12:08 | INFO     | __main__ | Generating customer addresses...
+2026-08-03 12:12:09 | INFO     | __main__ | Successfully generated 1261 addresses.
+2026-08-03 12:12:09 | INFO     | __main__ | Generating KYC records...
+2026-08-03 12:12:09 | INFO     | __main__ | Successfully generated 1000 KYC records.
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | Running Customer Domain Validations
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | Customer Validation Results
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Emails
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Phones
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Income Positive
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | Address Validation Results
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Unique Address IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Address IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | KYC Validation Results
+2026-08-03 12:12:09 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null PAN
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:12:09 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-08-03 12:12:09 | INFO     | __main__ | All validations passed.
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\datasets\raw\customers_20260802.csv
+2026-08-03 12:12:09 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\datasets\raw\customer_addresses_20260802.csv
+2026-08-03 12:12:09 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\datasets\raw\kyc_20260802.csv
+2026-08-03 12:12:09 | INFO     | __main__ | Export completed.
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | Customer Domain Summary
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | total_customers                          : 1000
+2026-08-03 12:12:09 | INFO     | __main__ | active_customers                         : 848
+2026-08-03 12:12:09 | INFO     | __main__ | blocked_customers                        : 51
+2026-08-03 12:12:09 | INFO     | __main__ | closed_customers                         : 34
+2026-08-03 12:12:09 | INFO     | __main__ | average_income                           : 883900.0
+2026-08-03 12:12:09 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-08-03 12:12:09 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-08-03 12:12:09 | INFO     | __main__ | total_addresses                          : 1261
+2026-08-03 12:12:09 | INFO     | __main__ | current_addresses                        : 1000
+2026-08-03 12:12:09 | INFO     | __main__ | historical_addresses                     : 261
+2026-08-03 12:12:09 | INFO     | __main__ | customers_with_multiple_addresses        : 261
+2026-08-03 12:12:09 | INFO     | __main__ | total_kyc_records                        : 1000
+2026-08-03 12:12:09 | INFO     | __main__ | verified                                 : 74
+2026-08-03 12:12:09 | INFO     | __main__ | pending                                  : 903
+2026-08-03 12:12:09 | INFO     | __main__ | rejected                                 : 23
+2026-08-03 12:12:09 | INFO     | __main__ | pan_verified                             : 511
+2026-08-03 12:12:09 | INFO     | __main__ | aadhaar_verified                         : 520
+2026-08-03 12:12:09 | INFO     | __main__ | address_verified                         : 490
+2026-08-03 12:12:09 | INFO     | __main__ | ======================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:09 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-08-03 12:12:09 | INFO     | __main__ | Execution Time : 0.93 seconds
+2026-08-03 12:12:09 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:52 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | ================================================================================
+2026-08-03 12:12:52 | INFO     | __main__ | Starting Organization Generator...
+2026-08-03 12:12:52 | INFO     | __main__ | Generating Branches...
+2026-08-03 12:12:52 | INFO     | __main__ | 25 branches generated successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | Generating Employees...
+2026-08-03 12:12:52 | INFO     | __main__ | 35 employees generated successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | Assigning Branch Managers...
+2026-08-03 12:12:52 | INFO     | __main__ | Branch Managers assigned successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | ============================================================
+2026-08-03 12:12:52 | INFO     | __main__ | Organization Generation Summary
+2026-08-03 12:12:52 | INFO     | __main__ | Branches Generated  : 25
+2026-08-03 12:12:52 | INFO     | __main__ | Employees Generated : 35
+2026-08-03 12:12:52 | INFO     | __main__ | ============================================================
+2026-08-03 12:12:52 | INFO     | __main__ | Running Validation...
+2026-08-03 12:12:52 | INFO     | __main__ | Validating Branches...
+2026-08-03 12:12:52 | INFO     | __main__ | Branch validation completed successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | Validating Employees...
+2026-08-03 12:12:52 | INFO     | __main__ | Employee validation completed successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:12:52 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:12:52 | INFO     | __main__ | Exporting Branches...
+2026-08-03 12:12:52 | INFO     | __main__ | Branches exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\branches_20260802.csv
+2026-08-03 12:12:52 | INFO     | __main__ | Exporting Employees...
+2026-08-03 12:12:52 | INFO     | __main__ | Employees exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\employees_20260802.csv
+2026-08-03 12:12:52 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | Organization Generator completed successfully.
+2026-08-03 12:12:52 | INFO     | __main__ | ================================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant Generator initialized successfully.
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant Generation Started
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | Generating Merchants...
+2026-08-03 12:14:01 | INFO     | __main__ | 100 merchants generated successfully.
+2026-08-03 12:14:01 | INFO     | __main__ | Validating Merchants...
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant validation completed successfully.
+2026-08-03 12:14:01 | INFO     | __main__ | Exporting Merchants...
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant dataset exported to C:\Documents\Banking_Data_Platform\datasets\raw\merchants_20260802.csv
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant Generation Summary
+2026-08-03 12:14:01 | INFO     | __main__ | Merchants Generated : 100
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:01 | INFO     | __main__ | Merchant Generation Completed Successfully
+2026-08-03 12:14:01 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:11 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 12:14:11 | INFO     | __main__ | Loaded 1000 customers.
+2026-08-03 12:14:11 | INFO     | __main__ | Loading Branch dataset...
+2026-08-03 12:14:11 | INFO     | __main__ | Loaded 25 branches.
+2026-08-03 12:14:11 | INFO     | __main__ | Loading Merchants dataset...
+2026-08-03 12:14:11 | INFO     | __main__ | Loaded 100 merchants.
+2026-08-03 12:14:11 | INFO     | __main__ | Banking Generator initialized successfully.
+2026-08-03 12:14:11 | INFO     | __main__ | ================================================================================
+2026-08-03 12:14:11 | INFO     | __main__ | Starting Banking Generator...
+2026-08-03 12:14:11 | INFO     | __main__ | Generating Accounts...
+2026-08-03 12:14:11 | INFO     | __main__ | 700 Accounts generated successfully.
+2026-08-03 12:14:11 | INFO     | __main__ | Generating Cards...
+2026-08-03 12:14:11 | INFO     | __main__ | 743 Cards generated successfully.
+2026-08-03 12:14:11 | INFO     | __main__ | Generating Transactions...
+2026-08-03 12:14:11 | INFO     | __main__ | Preparing transaction lookup caches...
+2026-08-03 12:14:11 | INFO     | __main__ | Transaction lookup caches ready (669 eligible accounts, 634 active cards, 95 active merchants).
+2026-08-03 12:14:57 | INFO     | __main__ | 200000 Transactions generated successfully.
+2026-08-03 12:14:57 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:57 | INFO     | __main__ | Banking Generation Summary
+2026-08-03 12:14:57 | INFO     | __main__ | Accounts Generated      : 700
+2026-08-03 12:14:57 | INFO     | __main__ | Cards Generated         : 743
+2026-08-03 12:14:57 | INFO     | __main__ | Transactions Generated  : 200000
+2026-08-03 12:14:57 | INFO     | __main__ | ======================================================================
+2026-08-03 12:14:57 | INFO     | __main__ | Running Validation...
+2026-08-03 12:14:57 | INFO     | __main__ | Validating Accounts...
+2026-08-03 12:14:57 | INFO     | __main__ | Account validation completed successfully.
+2026-08-03 12:14:57 | INFO     | __main__ | Validating Cards...
+2026-08-03 12:14:57 | INFO     | __main__ | Card validation successful.
+2026-08-03 12:14:57 | INFO     | __main__ | Validating Transactions...
+2026-08-03 12:14:59 | INFO     | __main__ | Transaction validation completed successfully.
+2026-08-03 12:14:59 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:14:59 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:14:59 | INFO     | __main__ | Exporting Accounts...
+2026-08-03 12:15:00 | INFO     | __main__ | Accounts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\accounts_20260802.csv
+2026-08-03 12:15:00 | INFO     | __main__ | Exporting Cards...
+2026-08-03 12:15:00 | INFO     | __main__ | Cards exported to C:\Documents\Banking_Data_Platform\datasets\raw\cards_20260802.csv
+2026-08-03 12:15:00 | INFO     | __main__ | Exporting Transactions...
+2026-08-03 12:15:03 | INFO     | __main__ | Transactions exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\transactions_20260802.csv
+2026-08-03 12:15:03 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:15:03 | INFO     | __main__ | Banking Generator completed successfully.
+2026-08-03 12:15:03 | INFO     | __main__ | ================================================================================
+2026-08-03 12:15:18 | INFO     | __main__ | Loading Transaction dataset...
+2026-08-03 12:15:19 | INFO     | __main__ | Loaded 200000 transactions.
+2026-08-03 12:15:19 | INFO     | __main__ | Loading Employee dataset...
+2026-08-03 12:15:19 | INFO     | __main__ | Loaded 35 employees.
+2026-08-03 12:15:19 | INFO     | __main__ | Risk Generator initialized successfully.
+2026-08-03 12:15:19 | INFO     | __main__ | ================================================================================
+2026-08-03 12:15:19 | INFO     | __main__ | Starting Risk Generator...
+2026-08-03 12:15:19 | INFO     | __main__ | Generating Fraud Alerts...
+2026-08-03 12:15:19 | INFO     | __main__ | 300 Fraud Alerts generated successfully.
+2026-08-03 12:15:19 | INFO     | __main__ | ======================================================================
+2026-08-03 12:15:19 | INFO     | __main__ | Risk Generation Summary
+2026-08-03 12:15:19 | INFO     | __main__ | Fraud Alerts Generated  : 300
+2026-08-03 12:15:19 | INFO     | __main__ | ======================================================================
+2026-08-03 12:15:19 | INFO     | __main__ | Running Validation...
+2026-08-03 12:15:19 | INFO     | __main__ | Validating Fraud Alerts...
+2026-08-03 12:15:19 | INFO     | __main__ | Fraud Alert validation completed successfully.
+2026-08-03 12:15:19 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:15:19 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:15:19 | INFO     | __main__ | Exporting Fraud Alerts...
+2026-08-03 12:15:19 | INFO     | __main__ | Fraud Alerts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\fraud_alerts_20260802.csv
+2026-08-03 12:15:19 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:15:19 | INFO     | __main__ | Risk Generator completed successfully.
+2026-08-03 12:15:19 | INFO     | __main__ | ================================================================================
+2026-08-03 12:15:32 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 12:15:32 | INFO     | __main__ | Loaded 1000 customers.
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Generator initialized successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | ================================================================================
+2026-08-03 12:15:32 | INFO     | __main__ | Starting Loan Generator...
+2026-08-03 12:15:32 | INFO     | __main__ | Generating Loans...
+2026-08-03 12:15:32 | INFO     | __main__ | 250 Loans generated successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Generating Loan Applications...
+2026-08-03 12:15:32 | INFO     | __main__ | 400 Loan Applications generated successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Generating Loan Repayments...
+2026-08-03 12:15:32 | INFO     | __main__ | 3500 Loan Repayments generated successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Generating Loan Collateral...
+2026-08-03 12:15:32 | INFO     | __main__ | 163 Loan Collateral records generated successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | ======================================================================
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Generation Summary
+2026-08-03 12:15:32 | INFO     | __main__ | Loans Generated              : 250
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Applications Generated  : 400
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Repayments Generated    : 3500
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Collateral Generated    : 163
+2026-08-03 12:15:32 | INFO     | __main__ | ======================================================================
+2026-08-03 12:15:32 | INFO     | __main__ | Running Validation...
+2026-08-03 12:15:32 | INFO     | __main__ | Validating Loans...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan validation completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Validating Loan Applications...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Application validation completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Validating Loan Repayments...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Repayment validation completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Validating Loan Collateral...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Collateral validation completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:15:32 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:15:32 | INFO     | __main__ | Exporting Loans...
+2026-08-03 12:15:32 | INFO     | __main__ | Loans exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loans_20260802.csv
+2026-08-03 12:15:32 | INFO     | __main__ | Exporting Loan Applications...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Applications exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_applications_20260802.csv
+2026-08-03 12:15:32 | INFO     | __main__ | Exporting Loan Repayments...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Repayments exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_repayments_20260802.csv
+2026-08-03 12:15:32 | INFO     | __main__ | Exporting Loan Collateral...
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Collateral exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_collateral_20260802.csv
+2026-08-03 12:15:32 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | Loan Generator completed successfully.
+2026-08-03 12:15:32 | INFO     | __main__ | ================================================================================
+2026-08-03 12:16:47 | INFO     | __main__ | Reference Generator initialized successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | ================================================================================
+2026-08-03 12:16:47 | INFO     | __main__ | Starting Reference Generator...
+2026-08-03 12:16:47 | INFO     | __main__ | Generating Exchange Rates...
+2026-08-03 12:16:47 | INFO     | __main__ | Fetched live exchange rates for 12 currencies.
+2026-08-03 12:16:47 | INFO     | __main__ | 4380 Exchange Rate records generated successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | Generating Holiday Calendar...
+2026-08-03 12:16:47 | WARNING  | __main__ | Live holiday fetch failed for 2025 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:16:47 | WARNING  | __main__ | Live holiday fetch failed for 2026 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:16:47 | WARNING  | __main__ | Live holiday fetch failed for 2027 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:16:47 | INFO     | __main__ | 24 Holiday records generated successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | ======================================================================
+2026-08-03 12:16:47 | INFO     | __main__ | Reference Generation Summary
+2026-08-03 12:16:47 | INFO     | __main__ | Exchange Rates Generated  : 4380
+2026-08-03 12:16:47 | INFO     | __main__ | Holidays Generated        : 24
+2026-08-03 12:16:47 | INFO     | __main__ | ======================================================================
+2026-08-03 12:16:47 | INFO     | __main__ | Running Validation...
+2026-08-03 12:16:47 | INFO     | __main__ | Validating Exchange Rates...
+2026-08-03 12:16:47 | INFO     | __main__ | Exchange Rate validation completed successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | Validating Holiday Calendar...
+2026-08-03 12:16:47 | INFO     | __main__ | Holiday Calendar validation completed successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:16:47 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:16:47 | INFO     | __main__ | Exporting Exchange Rates...
+2026-08-03 12:16:47 | INFO     | __main__ | Exchange Rates exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\exchange_rates_20260802.csv
+2026-08-03 12:16:47 | INFO     | __main__ | Exporting Holiday Calendar...
+2026-08-03 12:16:47 | INFO     | __main__ | Holiday Calendar exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\holiday_calendar.csv
+2026-08-03 12:16:47 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | Reference Generator completed successfully.
+2026-08-03 12:16:47 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Customer Generator Initialized
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | CUSTOMER DOMAIN PIPELINE STARTED
+2026-08-03 12:22:13 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Generating 750 customers...
+2026-08-03 12:22:13 | INFO     | __main__ | Successfully generated 750 customers.
+2026-08-03 12:22:13 | INFO     | __main__ | Generating customer addresses...
+2026-08-03 12:22:13 | INFO     | __main__ | Successfully generated 934 addresses.
+2026-08-03 12:22:13 | INFO     | __main__ | Generating KYC records...
+2026-08-03 12:22:13 | INFO     | __main__ | Successfully generated 750 KYC records.
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Running Customer Domain Validations
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | Customer Validation Results
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Emails
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Phones
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Income Positive
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | Address Validation Results
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Unique Address IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Address IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Customer IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : One Current Address Maximum
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | KYC Validation Results
+2026-08-03 12:22:13 | INFO     | __main__ | ------------------------------------------------------------
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Unique Customer IDs
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null PAN
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : No Null Aadhaar
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Customer Exists
+2026-08-03 12:22:13 | INFO     | __main__ | PASS : Verified Records Consistent
+2026-08-03 12:22:13 | INFO     | __main__ | All validations passed.
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Exporting Customer Domain Tables
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Customers exported to C:\Documents\Banking_Data_Platform\datasets\raw\customers_20260803.csv
+2026-08-03 12:22:13 | INFO     | __main__ | CustomerAddresses exported to C:\Documents\Banking_Data_Platform\datasets\raw\customer_addresses_20260803.csv
+2026-08-03 12:22:13 | INFO     | __main__ | KYC exported to C:\Documents\Banking_Data_Platform\datasets\raw\kyc_20260803.csv
+2026-08-03 12:22:13 | INFO     | __main__ | Export completed.
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | Customer Domain Summary
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | total_customers                          : 750
+2026-08-03 12:22:13 | INFO     | __main__ | active_customers                         : 642
+2026-08-03 12:22:13 | INFO     | __main__ | blocked_customers                        : 33
+2026-08-03 12:22:13 | INFO     | __main__ | closed_customers                         : 23
+2026-08-03 12:22:13 | INFO     | __main__ | average_income                           : 905066.67
+2026-08-03 12:22:13 | INFO     | __main__ | maximum_income                           : 5000000.0
+2026-08-03 12:22:13 | INFO     | __main__ | minimum_income                           : 300000.0
+2026-08-03 12:22:13 | INFO     | __main__ | total_addresses                          : 934
+2026-08-03 12:22:13 | INFO     | __main__ | current_addresses                        : 750
+2026-08-03 12:22:13 | INFO     | __main__ | historical_addresses                     : 184
+2026-08-03 12:22:13 | INFO     | __main__ | customers_with_multiple_addresses        : 184
+2026-08-03 12:22:13 | INFO     | __main__ | total_kyc_records                        : 750
+2026-08-03 12:22:13 | INFO     | __main__ | verified                                 : 35
+2026-08-03 12:22:13 | INFO     | __main__ | pending                                  : 695
+2026-08-03 12:22:13 | INFO     | __main__ | rejected                                 : 20
+2026-08-03 12:22:13 | INFO     | __main__ | pan_verified                             : 387
+2026-08-03 12:22:13 | INFO     | __main__ | aadhaar_verified                         : 405
+2026-08-03 12:22:13 | INFO     | __main__ | address_verified                         : 402
+2026-08-03 12:22:13 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:13 | INFO     | __main__ | CUSTOMER DOMAIN COMPLETED
+2026-08-03 12:22:13 | INFO     | __main__ | Execution Time : 0.70 seconds
+2026-08-03 12:22:13 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:27 | INFO     | __main__ | Organization Generator initialized successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:27 | INFO     | __main__ | Starting Organization Generator...
+2026-08-03 12:22:27 | INFO     | __main__ | Generating Branches...
+2026-08-03 12:22:27 | INFO     | __main__ | 5 branches generated successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | Generating Employees...
+2026-08-03 12:22:27 | INFO     | __main__ | 75 employees generated successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | Assigning Branch Managers...
+2026-08-03 12:22:27 | INFO     | __main__ | Branch Managers assigned successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | ============================================================
+2026-08-03 12:22:27 | INFO     | __main__ | Organization Generation Summary
+2026-08-03 12:22:27 | INFO     | __main__ | Branches Generated  : 5
+2026-08-03 12:22:27 | INFO     | __main__ | Employees Generated : 75
+2026-08-03 12:22:27 | INFO     | __main__ | ============================================================
+2026-08-03 12:22:27 | INFO     | __main__ | Running Validation...
+2026-08-03 12:22:27 | INFO     | __main__ | Validating Branches...
+2026-08-03 12:22:27 | INFO     | __main__ | Branch validation completed successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | Validating Employees...
+2026-08-03 12:22:27 | INFO     | __main__ | Employee validation completed successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:22:27 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:22:27 | INFO     | __main__ | Exporting Branches...
+2026-08-03 12:22:27 | INFO     | __main__ | Branches exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\branches_20260803.csv
+2026-08-03 12:22:27 | INFO     | __main__ | Exporting Employees...
+2026-08-03 12:22:27 | INFO     | __main__ | Employees exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\employees_20260803.csv
+2026-08-03 12:22:27 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | Organization Generator completed successfully.
+2026-08-03 12:22:27 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant Generator initialized successfully.
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant Generation Started
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | Generating Merchants...
+2026-08-03 12:22:36 | INFO     | __main__ | 50 merchants generated successfully.
+2026-08-03 12:22:36 | INFO     | __main__ | Validating Merchants...
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant validation completed successfully.
+2026-08-03 12:22:36 | INFO     | __main__ | Exporting Merchants...
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant dataset exported to C:\Documents\Banking_Data_Platform\datasets\raw\merchants_20260803.csv
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant Generation Summary
+2026-08-03 12:22:36 | INFO     | __main__ | Merchants Generated : 50
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:36 | INFO     | __main__ | Merchant Generation Completed Successfully
+2026-08-03 12:22:36 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:46 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 12:22:46 | INFO     | __main__ | Loaded 750 customers.
+2026-08-03 12:22:46 | INFO     | __main__ | Loading Branch dataset...
+2026-08-03 12:22:46 | INFO     | __main__ | Loaded 5 branches.
+2026-08-03 12:22:46 | INFO     | __main__ | Loading Merchants dataset...
+2026-08-03 12:22:46 | INFO     | __main__ | Loaded 50 merchants.
+2026-08-03 12:22:46 | INFO     | __main__ | Banking Generator initialized successfully.
+2026-08-03 12:22:46 | INFO     | __main__ | ================================================================================
+2026-08-03 12:22:46 | INFO     | __main__ | Starting Banking Generator...
+2026-08-03 12:22:46 | INFO     | __main__ | Generating Accounts...
+2026-08-03 12:22:46 | INFO     | __main__ | 70 Accounts generated successfully.
+2026-08-03 12:22:46 | INFO     | __main__ | Generating Cards...
+2026-08-03 12:22:46 | INFO     | __main__ | 79 Cards generated successfully.
+2026-08-03 12:22:46 | INFO     | __main__ | Generating Transactions...
+2026-08-03 12:22:46 | INFO     | __main__ | Preparing transaction lookup caches...
+2026-08-03 12:22:46 | INFO     | __main__ | Transaction lookup caches ready (66 eligible accounts, 68 active cards, 48 active merchants).
+2026-08-03 12:22:50 | INFO     | __main__ | 20000 Transactions generated successfully.
+2026-08-03 12:22:50 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:50 | INFO     | __main__ | Banking Generation Summary
+2026-08-03 12:22:50 | INFO     | __main__ | Accounts Generated      : 70
+2026-08-03 12:22:50 | INFO     | __main__ | Cards Generated         : 79
+2026-08-03 12:22:50 | INFO     | __main__ | Transactions Generated  : 20000
+2026-08-03 12:22:50 | INFO     | __main__ | ======================================================================
+2026-08-03 12:22:50 | INFO     | __main__ | Running Validation...
+2026-08-03 12:22:50 | INFO     | __main__ | Validating Accounts...
+2026-08-03 12:22:50 | INFO     | __main__ | Account validation completed successfully.
+2026-08-03 12:22:50 | INFO     | __main__ | Validating Cards...
+2026-08-03 12:22:50 | INFO     | __main__ | Card validation successful.
+2026-08-03 12:22:50 | INFO     | __main__ | Validating Transactions...
+2026-08-03 12:22:50 | INFO     | __main__ | Transaction validation completed successfully.
+2026-08-03 12:22:50 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:22:50 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:22:50 | INFO     | __main__ | Exporting Accounts...
+2026-08-03 12:22:50 | INFO     | __main__ | Accounts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\accounts_20260803.csv
+2026-08-03 12:22:50 | INFO     | __main__ | Exporting Cards...
+2026-08-03 12:22:50 | INFO     | __main__ | Cards exported to C:\Documents\Banking_Data_Platform\datasets\raw\cards_20260803.csv
+2026-08-03 12:22:50 | INFO     | __main__ | Exporting Transactions...
+2026-08-03 12:22:51 | INFO     | __main__ | Transactions exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\transactions_20260803.csv
+2026-08-03 12:22:51 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:22:51 | INFO     | __main__ | Banking Generator completed successfully.
+2026-08-03 12:22:51 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:17 | INFO     | __main__ | Reference Generator initialized successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:17 | INFO     | __main__ | Starting Reference Generator...
+2026-08-03 12:23:17 | INFO     | __main__ | Generating Exchange Rates...
+2026-08-03 12:23:17 | INFO     | __main__ | Fetched live exchange rates for 12 currencies.
+2026-08-03 12:23:17 | INFO     | __main__ | 4380 Exchange Rate records generated successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | Generating Holiday Calendar...
+2026-08-03 12:23:17 | WARNING  | __main__ | Live holiday fetch failed for 2025 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:23:17 | WARNING  | __main__ | Live holiday fetch failed for 2026 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:23:17 | WARNING  | __main__ | Live holiday fetch failed for 2027 (Expecting value: line 1 column 1 (char 0)). Falling back to synthetic holidays for this year.
+2026-08-03 12:23:17 | INFO     | __main__ | 24 Holiday records generated successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:17 | INFO     | __main__ | Reference Generation Summary
+2026-08-03 12:23:17 | INFO     | __main__ | Exchange Rates Generated  : 4380
+2026-08-03 12:23:17 | INFO     | __main__ | Holidays Generated        : 24
+2026-08-03 12:23:17 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:17 | INFO     | __main__ | Running Validation...
+2026-08-03 12:23:17 | INFO     | __main__ | Validating Exchange Rates...
+2026-08-03 12:23:17 | INFO     | __main__ | Exchange Rate validation completed successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | Validating Holiday Calendar...
+2026-08-03 12:23:17 | INFO     | __main__ | Holiday Calendar validation completed successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:23:17 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:23:17 | INFO     | __main__ | Exporting Exchange Rates...
+2026-08-03 12:23:17 | INFO     | __main__ | Exchange Rates exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\exchange_rates_20260803.csv
+2026-08-03 12:23:17 | INFO     | __main__ | Exporting Holiday Calendar...
+2026-08-03 12:23:17 | INFO     | __main__ | Holiday Calendar exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\holiday_calendar.csv
+2026-08-03 12:23:17 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | Reference Generator completed successfully.
+2026-08-03 12:23:17 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:25 | INFO     | __main__ | Loading Transaction dataset...
+2026-08-03 12:23:25 | INFO     | __main__ | Loaded 20000 transactions.
+2026-08-03 12:23:25 | INFO     | __main__ | Loading Employee dataset...
+2026-08-03 12:23:25 | INFO     | __main__ | Loaded 75 employees.
+2026-08-03 12:23:25 | INFO     | __main__ | Risk Generator initialized successfully.
+2026-08-03 12:23:25 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:25 | INFO     | __main__ | Starting Risk Generator...
+2026-08-03 12:23:25 | INFO     | __main__ | Generating Fraud Alerts...
+2026-08-03 12:23:25 | INFO     | __main__ | 250 Fraud Alerts generated successfully.
+2026-08-03 12:23:25 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:25 | INFO     | __main__ | Risk Generation Summary
+2026-08-03 12:23:25 | INFO     | __main__ | Fraud Alerts Generated  : 250
+2026-08-03 12:23:25 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:25 | INFO     | __main__ | Running Validation...
+2026-08-03 12:23:25 | INFO     | __main__ | Validating Fraud Alerts...
+2026-08-03 12:23:25 | INFO     | __main__ | Fraud Alert validation completed successfully.
+2026-08-03 12:23:25 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:23:25 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:23:25 | INFO     | __main__ | Exporting Fraud Alerts...
+2026-08-03 12:23:25 | INFO     | __main__ | Fraud Alerts exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\fraud_alerts_20260803.csv
+2026-08-03 12:23:25 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:23:25 | INFO     | __main__ | Risk Generator completed successfully.
+2026-08-03 12:23:25 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:34 | INFO     | __main__ | Loading Customer dataset...
+2026-08-03 12:23:34 | INFO     | __main__ | Loaded 750 customers.
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Generator initialized successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | ================================================================================
+2026-08-03 12:23:34 | INFO     | __main__ | Starting Loan Generator...
+2026-08-03 12:23:34 | INFO     | __main__ | Generating Loans...
+2026-08-03 12:23:34 | INFO     | __main__ | 25 Loans generated successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Generating Loan Applications...
+2026-08-03 12:23:34 | INFO     | __main__ | 40 Loan Applications generated successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Generating Loan Repayments...
+2026-08-03 12:23:34 | INFO     | __main__ | 350 Loan Repayments generated successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Generating Loan Collateral...
+2026-08-03 12:23:34 | INFO     | __main__ | 23 Loan Collateral records generated successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Generation Summary
+2026-08-03 12:23:34 | INFO     | __main__ | Loans Generated              : 25
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Applications Generated  : 40
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Repayments Generated    : 350
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Collateral Generated    : 23
+2026-08-03 12:23:34 | INFO     | __main__ | ======================================================================
+2026-08-03 12:23:34 | INFO     | __main__ | Running Validation...
+2026-08-03 12:23:34 | INFO     | __main__ | Validating Loans...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan validation completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Validating Loan Applications...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Application validation completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Validating Loan Repayments...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Repayment validation completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Validating Loan Collateral...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Collateral validation completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Validation Successful.
+2026-08-03 12:23:34 | INFO     | __main__ | Exporting datasets...
+2026-08-03 12:23:34 | INFO     | __main__ | Exporting Loans...
+2026-08-03 12:23:34 | INFO     | __main__ | Loans exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loans_20260803.csv
+2026-08-03 12:23:34 | INFO     | __main__ | Exporting Loan Applications...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Applications exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_applications_20260803.csv
+2026-08-03 12:23:34 | INFO     | __main__ | Exporting Loan Repayments...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Repayments exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_repayments_20260803.csv
+2026-08-03 12:23:34 | INFO     | __main__ | Exporting Loan Collateral...
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Collateral exported successfully to C:\Documents\Banking_Data_Platform\datasets\raw\loan_collateral_20260803.csv
+2026-08-03 12:23:34 | INFO     | __main__ | Export completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | Loan Generator completed successfully.
+2026-08-03 12:23:34 | INFO     | __main__ | ================================================================================

@@ -1,0 +1,251 @@
+alert_id,transaction_id,fraud_score,alert_reason,alert_status,alert_timestamp,assigned_to,assignee_emp_id,resolution_date,created_at,updated_at,source_system
+ALR00003301,TR00469266,42,Unusual Spending Pattern,Resolved,2019-06-14 04:45:59,Gaurika Deol,EMP00000447,2019-07-11,2026-08-03 12:23:25.691287,,Fraud Detection System
+ALR00003302,TR00460926,62,Velocity Check Failed,Under Investigation,2023-10-31 02:19:24,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.692283,,Fraud Detection System
+ALR00003303,TR00459337,66,Multiple Failed Attempts,False Positive,2026-06-24 16:25:49,Sathvik Grover,EMP00000460,2026-06-24,2026-08-03 12:23:25.693288,,Fraud Detection System
+ALR00003304,TR00460278,5,Card Not Present,False Positive,2025-03-03 22:55:00,Bhavya Ranganathan,EMP00000412,2025-03-25,2026-08-03 12:23:25.694271,,Fraud Detection System
+ALR00003305,TR00465202,10,Blacklisted Merchant,Open,2022-10-15 16:17:25,,,,2026-08-03 12:23:25.694271,,Fraud Detection System
+ALR00003306,TR00469786,55,Unusual Spending Pattern,Resolved,2022-04-30 19:06:06,Jagat Bath,EMP00000427,2022-05-25,2026-08-03 12:23:25.695287,,Fraud Detection System
+ALR00003307,TR00458430,18,Card Not Present,Resolved,2006-10-29 07:14:26,Bhavya Ranganathan,EMP00000412,2006-11-12,2026-08-03 12:23:25.696285,,Fraud Detection System
+ALR00003308,TR00454705,13,Multiple Failed Attempts,Closed,2024-06-23 12:53:51,David Vaidya,EMP00000430,2024-07-19,2026-08-03 12:23:25.697284,,Fraud Detection System
+ALR00003309,TR00457553,19,High Transaction Amount,Resolved,2022-01-04 05:01:00,Geetika Kumer,EMP00000388,2022-01-24,2026-08-03 12:23:25.698283,,Fraud Detection System
+ALR00003310,TR00451320,7,Velocity Check Failed,False Positive,2025-09-16 14:15:16,Abhimanyu Bal,EMP00000443,2025-09-27,2026-08-03 12:23:25.698283,,Fraud Detection System
+ALR00003311,TR00462537,65,Multiple Failed Attempts,Resolved,2023-10-05 06:31:23,Sathvik Grover,EMP00000460,2023-10-09,2026-08-03 12:23:25.699816,,Fraud Detection System
+ALR00003312,TR00469874,93,Velocity Check Failed,Under Investigation,2025-05-03 20:55:04,Geetika Kumer,EMP00000388,,2026-08-03 12:23:25.699816,,Fraud Detection System
+ALR00003313,TR00454236,99,Unusual Spending Pattern,False Positive,2025-03-26 14:29:58,David Vaidya,EMP00000430,2025-04-13,2026-08-03 12:23:25.700847,,Fraud Detection System
+ALR00003314,TR00465043,55,High Transaction Amount,Under Investigation,2022-07-22 00:43:40,Geetika Kumer,EMP00000388,,2026-08-03 12:23:25.702182,,Fraud Detection System
+ALR00003315,TR00454328,27,High Transaction Amount,False Positive,2025-11-09 16:29:13,David Vaidya,EMP00000430,2025-11-12,2026-08-03 12:23:25.703234,,Fraud Detection System
+ALR00003316,TR00468496,0,Blacklisted Merchant,Open,2008-09-26 04:30:23,,,,2026-08-03 12:23:25.703234,,Fraud Detection System
+ALR00003317,TR00460888,38,Card Not Present,Resolved,2021-04-28 14:00:51,Vincent Johal,EMP00000421,2021-05-14,2026-08-03 12:23:25.704227,,Fraud Detection System
+ALR00003318,TR00457746,74,Unusual Spending Pattern,Closed,2026-01-05 11:00:15,Sathvik Grover,EMP00000460,2026-01-17,2026-08-03 12:23:25.705227,,Fraud Detection System
+ALR00003319,TR00450619,0,High Transaction Amount,Under Investigation,2020-08-28 20:17:41,Vincent Johal,EMP00000421,,2026-08-03 12:23:25.706226,,Fraud Detection System
+ALR00003320,TR00453163,69,Location Mismatch,Under Investigation,2011-07-14 04:46:04,David Vaidya,EMP00000430,,2026-08-03 12:23:25.706226,,Fraud Detection System
+ALR00003321,TR00467919,2,Location Mismatch,Resolved,2024-07-01 01:46:22,Vincent Johal,EMP00000421,2024-07-28,2026-08-03 12:23:25.707226,,Fraud Detection System
+ALR00003322,TR00453812,4,Unusual Spending Pattern,Resolved,2014-03-14 21:45:27,Vincent Johal,EMP00000421,2014-03-24,2026-08-03 12:23:25.708227,,Fraud Detection System
+ALR00003323,TR00462001,100,Multiple Failed Attempts,Resolved,2020-08-20 11:16:54,Jagat Bath,EMP00000427,2020-08-21,2026-08-03 12:23:25.709203,,Fraud Detection System
+ALR00003324,TR00460917,82,Card Not Present,Under Investigation,2024-07-07 09:59:14,Bhavya Ranganathan,EMP00000412,,2026-08-03 12:23:25.709738,,Fraud Detection System
+ALR00003325,TR00458847,34,Multiple Failed Attempts,Closed,2013-03-01 09:15:56,Tanish Vohra,EMP00000396,2013-03-28,2026-08-03 12:23:25.710745,,Fraud Detection System
+ALR00003326,TR00464067,74,High Transaction Amount,Resolved,2016-06-09 20:50:19,Tanish Vohra,EMP00000396,2016-06-19,2026-08-03 12:23:25.711864,,Fraud Detection System
+ALR00003327,TR00452471,47,Velocity Check Failed,Open,2023-10-05 19:24:46,,,,2026-08-03 12:23:25.711864,,Fraud Detection System
+ALR00003328,TR00463122,79,Card Not Present,Resolved,2023-02-19 14:56:21,Sathvik Grover,EMP00000460,2023-02-21,2026-08-03 12:23:25.712849,,Fraud Detection System
+ALR00003329,TR00451217,65,Multiple Failed Attempts,False Positive,2013-06-07 06:41:17,Shivansh Bhagat,EMP00000390,2013-07-05,2026-08-03 12:23:25.713829,,Fraud Detection System
+ALR00003330,TR00454388,60,Blacklisted Merchant,Under Investigation,2023-05-16 18:39:43,Gaurika Deol,EMP00000447,,2026-08-03 12:23:25.714837,,Fraud Detection System
+ALR00003331,TR00463228,99,Card Not Present,Resolved,2026-07-20 20:43:34,David Vaidya,EMP00000430,2026-08-02,2026-08-03 12:23:25.715835,,Fraud Detection System
+ALR00003332,TR00453876,28,Unusual Spending Pattern,Open,2017-09-04 20:53:35,,,,2026-08-03 12:23:25.715835,,Fraud Detection System
+ALR00003333,TR00452682,48,Blacklisted Merchant,Resolved,2026-01-07 02:44:45,Tanish Vohra,EMP00000396,2026-01-13,2026-08-03 12:23:25.716836,,Fraud Detection System
+ALR00003334,TR00459805,58,Multiple Failed Attempts,Resolved,2025-02-16 09:05:18,Gaurika Deol,EMP00000447,2025-03-06,2026-08-03 12:23:25.716836,,Fraud Detection System
+ALR00003335,TR00462465,69,Velocity Check Failed,Resolved,2020-11-04 19:13:23,Bhavya Ranganathan,EMP00000412,2020-11-05,2026-08-03 12:23:25.717844,,Fraud Detection System
+ALR00003336,TR00450083,85,High Transaction Amount,Resolved,2026-05-30 15:21:16,David Vaidya,EMP00000430,2026-06-06,2026-08-03 12:23:25.717844,,Fraud Detection System
+ALR00003337,TR00463219,87,Card Not Present,Resolved,2022-12-30 18:15:33,Gaurika Deol,EMP00000447,2023-01-17,2026-08-03 12:23:25.719439,,Fraud Detection System
+ALR00003338,TR00461341,31,Location Mismatch,Closed,2025-05-05 12:24:16,Shivansh Bhagat,EMP00000390,2025-05-16,2026-08-03 12:23:25.720551,,Fraud Detection System
+ALR00003339,TR00450017,50,Blacklisted Merchant,Resolved,2014-02-13 18:16:03,Sathvik Grover,EMP00000460,2014-02-22,2026-08-03 12:23:25.721540,,Fraud Detection System
+ALR00003340,TR00461054,55,Card Not Present,Resolved,2024-07-20 03:18:58,Tanish Vohra,EMP00000396,2024-07-24,2026-08-03 12:23:25.721540,,Fraud Detection System
+ALR00003341,TR00450017,11,Card Not Present,Resolved,2014-02-13 17:22:03,Jagat Bath,EMP00000427,2014-03-14,2026-08-03 12:23:25.722536,,Fraud Detection System
+ALR00003342,TR00460841,83,Location Mismatch,Resolved,2024-09-22 14:00:30,Sathvik Grover,EMP00000460,2024-10-01,2026-08-03 12:23:25.723545,,Fraud Detection System
+ALR00003343,TR00461915,69,Location Mismatch,False Positive,2015-01-20 04:19:11,Geetika Kumer,EMP00000388,2015-02-16,2026-08-03 12:23:25.724558,,Fraud Detection System
+ALR00003344,TR00457753,95,Multiple Failed Attempts,Closed,2016-01-01 15:35:30,David Vaidya,EMP00000430,2016-01-11,2026-08-03 12:23:25.724558,,Fraud Detection System
+ALR00003345,TR00457269,48,Multiple Failed Attempts,Resolved,2026-06-01 17:40:55,Bhavya Ranganathan,EMP00000412,2026-06-22,2026-08-03 12:23:25.725538,,Fraud Detection System
+ALR00003346,TR00465701,65,Blacklisted Merchant,Under Investigation,2026-04-09 21:42:44,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.726531,,Fraud Detection System
+ALR00003347,TR00453967,69,High Transaction Amount,Under Investigation,2026-06-12 00:12:03,Geetika Kumer,EMP00000388,,2026-08-03 12:23:25.727112,,Fraud Detection System
+ALR00003348,TR00459155,61,Location Mismatch,Under Investigation,2018-05-23 06:53:46,Geetika Kumer,EMP00000388,,2026-08-03 12:23:25.728125,,Fraud Detection System
+ALR00003349,TR00459839,14,Card Not Present,Open,2022-11-21 05:29:41,,,,2026-08-03 12:23:25.728125,,Fraud Detection System
+ALR00003350,TR00450856,23,Velocity Check Failed,Under Investigation,2018-01-29 15:29:09,Bhavya Ranganathan,EMP00000412,,2026-08-03 12:23:25.729792,,Fraud Detection System
+ALR00003351,TR00467870,88,Location Mismatch,Resolved,2023-05-30 02:26:58,Bhavya Ranganathan,EMP00000412,2023-06-07,2026-08-03 12:23:25.729792,,Fraud Detection System
+ALR00003352,TR00453704,90,Location Mismatch,Under Investigation,2014-04-08 15:11:14,Shivansh Bhagat,EMP00000390,,2026-08-03 12:23:25.730888,,Fraud Detection System
+ALR00003353,TR00465678,64,Unusual Spending Pattern,False Positive,2023-08-21 21:39:37,David Vaidya,EMP00000430,2023-09-08,2026-08-03 12:23:25.731892,,Fraud Detection System
+ALR00003354,TR00459216,54,Unusual Spending Pattern,Under Investigation,2026-04-18 17:20:28,Tanish Vohra,EMP00000396,,2026-08-03 12:23:25.732889,,Fraud Detection System
+ALR00003355,TR00450190,26,Card Not Present,Under Investigation,2022-11-20 17:39:29,Tanish Vohra,EMP00000396,,2026-08-03 12:23:25.732889,,Fraud Detection System
+ALR00003356,TR00456110,96,Velocity Check Failed,False Positive,2026-06-20 21:16:30,Vincent Johal,EMP00000421,2026-06-26,2026-08-03 12:23:25.733882,,Fraud Detection System
+ALR00003357,TR00461326,94,Velocity Check Failed,Resolved,2026-07-05 09:54:22,Geetika Kumer,EMP00000388,2026-07-08,2026-08-03 12:23:25.734891,,Fraud Detection System
+ALR00003358,TR00459100,80,High Transaction Amount,Resolved,2025-07-12 03:59:01,Bhavya Ranganathan,EMP00000412,2025-07-22,2026-08-03 12:23:25.735890,,Fraud Detection System
+ALR00003359,TR00468094,82,Multiple Failed Attempts,Closed,2018-10-19 19:12:41,Sathvik Grover,EMP00000460,2018-11-13,2026-08-03 12:23:25.735890,,Fraud Detection System
+ALR00003360,TR00450613,68,Card Not Present,Resolved,2026-07-31 07:41:19,Kalpit Balan,EMP00000409,2026-08-02,2026-08-03 12:23:25.736892,,Fraud Detection System
+ALR00003361,TR00466445,66,Blacklisted Merchant,Resolved,2024-01-07 21:36:49,Shivansh Bhagat,EMP00000390,2024-01-15,2026-08-03 12:23:25.737887,,Fraud Detection System
+ALR00003362,TR00467113,33,Velocity Check Failed,Closed,2023-06-25 11:14:26,Geetika Kumer,EMP00000388,2023-07-04,2026-08-03 12:23:25.737887,,Fraud Detection System
+ALR00003363,TR00453332,35,Card Not Present,Open,2016-09-06 19:15:33,,,,2026-08-03 12:23:25.737887,,Fraud Detection System
+ALR00003364,TR00460025,35,Blacklisted Merchant,Resolved,2011-10-23 15:29:55,Abhimanyu Bal,EMP00000443,2011-10-31,2026-08-03 12:23:25.739486,,Fraud Detection System
+ALR00003365,TR00450955,84,Card Not Present,Under Investigation,2025-09-14 01:00:20,David Vaidya,EMP00000430,,2026-08-03 12:23:25.740576,,Fraud Detection System
+ALR00003366,TR00461268,33,Location Mismatch,Under Investigation,2026-03-25 10:39:35,Shivansh Bhagat,EMP00000390,,2026-08-03 12:23:25.741587,,Fraud Detection System
+ALR00003367,TR00463625,65,Velocity Check Failed,Resolved,2014-08-03 09:58:35,Geetika Kumer,EMP00000388,2014-08-09,2026-08-03 12:23:25.741587,,Fraud Detection System
+ALR00003368,TR00455851,31,Unusual Spending Pattern,False Positive,2023-10-11 23:31:54,Geetika Kumer,EMP00000388,2023-11-06,2026-08-03 12:23:25.742592,,Fraud Detection System
+ALR00003369,TR00465576,30,Velocity Check Failed,Under Investigation,2018-11-19 05:41:32,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.743601,,Fraud Detection System
+ALR00003370,TR00454962,37,Multiple Failed Attempts,Resolved,2016-07-30 20:34:29,Tanish Vohra,EMP00000396,2016-08-23,2026-08-03 12:23:25.744531,,Fraud Detection System
+ALR00003371,TR00451102,93,Multiple Failed Attempts,Resolved,2024-08-23 14:39:45,Vincent Johal,EMP00000421,2024-09-09,2026-08-03 12:23:25.745575,,Fraud Detection System
+ALR00003372,TR00459502,9,Unusual Spending Pattern,Open,2019-12-27 22:31:21,,,,2026-08-03 12:23:25.745575,,Fraud Detection System
+ALR00003373,TR00464737,44,Unusual Spending Pattern,Closed,2014-04-27 13:26:28,Abhimanyu Bal,EMP00000443,2014-04-27,2026-08-03 12:23:25.746584,,Fraud Detection System
+ALR00003374,TR00456083,20,Location Mismatch,Resolved,2019-07-28 13:59:26,Kalpit Balan,EMP00000409,2019-07-29,2026-08-03 12:23:25.746584,,Fraud Detection System
+ALR00003375,TR00454449,51,Multiple Failed Attempts,Closed,2025-10-11 02:30:18,Gaurika Deol,EMP00000447,2025-11-08,2026-08-03 12:23:25.747585,,Fraud Detection System
+ALR00003376,TR00462777,90,Velocity Check Failed,Under Investigation,2020-02-10 06:14:32,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.747585,,Fraud Detection System
+ALR00003377,TR00463093,50,Card Not Present,Resolved,2026-04-24 16:23:49,Bhavya Ranganathan,EMP00000412,2026-05-11,2026-08-03 12:23:25.749245,,Fraud Detection System
+ALR00003378,TR00452604,51,Blacklisted Merchant,Under Investigation,2025-03-30 15:00:08,David Vaidya,EMP00000430,,2026-08-03 12:23:25.750267,,Fraud Detection System
+ALR00003379,TR00453358,54,Unusual Spending Pattern,Open,2022-02-13 05:47:50,,,,2026-08-03 12:23:25.750267,,Fraud Detection System
+ALR00003380,TR00462105,35,Velocity Check Failed,Resolved,2022-10-03 03:45:48,Bhavya Ranganathan,EMP00000412,2022-10-03,2026-08-03 12:23:25.751275,,Fraud Detection System
+ALR00003381,TR00465676,19,Blacklisted Merchant,Closed,2020-10-20 09:58:05,David Vaidya,EMP00000430,2020-11-16,2026-08-03 12:23:25.752279,,Fraud Detection System
+ALR00003382,TR00452886,7,Unusual Spending Pattern,Resolved,2019-09-14 06:02:45,Jagat Bath,EMP00000427,2019-09-14,2026-08-03 12:23:25.753280,,Fraud Detection System
+ALR00003383,TR00462446,50,Card Not Present,Resolved,2025-12-09 19:44:48,Sathvik Grover,EMP00000460,2026-01-03,2026-08-03 12:23:25.753280,,Fraud Detection System
+ALR00003384,TR00462880,45,Location Mismatch,Resolved,2025-04-07 21:04:52,Kalpit Balan,EMP00000409,2025-05-03,2026-08-03 12:23:25.754286,,Fraud Detection System
+ALR00003385,TR00450804,93,Multiple Failed Attempts,Open,2024-10-16 20:54:07,,,,2026-08-03 12:23:25.755286,,Fraud Detection System
+ALR00003386,TR00463346,7,Location Mismatch,Open,2026-03-08 08:05:50,,,,2026-08-03 12:23:25.755286,,Fraud Detection System
+ALR00003387,TR00459564,99,Location Mismatch,Resolved,2025-07-11 05:03:06,Geetika Kumer,EMP00000388,2025-07-15,2026-08-03 12:23:25.756290,,Fraud Detection System
+ALR00003388,TR00452114,19,Multiple Failed Attempts,False Positive,2022-09-26 01:28:07,Vincent Johal,EMP00000421,2022-10-25,2026-08-03 12:23:25.756290,,Fraud Detection System
+ALR00003389,TR00452664,91,Multiple Failed Attempts,Resolved,2022-06-29 18:21:38,David Vaidya,EMP00000430,2022-07-23,2026-08-03 12:23:25.757294,,Fraud Detection System
+ALR00003390,TR00455234,24,Location Mismatch,Open,2022-03-25 09:31:58,,,,2026-08-03 12:23:25.758287,,Fraud Detection System
+ALR00003391,TR00463940,77,Multiple Failed Attempts,Open,2010-11-03 08:27:57,,,,2026-08-03 12:23:25.758287,,Fraud Detection System
+ALR00003392,TR00453028,3,Velocity Check Failed,Resolved,2021-01-25 08:16:49,Tanish Vohra,EMP00000396,2021-02-12,2026-08-03 12:23:25.759307,,Fraud Detection System
+ALR00003393,TR00461308,65,Unusual Spending Pattern,Resolved,2021-05-08 04:14:30,Shivansh Bhagat,EMP00000390,2021-05-25,2026-08-03 12:23:25.759899,,Fraud Detection System
+ALR00003394,TR00467193,28,Location Mismatch,Closed,2013-06-17 17:17:03,Tanish Vohra,EMP00000396,2013-07-10,2026-08-03 12:23:25.760912,,Fraud Detection System
+ALR00003395,TR00461025,17,Location Mismatch,Resolved,2014-06-02 10:58:58,David Vaidya,EMP00000430,2014-06-20,2026-08-03 12:23:25.761994,,Fraud Detection System
+ALR00003396,TR00463575,44,Multiple Failed Attempts,Resolved,2025-08-19 15:49:32,Gaurika Deol,EMP00000447,2025-08-28,2026-08-03 12:23:25.761994,,Fraud Detection System
+ALR00003397,TR00452297,58,Multiple Failed Attempts,Resolved,2007-07-27 22:28:55,Geetika Kumer,EMP00000388,2007-08-20,2026-08-03 12:23:25.762999,,Fraud Detection System
+ALR00003398,TR00469133,28,Multiple Failed Attempts,Resolved,2023-06-10 03:28:06,Jagat Bath,EMP00000427,2023-07-02,2026-08-03 12:23:25.763999,,Fraud Detection System
+ALR00003399,TR00468927,1,High Transaction Amount,Under Investigation,2025-11-28 05:59:31,Shivansh Bhagat,EMP00000390,,2026-08-03 12:23:25.765005,,Fraud Detection System
+ALR00003400,TR00467028,17,Unusual Spending Pattern,Open,2026-01-30 18:00:56,,,,2026-08-03 12:23:25.765005,,Fraud Detection System
+ALR00003401,TR00454733,29,High Transaction Amount,Resolved,2013-06-11 11:30:31,Jagat Bath,EMP00000427,2013-07-07,2026-08-03 12:23:25.765995,,Fraud Detection System
+ALR00003402,TR00461514,73,Multiple Failed Attempts,Resolved,2026-07-10 12:38:31,Gaurika Deol,EMP00000447,2026-07-22,2026-08-03 12:23:25.766991,,Fraud Detection System
+ALR00003403,TR00464859,15,Multiple Failed Attempts,Resolved,2023-09-29 05:27:25,Kalpit Balan,EMP00000409,2023-10-01,2026-08-03 12:23:25.766991,,Fraud Detection System
+ALR00003404,TR00452643,60,Location Mismatch,Resolved,2025-04-20 08:43:24,Jagat Bath,EMP00000427,2025-04-30,2026-08-03 12:23:25.767992,,Fraud Detection System
+ALR00003405,TR00452565,68,Multiple Failed Attempts,Resolved,2026-07-29 23:27:30,Sathvik Grover,EMP00000460,2026-07-30,2026-08-03 12:23:25.767992,,Fraud Detection System
+ALR00003406,TR00467876,96,Velocity Check Failed,Resolved,2025-08-19 04:32:45,Gaurika Deol,EMP00000447,2025-09-04,2026-08-03 12:23:25.769784,,Fraud Detection System
+ALR00003407,TR00460926,31,Velocity Check Failed,Resolved,2023-10-31 01:40:24,David Vaidya,EMP00000430,2023-11-22,2026-08-03 12:23:25.770678,,Fraud Detection System
+ALR00003408,TR00468324,93,Unusual Spending Pattern,Under Investigation,2010-09-17 00:14:11,Shivansh Bhagat,EMP00000390,,2026-08-03 12:23:25.771675,,Fraud Detection System
+ALR00003409,TR00458430,30,Location Mismatch,Open,2006-10-29 06:30:26,,,,2026-08-03 12:23:25.771675,,Fraud Detection System
+ALR00003410,TR00468711,23,Location Mismatch,Closed,2025-09-06 19:06:05,Tanish Vohra,EMP00000396,2025-09-12,2026-08-03 12:23:25.772675,,Fraud Detection System
+ALR00003411,TR00464099,83,Blacklisted Merchant,False Positive,2024-01-27 12:54:25,David Vaidya,EMP00000430,2024-01-27,2026-08-03 12:23:25.772675,,Fraud Detection System
+ALR00003412,TR00453963,34,High Transaction Amount,Resolved,2024-02-12 09:11:46,Gaurika Deol,EMP00000447,2024-02-21,2026-08-03 12:23:25.773681,,Fraud Detection System
+ALR00003413,TR00454831,93,Blacklisted Merchant,Resolved,2015-01-28 15:45:13,Sathvik Grover,EMP00000460,2015-02-11,2026-08-03 12:23:25.774694,,Fraud Detection System
+ALR00003414,TR00468650,27,Location Mismatch,Open,2025-10-09 13:36:29,,,,2026-08-03 12:23:25.774694,,Fraud Detection System
+ALR00003415,TR00452049,78,Card Not Present,Open,2026-03-26 23:18:37,,,,2026-08-03 12:23:25.775680,,Fraud Detection System
+ALR00003416,TR00469257,74,Blacklisted Merchant,Closed,2025-05-14 20:46:15,Geetika Kumer,EMP00000388,2025-05-20,2026-08-03 12:23:25.775680,,Fraud Detection System
+ALR00003417,TR00462529,1,Blacklisted Merchant,False Positive,2026-05-23 04:52:37,David Vaidya,EMP00000430,2026-06-20,2026-08-03 12:23:25.776689,,Fraud Detection System
+ALR00003418,TR00468737,22,Multiple Failed Attempts,Resolved,2026-04-17 04:06:47,Gaurika Deol,EMP00000447,2026-04-29,2026-08-03 12:23:25.777611,,Fraud Detection System
+ALR00003419,TR00453921,56,Blacklisted Merchant,Open,2024-05-25 12:22:15,,,,2026-08-03 12:23:25.777611,,Fraud Detection System
+ALR00003420,TR00450880,36,Card Not Present,Under Investigation,2014-08-29 03:46:05,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.779208,,Fraud Detection System
+ALR00003421,TR00468580,59,Velocity Check Failed,Open,2025-10-20 09:50:28,,,,2026-08-03 12:23:25.779208,,Fraud Detection System
+ALR00003422,TR00460548,79,High Transaction Amount,Resolved,2012-10-04 19:15:01,Vincent Johal,EMP00000421,2012-10-26,2026-08-03 12:23:25.780314,,Fraud Detection System
+ALR00003423,TR00455769,97,Card Not Present,Under Investigation,2023-11-04 03:05:42,Bhavya Ranganathan,EMP00000412,,2026-08-03 12:23:25.781300,,Fraud Detection System
+ALR00003424,TR00461841,85,Blacklisted Merchant,False Positive,2024-12-14 09:50:52,Bhavya Ranganathan,EMP00000412,2024-12-14,2026-08-03 12:23:25.781300,,Fraud Detection System
+ALR00003425,TR00452859,38,Unusual Spending Pattern,False Positive,2021-10-04 01:10:48,Shivansh Bhagat,EMP00000390,2021-10-10,2026-08-03 12:23:25.782298,,Fraud Detection System
+ALR00003426,TR00463772,7,Multiple Failed Attempts,False Positive,2008-07-08 16:10:51,Geetika Kumer,EMP00000388,2008-07-09,2026-08-03 12:23:25.783318,,Fraud Detection System
+ALR00003427,TR00462269,88,High Transaction Amount,Open,2021-11-02 17:02:51,,,,2026-08-03 12:23:25.783318,,Fraud Detection System
+ALR00003428,TR00462797,34,Location Mismatch,Resolved,2023-09-21 04:14:10,Geetika Kumer,EMP00000388,2023-10-20,2026-08-03 12:23:25.784312,,Fraud Detection System
+ALR00003429,TR00457590,19,Location Mismatch,False Positive,2015-04-13 11:14:31,Tanish Vohra,EMP00000396,2015-04-27,2026-08-03 12:23:25.785317,,Fraud Detection System
+ALR00003430,TR00458159,32,Multiple Failed Attempts,Resolved,2025-12-17 19:58:03,Kalpit Balan,EMP00000409,2026-01-10,2026-08-03 12:23:25.786307,,Fraud Detection System
+ALR00003431,TR00454969,31,High Transaction Amount,Under Investigation,2015-02-16 18:13:51,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.786307,,Fraud Detection System
+ALR00003432,TR00451193,78,Location Mismatch,False Positive,2026-07-28 18:18:38,Shivansh Bhagat,EMP00000390,2026-07-28,2026-08-03 12:23:25.787300,,Fraud Detection System
+ALR00003433,TR00460068,0,Unusual Spending Pattern,Resolved,2025-04-27 11:48:57,Sathvik Grover,EMP00000460,2025-05-21,2026-08-03 12:23:25.788299,,Fraud Detection System
+ALR00003434,TR00456656,51,Location Mismatch,Closed,2013-08-30 02:46:29,Gaurika Deol,EMP00000447,2013-09-03,2026-08-03 12:23:25.789303,,Fraud Detection System
+ALR00003435,TR00457628,68,Multiple Failed Attempts,Under Investigation,2025-08-23 05:01:50,Tanish Vohra,EMP00000396,,2026-08-03 12:23:25.789894,,Fraud Detection System
+ALR00003436,TR00452400,28,Card Not Present,Resolved,2020-10-30 16:15:11,Bhavya Ranganathan,EMP00000412,2020-11-01,2026-08-03 12:23:25.790988,,Fraud Detection System
+ALR00003437,TR00465151,67,Card Not Present,Open,2024-03-23 00:17:38,,,,2026-08-03 12:23:25.790988,,Fraud Detection System
+ALR00003438,TR00461229,31,Velocity Check Failed,False Positive,2024-12-22 06:36:18,Tanish Vohra,EMP00000396,2025-01-19,2026-08-03 12:23:25.791997,,Fraud Detection System
+ALR00003439,TR00451948,39,Location Mismatch,Under Investigation,2010-04-21 17:02:38,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.791997,,Fraud Detection System
+ALR00003440,TR00458965,59,Multiple Failed Attempts,Resolved,2022-09-07 09:14:13,Abhimanyu Bal,EMP00000443,2022-09-21,2026-08-03 12:23:25.792997,,Fraud Detection System
+ALR00003441,TR00458569,40,Multiple Failed Attempts,False Positive,2025-04-16 11:46:05,Geetika Kumer,EMP00000388,2025-05-15,2026-08-03 12:23:25.794004,,Fraud Detection System
+ALR00003442,TR00466575,6,Unusual Spending Pattern,Under Investigation,2026-03-29 21:26:15,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.794988,,Fraud Detection System
+ALR00003443,TR00457291,77,Unusual Spending Pattern,Under Investigation,2024-05-22 02:40:49,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.795983,,Fraud Detection System
+ALR00003444,TR00456222,85,Location Mismatch,False Positive,2024-08-24 14:25:49,Shivansh Bhagat,EMP00000390,2024-09-12,2026-08-03 12:23:25.796984,,Fraud Detection System
+ALR00003445,TR00460505,12,Blacklisted Merchant,Under Investigation,2017-05-31 07:26:42,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.796984,,Fraud Detection System
+ALR00003446,TR00466739,42,Unusual Spending Pattern,Open,2019-09-21 11:58:07,,,,2026-08-03 12:23:25.797992,,Fraud Detection System
+ALR00003447,TR00450429,38,High Transaction Amount,False Positive,2011-03-01 01:47:11,Gaurika Deol,EMP00000447,2011-03-12,2026-08-03 12:23:25.797992,,Fraud Detection System
+ALR00003448,TR00469037,18,Velocity Check Failed,Resolved,2025-07-26 08:41:55,Tanish Vohra,EMP00000396,2025-07-28,2026-08-03 12:23:25.799590,,Fraud Detection System
+ALR00003449,TR00451617,93,Velocity Check Failed,Under Investigation,2015-09-04 05:40:42,Abhimanyu Bal,EMP00000443,,2026-08-03 12:23:25.799590,,Fraud Detection System
+ALR00003450,TR00450607,65,Unusual Spending Pattern,Resolved,2026-03-31 02:26:09,Shivansh Bhagat,EMP00000390,2026-04-24,2026-08-03 12:23:25.800686,,Fraud Detection System
+ALR00003451,TR00455302,80,Unusual Spending Pattern,False Positive,2015-01-12 06:04:27,Jagat Bath,EMP00000427,2015-02-04,2026-08-03 12:23:25.801938,,Fraud Detection System
+ALR00003452,TR00463675,80,Unusual Spending Pattern,Under Investigation,2025-05-14 11:51:54,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.801938,,Fraud Detection System
+ALR00003453,TR00467762,68,Location Mismatch,Open,2019-04-12 17:19:38,,,,2026-08-03 12:23:25.803040,,Fraud Detection System
+ALR00003454,TR00458234,33,High Transaction Amount,Resolved,2023-07-23 00:02:53,Geetika Kumer,EMP00000388,2023-08-18,2026-08-03 12:23:25.803040,,Fraud Detection System
+ALR00003455,TR00452698,38,High Transaction Amount,False Positive,2017-07-12 23:12:15,Vincent Johal,EMP00000421,2017-07-26,2026-08-03 12:23:25.804045,,Fraud Detection System
+ALR00003456,TR00457990,9,Velocity Check Failed,Resolved,2020-08-10 06:07:09,Kalpit Balan,EMP00000409,2020-09-08,2026-08-03 12:23:25.805059,,Fraud Detection System
+ALR00003457,TR00456415,33,High Transaction Amount,False Positive,2020-01-16 19:54:33,Bhavya Ranganathan,EMP00000412,2020-01-26,2026-08-03 12:23:25.806052,,Fraud Detection System
+ALR00003458,TR00460511,17,Location Mismatch,Open,2025-07-01 02:08:01,,,,2026-08-03 12:23:25.806052,,Fraud Detection System
+ALR00003459,TR00452177,13,Card Not Present,Resolved,2024-04-27 18:45:21,Gaurika Deol,EMP00000447,2024-04-29,2026-08-03 12:23:25.807044,,Fraud Detection System
+ALR00003460,TR00464274,95,Velocity Check Failed,Open,2026-04-30 11:02:49,,,,2026-08-03 12:23:25.807044,,Fraud Detection System
+ALR00003461,TR00466948,26,High Transaction Amount,False Positive,2023-09-18 03:25:16,Jagat Bath,EMP00000427,2023-10-07,2026-08-03 12:23:25.808047,,Fraud Detection System
+ALR00003462,TR00455175,57,Multiple Failed Attempts,Resolved,2026-03-16 12:43:56,David Vaidya,EMP00000430,2026-03-22,2026-08-03 12:23:25.808047,,Fraud Detection System
+ALR00003463,TR00458909,46,Location Mismatch,Resolved,2023-10-02 19:27:01,Bhavya Ranganathan,EMP00000412,2023-10-09,2026-08-03 12:23:25.809638,,Fraud Detection System
+ALR00003464,TR00469851,9,Blacklisted Merchant,Under Investigation,2025-07-17 15:26:02,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.810645,,Fraud Detection System
+ALR00003465,TR00454580,52,Card Not Present,Open,2026-01-08 23:07:45,,,,2026-08-03 12:23:25.810645,,Fraud Detection System
+ALR00003466,TR00450131,89,Multiple Failed Attempts,False Positive,2020-12-13 17:48:56,Vincent Johal,EMP00000421,2021-01-08,2026-08-03 12:23:25.811728,,Fraud Detection System
+ALR00003467,TR00463260,70,Multiple Failed Attempts,False Positive,2024-04-30 05:08:15,David Vaidya,EMP00000430,2024-05-27,2026-08-03 12:23:25.812644,,Fraud Detection System
+ALR00003468,TR00459160,11,Location Mismatch,False Positive,2018-12-28 16:10:57,Gaurika Deol,EMP00000447,2019-01-03,2026-08-03 12:23:25.813734,,Fraud Detection System
+ALR00003469,TR00458529,90,Location Mismatch,Resolved,2021-05-22 01:39:03,Vincent Johal,EMP00000421,2021-06-16,2026-08-03 12:23:25.813734,,Fraud Detection System
+ALR00003470,TR00454962,5,Velocity Check Failed,Resolved,2016-07-30 17:29:29,Gaurika Deol,EMP00000447,2016-07-31,2026-08-03 12:23:25.814734,,Fraud Detection System
+ALR00003471,TR00462061,96,Location Mismatch,Open,2025-01-24 01:10:38,,,,2026-08-03 12:23:25.815732,,Fraud Detection System
+ALR00003472,TR00467983,49,Multiple Failed Attempts,Resolved,2025-11-20 13:53:01,Tanish Vohra,EMP00000396,2025-11-22,2026-08-03 12:23:25.815732,,Fraud Detection System
+ALR00003473,TR00465587,34,Blacklisted Merchant,Closed,2025-11-07 12:40:51,Vincent Johal,EMP00000421,2025-11-08,2026-08-03 12:23:25.816731,,Fraud Detection System
+ALR00003474,TR00457136,83,Unusual Spending Pattern,Closed,2025-09-19 18:01:00,Tanish Vohra,EMP00000396,2025-10-12,2026-08-03 12:23:25.817731,,Fraud Detection System
+ALR00003475,TR00453839,74,Unusual Spending Pattern,Under Investigation,2024-09-16 07:41:27,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.817731,,Fraud Detection System
+ALR00003476,TR00459415,16,High Transaction Amount,Resolved,2021-06-16 01:25:35,Tanish Vohra,EMP00000396,2021-06-28,2026-08-03 12:23:25.819325,,Fraud Detection System
+ALR00003477,TR00468678,77,Velocity Check Failed,Open,2024-05-01 02:22:16,,,,2026-08-03 12:23:25.819325,,Fraud Detection System
+ALR00003478,TR00460944,1,Multiple Failed Attempts,Open,2016-11-29 18:19:20,,,,2026-08-03 12:23:25.819325,,Fraud Detection System
+ALR00003479,TR00461281,39,Location Mismatch,Resolved,2021-06-06 17:15:31,David Vaidya,EMP00000430,2021-06-11,2026-08-03 12:23:25.820427,,Fraud Detection System
+ALR00003480,TR00461886,76,Multiple Failed Attempts,Resolved,2020-03-06 13:47:51,Geetika Kumer,EMP00000388,2020-03-30,2026-08-03 12:23:25.821418,,Fraud Detection System
+ALR00003481,TR00468105,15,Unusual Spending Pattern,Open,2025-12-24 00:02:48,,,,2026-08-03 12:23:25.821418,,Fraud Detection System
+ALR00003482,TR00469766,15,Multiple Failed Attempts,Resolved,2015-08-08 16:19:19,Tanish Vohra,EMP00000396,2015-08-14,2026-08-03 12:23:25.822418,,Fraud Detection System
+ALR00003483,TR00454479,42,Card Not Present,Under Investigation,2025-09-25 11:34:20,Vincent Johal,EMP00000421,,2026-08-03 12:23:25.823417,,Fraud Detection System
+ALR00003484,TR00464650,40,Card Not Present,Resolved,2026-01-15 06:56:36,Gaurika Deol,EMP00000447,2026-01-17,2026-08-03 12:23:25.824420,,Fraud Detection System
+ALR00003485,TR00463918,32,High Transaction Amount,Resolved,2023-03-24 22:37:38,Shivansh Bhagat,EMP00000390,2023-04-05,2026-08-03 12:23:25.824420,,Fraud Detection System
+ALR00003486,TR00459276,10,Velocity Check Failed,Closed,2022-03-12 11:15:41,David Vaidya,EMP00000430,2022-03-19,2026-08-03 12:23:25.825417,,Fraud Detection System
+ALR00003487,TR00463742,71,Card Not Present,Under Investigation,2013-10-22 13:38:35,David Vaidya,EMP00000430,,2026-08-03 12:23:25.826420,,Fraud Detection System
+ALR00003488,TR00452219,80,Multiple Failed Attempts,False Positive,2021-06-24 09:39:44,David Vaidya,EMP00000430,2021-07-22,2026-08-03 12:23:25.827041,,Fraud Detection System
+ALR00003489,TR00459268,34,Unusual Spending Pattern,Resolved,2022-07-17 01:29:06,Kalpit Balan,EMP00000409,2022-08-13,2026-08-03 12:23:25.828138,,Fraud Detection System
+ALR00003490,TR00452452,93,Location Mismatch,Open,2025-09-17 12:41:43,,,,2026-08-03 12:23:25.829133,,Fraud Detection System
+ALR00003491,TR00450511,3,Unusual Spending Pattern,Resolved,2025-07-29 11:35:17,Sathvik Grover,EMP00000460,2025-08-03,2026-08-03 12:23:25.829736,,Fraud Detection System
+ALR00003492,TR00462103,86,Card Not Present,Resolved,2019-04-22 11:28:58,Shivansh Bhagat,EMP00000390,2019-05-11,2026-08-03 12:23:25.829736,,Fraud Detection System
+ALR00003493,TR00469407,90,Unusual Spending Pattern,Open,2024-04-04 16:16:46,,,,2026-08-03 12:23:25.830850,,Fraud Detection System
+ALR00003494,TR00459502,70,Blacklisted Merchant,Resolved,2019-12-27 23:23:21,Jagat Bath,EMP00000427,2020-01-07,2026-08-03 12:23:25.831833,,Fraud Detection System
+ALR00003495,TR00462689,87,Location Mismatch,Under Investigation,2019-02-24 21:05:14,Abhimanyu Bal,EMP00000443,,2026-08-03 12:23:25.831833,,Fraud Detection System
+ALR00003496,TR00461160,38,Unusual Spending Pattern,Under Investigation,2018-02-02 23:09:28,Bhavya Ranganathan,EMP00000412,,2026-08-03 12:23:25.832838,,Fraud Detection System
+ALR00003497,TR00454607,26,Velocity Check Failed,Resolved,2016-08-10 21:08:17,Geetika Kumer,EMP00000388,2016-08-20,2026-08-03 12:23:25.833837,,Fraud Detection System
+ALR00003498,TR00456020,6,Blacklisted Merchant,False Positive,2023-03-16 02:55:00,Vincent Johal,EMP00000421,2023-04-13,2026-08-03 12:23:25.834851,,Fraud Detection System
+ALR00003499,TR00462022,50,Location Mismatch,Resolved,2025-03-15 04:29:52,Jagat Bath,EMP00000427,2025-03-20,2026-08-03 12:23:25.834851,,Fraud Detection System
+ALR00003500,TR00461027,23,Multiple Failed Attempts,Under Investigation,2024-03-21 18:14:13,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.835837,,Fraud Detection System
+ALR00003501,TR00450973,74,Unusual Spending Pattern,Resolved,2025-12-10 11:08:56,Shivansh Bhagat,EMP00000390,2025-12-25,2026-08-03 12:23:25.836833,,Fraud Detection System
+ALR00003502,TR00459647,13,Unusual Spending Pattern,Under Investigation,2020-07-16 02:18:26,Gaurika Deol,EMP00000447,,2026-08-03 12:23:25.837833,,Fraud Detection System
+ALR00003503,TR00460581,46,Multiple Failed Attempts,Under Investigation,2020-10-24 07:50:55,David Vaidya,EMP00000430,,2026-08-03 12:23:25.837833,,Fraud Detection System
+ALR00003504,TR00463202,29,Card Not Present,Resolved,2021-09-06 14:56:47,Kalpit Balan,EMP00000409,2021-09-12,2026-08-03 12:23:25.837833,,Fraud Detection System
+ALR00003505,TR00452377,24,Multiple Failed Attempts,Under Investigation,2024-02-19 01:10:55,Jagat Bath,EMP00000427,,2026-08-03 12:23:25.839438,,Fraud Detection System
+ALR00003506,TR00467849,60,Multiple Failed Attempts,Under Investigation,2013-05-12 19:09:18,Gaurika Deol,EMP00000447,,2026-08-03 12:23:25.840537,,Fraud Detection System
+ALR00003507,TR00460511,62,Unusual Spending Pattern,Closed,2025-07-01 01:05:01,Abhimanyu Bal,EMP00000443,2025-07-27,2026-08-03 12:23:25.841539,,Fraud Detection System
+ALR00003508,TR00465013,48,Location Mismatch,Resolved,2026-04-11 15:45:19,Abhimanyu Bal,EMP00000443,2026-04-17,2026-08-03 12:23:25.841539,,Fraud Detection System
+ALR00003509,TR00464594,35,Card Not Present,Resolved,2022-11-17 14:36:55,Tanish Vohra,EMP00000396,2022-12-14,2026-08-03 12:23:25.842531,,Fraud Detection System
+ALR00003510,TR00455560,73,Multiple Failed Attempts,Resolved,2025-03-06 23:30:37,Vincent Johal,EMP00000421,2025-03-11,2026-08-03 12:23:25.843533,,Fraud Detection System
+ALR00003511,TR00453828,21,Location Mismatch,Closed,2021-06-22 06:14:40,Gaurika Deol,EMP00000447,2021-07-03,2026-08-03 12:23:25.844450,,Fraud Detection System
+ALR00003512,TR00455756,34,Multiple Failed Attempts,Resolved,2026-06-12 10:54:44,Kalpit Balan,EMP00000409,2026-07-02,2026-08-03 12:23:25.845528,,Fraud Detection System
+ALR00003513,TR00464886,1,Unusual Spending Pattern,Open,2025-07-21 20:25:22,,,,2026-08-03 12:23:25.845528,,Fraud Detection System
+ALR00003514,TR00454831,23,High Transaction Amount,Resolved,2015-01-28 17:27:13,Vincent Johal,EMP00000421,2015-02-16,2026-08-03 12:23:25.846527,,Fraud Detection System
+ALR00003515,TR00468884,25,Blacklisted Merchant,Open,2026-07-28 15:48:19,,,,2026-08-03 12:23:25.846527,,Fraud Detection System
+ALR00003516,TR00462984,100,Blacklisted Merchant,Under Investigation,2022-03-21 00:38:18,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.847532,,Fraud Detection System
+ALR00003517,TR00462198,10,Velocity Check Failed,Resolved,2009-09-19 04:14:29,Jagat Bath,EMP00000427,2009-09-24,2026-08-03 12:23:25.848536,,Fraud Detection System
+ALR00003518,TR00457924,100,Blacklisted Merchant,Resolved,2026-06-20 18:03:28,Gaurika Deol,EMP00000447,2026-06-29,2026-08-03 12:23:25.849539,,Fraud Detection System
+ALR00003519,TR00459417,16,Multiple Failed Attempts,Closed,2012-10-18 22:55:58,Tanish Vohra,EMP00000396,2012-10-29,2026-08-03 12:23:25.850129,,Fraud Detection System
+ALR00003520,TR00465277,35,Velocity Check Failed,Resolved,2025-08-31 08:34:42,Vincent Johal,EMP00000421,2025-09-13,2026-08-03 12:23:25.851221,,Fraud Detection System
+ALR00003521,TR00459546,65,Blacklisted Merchant,Resolved,2024-02-25 17:43:45,Shivansh Bhagat,EMP00000390,2024-03-01,2026-08-03 12:23:25.851221,,Fraud Detection System
+ALR00003522,TR00467055,12,Blacklisted Merchant,False Positive,2021-08-21 07:59:41,Tanish Vohra,EMP00000396,2021-09-19,2026-08-03 12:23:25.852226,,Fraud Detection System
+ALR00003523,TR00469550,55,Blacklisted Merchant,Resolved,2025-09-10 18:53:41,Tanish Vohra,EMP00000396,2025-09-13,2026-08-03 12:23:25.853227,,Fraud Detection System
+ALR00003524,TR00460902,55,Card Not Present,False Positive,2026-06-26 03:47:13,Abhimanyu Bal,EMP00000443,2026-07-05,2026-08-03 12:23:25.854238,,Fraud Detection System
+ALR00003525,TR00466856,3,Velocity Check Failed,Resolved,2026-07-16 08:44:37,David Vaidya,EMP00000430,2026-07-18,2026-08-03 12:23:25.854238,,Fraud Detection System
+ALR00003526,TR00453421,40,Blacklisted Merchant,Closed,2022-10-12 05:14:41,Jagat Bath,EMP00000427,2022-10-14,2026-08-03 12:23:25.855227,,Fraud Detection System
+ALR00003527,TR00452931,69,Velocity Check Failed,Resolved,2026-07-19 05:16:39,Abhimanyu Bal,EMP00000443,2026-07-29,2026-08-03 12:23:25.856224,,Fraud Detection System
+ALR00003528,TR00457324,56,Blacklisted Merchant,Resolved,2026-05-20 19:20:45,Vincent Johal,EMP00000421,2026-06-15,2026-08-03 12:23:25.857230,,Fraud Detection System
+ALR00003529,TR00468076,50,High Transaction Amount,False Positive,2026-06-10 02:55:23,Gaurika Deol,EMP00000447,2026-06-23,2026-08-03 12:23:25.857230,,Fraud Detection System
+ALR00003530,TR00451449,41,Card Not Present,False Positive,2020-03-05 10:33:17,Jagat Bath,EMP00000427,2020-04-03,2026-08-03 12:23:25.858220,,Fraud Detection System
+ALR00003531,TR00455687,91,Velocity Check Failed,Open,2023-06-21 00:27:45,,,,2026-08-03 12:23:25.859228,,Fraud Detection System
+ALR00003532,TR00467432,30,High Transaction Amount,Resolved,2013-06-11 11:07:27,Vincent Johal,EMP00000421,2013-06-17,2026-08-03 12:23:25.859825,,Fraud Detection System
+ALR00003533,TR00453856,47,Velocity Check Failed,Closed,2025-06-24 17:27:57,David Vaidya,EMP00000430,2025-07-21,2026-08-03 12:23:25.860897,,Fraud Detection System
+ALR00003534,TR00452222,3,High Transaction Amount,Open,2013-02-02 23:50:02,,,,2026-08-03 12:23:25.860897,,Fraud Detection System
+ALR00003535,TR00455251,33,Location Mismatch,Under Investigation,2026-02-20 02:01:25,Bhavya Ranganathan,EMP00000412,,2026-08-03 12:23:25.861919,,Fraud Detection System
+ALR00003536,TR00456710,1,Location Mismatch,Under Investigation,2021-02-07 13:30:54,Kalpit Balan,EMP00000409,,2026-08-03 12:23:25.862920,,Fraud Detection System
+ALR00003537,TR00460195,76,Velocity Check Failed,Resolved,2025-02-27 21:53:37,Kalpit Balan,EMP00000409,2025-03-25,2026-08-03 12:23:25.862920,,Fraud Detection System
+ALR00003538,TR00460729,48,Blacklisted Merchant,Resolved,2021-11-22 00:11:59,Geetika Kumer,EMP00000388,2021-12-10,2026-08-03 12:23:25.863921,,Fraud Detection System
+ALR00003539,TR00457295,30,Unusual Spending Pattern,False Positive,2023-08-05 07:41:29,Shivansh Bhagat,EMP00000390,2023-08-24,2026-08-03 12:23:25.864920,,Fraud Detection System
+ALR00003540,TR00469127,61,Velocity Check Failed,Under Investigation,2023-10-30 03:24:35,Abhimanyu Bal,EMP00000443,,2026-08-03 12:23:25.865922,,Fraud Detection System
+ALR00003541,TR00464003,55,Unusual Spending Pattern,Open,2011-03-13 20:14:05,,,,2026-08-03 12:23:25.865922,,Fraud Detection System
+ALR00003542,TR00465868,69,Location Mismatch,Under Investigation,2019-05-29 15:58:02,Gaurika Deol,EMP00000447,,2026-08-03 12:23:25.866919,,Fraud Detection System
+ALR00003543,TR00464886,19,Blacklisted Merchant,Closed,2025-07-21 19:21:22,Gaurika Deol,EMP00000447,2025-08-01,2026-08-03 12:23:25.867923,,Fraud Detection System
+ALR00003544,TR00460604,47,High Transaction Amount,Resolved,2018-03-06 17:36:12,Kalpit Balan,EMP00000409,2018-03-09,2026-08-03 12:23:25.867923,,Fraud Detection System
+ALR00003545,TR00464980,22,High Transaction Amount,Resolved,2017-09-13 21:40:59,Tanish Vohra,EMP00000396,2017-10-07,2026-08-03 12:23:25.867923,,Fraud Detection System
+ALR00003546,TR00465279,24,Velocity Check Failed,Resolved,2025-02-10 09:53:08,Abhimanyu Bal,EMP00000443,2025-03-03,2026-08-03 12:23:25.869527,,Fraud Detection System
+ALR00003547,TR00468428,79,Unusual Spending Pattern,Under Investigation,2023-10-31 06:13:08,Sathvik Grover,EMP00000460,,2026-08-03 12:23:25.870626,,Fraud Detection System
+ALR00003548,TR00465753,8,Blacklisted Merchant,Resolved,2022-11-15 09:19:06,Tanish Vohra,EMP00000396,2022-11-30,2026-08-03 12:23:25.871636,,Fraud Detection System
+ALR00003549,TR00464324,15,Card Not Present,Open,2025-10-14 04:29:21,,,,2026-08-03 12:23:25.871636,,Fraud Detection System
+ALR00003550,TR00469596,63,High Transaction Amount,Resolved,2026-07-11 11:45:27,Shivansh Bhagat,EMP00000390,2026-07-29,2026-08-03 12:23:25.872620,,Fraud Detection System

@@ -14,7 +14,7 @@ Author : Shruti Mokhashi
 # GLOBAL SETTINGS
 # =============================================================================
 
-SEED = 42
+SEED = 56
 
 COUNTRY = "India"
 

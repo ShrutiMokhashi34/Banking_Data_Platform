@@ -1,0 +1,20 @@
+CREATE OR REPLACE TABLE ABC_BANK.STG.LOAN_LOAN_COLLATERAL
+(
+    COLLATERAL_ID           VARCHAR(20)        NOT NULL,
+
+    LOAN_ID                 VARCHAR(20)        NOT NULL,
+
+    ASSET_TYPE              VARCHAR(30)        NOT NULL,
+
+    ASSET_VALUE             NUMBER(15,2)       NOT NULL,
+
+    VALUATION_DATE          DATE               NOT NULL,
+
+    CREATED_AT              TIMESTAMP_NTZ      DEFAULT CURRENT_TIMESTAMP(),
+    UPDATED_AT              TIMESTAMP_NTZ,
+    SOURCE_SYSTEM           VARCHAR(50)        DEFAULT 'Loan Management System',
+    BATCH_ID                TIMESTAMP_NTZ,
+	BATCH_DATE         		DATE,
+	PIPELINE_RUN_ID			VARCHAR(20),
+	DATA_SOURCE				VARCHAR(50)
+);

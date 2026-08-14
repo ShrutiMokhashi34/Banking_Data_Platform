@@ -1,0 +1,76 @@
+employee_id,branch_id,first_name,last_name,designation,department,hire_date,salary,employee_status,created_at,updated_at,source_system
+EMP00000386,BR00000079,Charvi,Salvi,Manager,Retail Banking,2014-06-11,1762817.54,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000387,BR00000076,Girindra,Prasad,Senior Associate,Customer Service,2008-11-21,626992.33,Retired,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000388,BR00000079,Geetika,Kumer,Assistant Manager,Compliance,2026-02-09,1201936.57,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000389,BR00000076,Sarthak,Bains,Officer,Customer Service,2026-01-27,844890.35,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000390,BR00000080,Shivansh,Bhagat,Associate,Risk,2026-05-22,364173.64,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000391,BR00000078,Laksh,Rajagopalan,Senior Associate,Operations,2007-08-15,799635.65,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000392,BR00000077,Nachiket,Rajan,Senior Associate,Customer Service,2014-12-24,791854.11,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000393,BR00000080,Rachit,Chandra,Associate,Technology,2013-04-03,415346.75,Active,2026-08-03 12:22:27.236688,,Enterprise System
+EMP00000394,BR00000078,Tejas,Sawhney,Associate,Operations,2012-11-14,542287.2,Retired,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000395,BR00000076,Lekha,Dass,Senior Manager,Corporate Banking,2008-09-28,3478542.63,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000396,BR00000078,Tanish,Vohra,Officer,Risk,2012-09-22,762184.4,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000397,BR00000076,Ranveer,Gill,Associate,Customer Service,2011-03-08,382904.92,Resigned,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000398,BR00000080,Watika,Patel,Senior Associate,Risk,2006-10-07,726093.9,Retired,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000399,BR00000077,Bakhshi,Pillay,Officer,Risk,2006-08-12,933772.69,Retired,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000400,BR00000076,Aadi,Vora,Associate,Corporate Banking,2025-06-14,584858.35,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000401,BR00000077,Guneet,Tara,Associate,Human Resources,2019-09-09,484115.36,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000402,BR00000078,Jagvi,Soni,Officer,Operations,2019-03-27,953444.56,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000403,BR00000080,Rishi,Varkey,Senior Manager,Customer Service,2022-05-25,2565177.03,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000404,BR00000080,Xalak,Basu,Associate,Retail Banking,2013-10-18,547965.72,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000405,BR00000076,Pratyush,Oza,Assistant Manager,Corporate Banking,2022-06-30,1074161.79,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000406,BR00000077,Luke,Andra,Associate,Technology,2013-02-01,381506.25,Terminated,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000407,BR00000077,Chasmum,Dhaliwal,Officer,Technology,2026-06-01,792399.17,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000408,BR00000078,Zayan,Shenoy,Assistant Manager,Retail Banking,2006-12-01,1256657.09,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000409,BR00000076,Kalpit,Balan,Senior Associate,Compliance,2016-07-21,678301.47,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000410,BR00000077,Yashoda,Gaba,Manager,Human Resources,2023-11-25,1919776.15,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000411,BR00000077,Gautam,Bawa,Manager,Customer Service,2026-04-18,1887309.07,On Leave,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000412,BR00000079,Bhavya,Ranganathan,Senior Manager,Compliance,2014-11-14,2078167.66,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000413,BR00000080,Dakshesh,Varghese,Assistant Manager,Finance,2023-01-08,903623.96,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000414,BR00000079,Charvi,Kalla,Senior Associate,Human Resources,2008-07-07,817261.96,Terminated,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000415,BR00000076,Nisha,Deol,Associate,Operations,2012-03-08,438331.74,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000416,BR00000077,Luke,Virk,Senior Associate,Operations,2007-04-21,768378.77,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000417,BR00000076,Benjamin,Barad,Officer,Human Resources,2023-02-17,765441.15,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000418,BR00000079,Advika,Chhabra,Officer,Technology,2023-12-06,849041.15,Resigned,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000419,BR00000077,Krish,Bath,Associate,Corporate Banking,2015-04-24,443699.2,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000420,BR00000079,Manthan,Contractor,Senior Associate,Finance,2020-05-12,744911.63,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000421,BR00000076,Vincent,Johal,Senior Associate,Risk,2010-04-29,845543.27,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000422,BR00000079,Dipta,Desai,Officer,Corporate Banking,2024-11-21,715005.55,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000423,BR00000077,Karan,Choudhury,Senior Associate,Corporate Banking,2014-06-25,891318.31,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000424,BR00000079,Osha,Rastogi,Associate,Finance,2010-04-10,418425.8,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000425,BR00000079,Rishi,Khanna,Associate,Customer Service,2016-05-18,409534.62,Retired,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000426,BR00000077,Hemang,Buch,Officer,Human Resources,2013-02-09,933069.94,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000427,BR00000080,Jagat,Bath,Senior Associate,Compliance,2021-03-05,894248.02,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000428,BR00000076,Bhavani,Dhar,Assistant Manager,Operations,2025-10-04,1383701.0,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000429,BR00000079,Krisha,Rau,Associate,Operations,2014-11-16,368859.06,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000430,BR00000078,David,Vaidya,Manager,Risk,2021-11-15,1419987.57,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000431,BR00000080,Falguni,Radhakrishnan,Associate,Retail Banking,2010-09-20,479773.98,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000432,BR00000078,Ijaya,Radhakrishnan,Senior Associate,Human Resources,2026-03-05,812670.41,On Leave,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000433,BR00000078,Damyanti,Chaudhry,Assistant Manager,Customer Service,2021-12-28,959613.62,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000434,BR00000076,Jonathan,Sani,Associate,Customer Service,2018-11-08,553469.52,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000435,BR00000076,Tripti,Morar,Associate,Operations,2013-02-02,598292.33,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000436,BR00000078,Ansh,Sankaran,Officer,Retail Banking,2009-05-27,769893.14,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000437,BR00000079,Radhika,Balakrishnan,Associate,Retail Banking,2016-05-19,358405.06,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000438,BR00000079,Advika,Kaur,Associate,Operations,2008-01-28,384314.63,Active,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000439,BR00000076,Nikita,Deshmukh,Senior Associate,Human Resources,2013-11-01,714345.11,Terminated,2026-08-03 12:22:27.237639,,Enterprise System
+EMP00000440,BR00000080,Megha,Nagar,Officer,Customer Service,2024-09-15,700356.02,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000441,BR00000080,Imaran,Kumer,Associate,Human Resources,2008-05-11,586553.38,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000442,BR00000077,Shravya,Kapadia,Associate,Technology,2018-09-29,509973.63,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000443,BR00000077,Abhimanyu,Bal,Manager,Compliance,2022-05-31,1466247.31,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000444,BR00000076,Omkaar,Sandal,Associate,Corporate Banking,2014-11-14,457685.39,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000445,BR00000078,Girindra,Dugar,Associate,Operations,2018-08-10,409577.47,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000446,BR00000080,Rajeshri,Grover,Assistant Manager,Technology,2022-10-31,1299131.43,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000447,BR00000080,Gaurika,Deol,Assistant Manager,Compliance,2025-09-07,1036303.85,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000448,BR00000080,Suhani,Ahuja,Senior Associate,Risk,2020-06-16,789089.4,Suspended,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000449,BR00000079,Tejas,Dewan,Associate,Operations,2022-08-16,383191.27,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000450,BR00000080,Watika,Chowdhury,Senior Associate,Human Resources,2013-10-25,862459.08,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000451,BR00000078,Urishilla,Dash,Assistant Manager,Retail Banking,2019-05-04,1203639.25,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000452,BR00000077,Atharv,Keer,Officer,Corporate Banking,2019-10-23,798706.63,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000453,BR00000080,Ekani,Subramanian,Senior Associate,Customer Service,2008-10-09,613987.75,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000454,BR00000078,Nidra,Naidu,Associate,Corporate Banking,2014-03-16,398369.73,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000455,BR00000077,Chameli,Sodhi,Senior Associate,Retail Banking,2025-11-13,833441.61,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000456,BR00000078,Gagan,Bedi,Officer,Corporate Banking,2010-02-06,962108.88,Retired,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000457,BR00000079,Vrishti,Batra,Associate,Finance,2024-11-26,599946.08,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000458,BR00000079,Jalsa,Dar,Senior Manager,Customer Service,2017-05-27,2298971.93,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000459,BR00000078,Anita,Parmer,Officer,Retail Banking,2015-11-25,998894.51,Active,2026-08-03 12:22:27.239229,,Enterprise System
+EMP00000460,BR00000078,Sathvik,Grover,Associate,Compliance,2017-12-27,411285.25,Active,2026-08-03 12:22:27.239229,,Enterprise System

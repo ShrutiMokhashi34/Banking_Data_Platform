@@ -1,0 +1,6 @@
+branch_id,branch_name,city,state,country,zip_code,manager_employee_id,opened_date,created_at,updated_at,source_system
+BR00000076,VIKARABAD Main Branch,VIKARABAD,TELANGANA,India,502345,,2025-06-13,2026-08-03 12:22:27.233599,,Enterprise System
+BR00000077,UDALGURI Financial Centre,UDALGURI,ASSAM,India,784509,,2015-08-19,2026-08-03 12:22:27.234658,,Enterprise System
+BR00000078,KUSHI NAGAR Commercial Branch,KUSHI NAGAR,UTTAR PRADESH,India,274407,,1996-12-22,2026-08-03 12:22:27.234658,,Enterprise System
+BR00000079,SALEM Regional Office,SALEM,TAMIL NADU,India,636453,,2012-09-13,2026-08-03 12:22:27.235674,,Enterprise System
+BR00000080,TIRUNELVELI Corporate Branch,TIRUNELVELI,TAMIL NADU,India,627119,,2018-10-22,2026-08-03 12:22:27.235674,,Enterprise System

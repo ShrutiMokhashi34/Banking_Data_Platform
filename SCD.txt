@@ -1,0 +1,719 @@
+===============================================================================
+BANKING DATA PLATFORM — SCD STRATEGY
+===============================================================================
+
+SCD METADATA COLUMNS FOR TYPE 2 TABLES
+--------------------------------------
+
+effective_from     DATE/TIMESTAMP
+effective_to       DATE/TIMESTAMP
+is_current         BOOLEAN
+batch_date         DATE
+load_timestamp     TIMESTAMP
+
+IMPORTANT:
+- batch_date      = date of the source batch being ingested
+- load_timestamp = actual timestamp when Airflow loaded the record
+- effective_from = when this version of the record became valid
+- effective_to   = when this version stopped being valid
+- is_current     = TRUE for the current version
+- Do NOT use batch_date as a replacement for effective_from/effective_to.
+
+
+===============================================================================
+1. CUSTOMERS
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    customer_id
+
+COLUMNS TRACKED FOR CHANGES:
+    first_name
+    last_name
+    dob
+    gender
+    email
+    phone
+    occupation
+    annual_income
+    customer_since
+    risk_rating
+    customer_status
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOT TYPICALLY UPDATED:
+    customer_id
+    created_at
+    source_system
+
+
+===============================================================================
+2. CUSTOMER_ADDRESSES
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    address_id
+
+PARENT KEY:
+    customer_id
+
+COLUMNS TRACKED FOR CHANGES:
+    address_type
+    address_line1
+    address_line2
+    city
+    state
+    postal_code
+    country
+    is_current
+    effective_date
+    expiry_date
+
+SCD COLUMNS TO ADD:
+    scd_effective_from
+    scd_effective_to
+    scd_is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    The existing effective_date and expiry_date represent the
+    business validity of the address. Keep them separate from the
+    SCD technical columns.
+
+
+===============================================================================
+3. ACCOUNTS
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    account_id
+
+COLUMNS TRACKED FOR CHANGES:
+    account_type
+    account_status
+    branch_id
+    account_open_date
+    account_close_date
+    interest_rate
+    minimum_balance
+    account_currency
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOT TYPICALLY UPDATED:
+    account_id
+    customer_id
+    created_at
+    source_system
+
+
+===============================================================================
+4. CARDS
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    card_id
+
+COLUMNS TRACKED FOR CHANGES:
+    card_type
+    card_status
+    card_network
+    card_limit
+    expiry_date
+    issue_date
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOT TYPICALLY UPDATED:
+    card_id
+    account_id
+    card_number/tokenized_identifier
+    created_at
+    source_system
+
+
+===============================================================================
+5. TRANSACTIONS
+===============================================================================
+
+SCD TYPE:
+    NOT APPLICABLE
+
+TABLE TYPE:
+    FACT / TRANSACTION
+
+LOAD STRATEGY:
+    APPEND-ONLY
+
+BUSINESS KEY:
+    transaction_id
+
+DO NOT CREATE:
+    effective_from
+    effective_to
+    is_current
+
+RETAIN:
+    transaction_id
+    account_id
+    customer_id
+    transaction_date
+    transaction_type
+    amount
+    currency
+    merchant_id
+    channel
+    transaction_status
+    etc.
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    A transaction represents an event. Historical transactions should
+    not be overwritten when a new day's data arrives.
+
+
+===============================================================================
+6. BRANCHES
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    branch_id
+
+COLUMNS TRACKED FOR CHANGES:
+    branch_name
+    branch_type
+    address
+    city
+    state
+    postal_code
+    manager/manager_id
+    branch_status
+    contact_information
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+
+===============================================================================
+7. EMPLOYEES
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    employee_id
+
+COLUMNS TRACKED FOR CHANGES:
+    first_name
+    last_name
+    department
+    designation
+    branch_id
+    employment_status
+    joining_date
+    salary
+    manager_id
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Employee history is particularly useful for analyzing branch
+    performance and organizational changes over time.
+
+
+===============================================================================
+8. MERCHANTS
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    merchant_id
+
+COLUMNS TRACKED FOR CHANGES:
+    merchant_name
+    merchant_category
+    merchant_type
+    address
+    city
+    state
+    country
+    merchant_status
+    risk_category
+    network
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+
+===============================================================================
+9. LOANS
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    loan_id
+
+COLUMNS TRACKED FOR CHANGES:
+    loan_type
+    principal_amount
+    interest_rate
+    tenure_months
+    emi_amount
+    loan_status
+    disbursement_date
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Loan status changes such as:
+
+        Pending
+            ↓
+        Active
+            ↓
+        Defaulted
+            ↓
+        Closed
+
+    should be historically preserved.
+
+
+===============================================================================
+10. LOAN_APPLICATIONS
+===============================================================================
+
+SCD TYPE:
+    NOT APPLICABLE
+
+TABLE TYPE:
+    FACT / BUSINESS EVENT
+
+LOAD STRATEGY:
+    APPEND-ONLY
+
+BUSINESS KEY:
+    application_id
+
+RETAIN:
+    application_id
+    customer_id
+    loan_id
+    application_date
+    requested_amount
+    approval_status
+    created_at
+    updated_at
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    An application is an event/process record. Do not overwrite the
+    original application record.
+
+    If application status history is required later, create a separate:
+
+        FACT_LOAN_APPLICATION_STATUS_HISTORY
+
+    rather than turning the application table into a conventional SCD.
+
+
+===============================================================================
+11. LOAN_REPAYMENTS
+===============================================================================
+
+SCD TYPE:
+    NOT APPLICABLE
+
+TABLE TYPE:
+    FACT / TRANSACTION
+
+LOAD STRATEGY:
+    APPEND-ONLY
+
+BUSINESS KEY:
+    repayment_id
+
+RETAIN:
+    repayment_id
+    loan_id
+    payment_date
+    amount_paid
+    payment_mode
+    created_at
+    updated_at
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+DO NOT CREATE:
+    effective_from
+    effective_to
+    is_current
+
+
+===============================================================================
+12. LOAN_COLLATERAL
+===============================================================================
+
+SCD TYPE:
+    Type 2
+
+BUSINESS KEY:
+    collateral_id
+
+COLUMNS TRACKED FOR CHANGES:
+    asset_type
+    asset_value
+    valuation_date
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Collateral valuation can change over time. Keeping historical
+    valuations allows analysis of:
+
+        Loan Amount
+             vs
+        Collateral Value
+
+    at different points in time.
+
+
+===============================================================================
+13. FRAUD_ALERTS
+===============================================================================
+
+SCD TYPE:
+    NOT APPLICABLE
+
+TABLE TYPE:
+    EVENT / FACT
+
+LOAD STRATEGY:
+    APPEND-ONLY
+
+BUSINESS KEY:
+    alert_id
+
+RETAIN:
+    alert_id
+    transaction_id
+    customer_id
+    alert_type
+    alert_date
+    severity
+    alert_status
+    resolution_date
+    etc.
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Every fraud alert is an event and should be retained.
+
+
+===============================================================================
+14. EXCHANGE_RATES
+===============================================================================
+
+SCD TYPE:
+    NOT APPLICABLE
+
+TABLE TYPE:
+    DAILY REFERENCE / SNAPSHOT
+
+BUSINESS KEY:
+    rate_date + currency
+
+LOAD STRATEGY:
+    DAILY SNAPSHOT / APPEND
+
+RETAIN:
+    rate_date
+    currency
+    currency_symbol
+    rate_to_inr
+    source
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Exchange rates naturally represent values at a point in time.
+    Historical rates should be retained rather than overwritten.
+
+    Example:
+
+        2026-08-01 USD = 87.20
+        2026-08-02 USD = 87.35
+        2026-08-03 USD = 87.10
+
+
+===============================================================================
+15. HOLIDAY_CALENDAR
+===============================================================================
+
+SCD TYPE:
+    Type 1
+
+LOAD STRATEGY:
+    OVERWRITE / UPDATE
+
+BUSINESS KEY:
+    holiday_id
+
+COLUMNS UPDATED:
+    holiday_date
+    country
+    state
+    holiday_name
+    holiday_type
+
+SCD COLUMNS:
+    NONE
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    Historical versions of a holiday name/type are generally not
+    important for the banking analytics use case.
+
+    If regulatory/audit requirements arise, this can be converted
+    to Type 2 later.
+
+
+===============================================================================
+16. ORGANIZATION / REFERENCE TABLE
+===============================================================================
+
+SCD TYPE:
+    Type 2 WHERE BUSINESS HISTORY MATTERS
+
+BUSINESS KEY:
+    organization/branch/employee business key
+
+COLUMNS TRACKED FOR CHANGES:
+    organization_name
+    organization_type
+    department
+    designation
+    status
+    hierarchy attributes
+    other business attributes
+
+SCD COLUMNS TO ADD:
+    effective_from
+    effective_to
+    is_current
+
+INGESTION METADATA:
+    batch_date
+    load_timestamp
+
+NOTE:
+    If this table is only static reference data, Type 1 is sufficient.
+    If it represents organizational structures that change over time,
+    Type 2 is preferred.
+
+
+===============================================================================
+SUMMARY
+===============================================================================
+
+TABLE                       SCD TYPE       LOAD STRATEGY
+---------------------------------------------------------------------------
+Customers                   Type 2         Historical versions
+Customer Addresses          Type 2         Historical versions
+Accounts                    Type 2         Historical versions
+Cards                       Type 2         Historical versions
+Transactions                N/A            Append-only fact
+Branches                    Type 2         Historical versions
+Employees                   Type 2         Historical versions
+Merchants                   Type 2         Historical versions
+Loans                       Type 2         Historical versions
+Loan Applications           N/A            Append-only event
+Loan Repayments             N/A            Append-only fact
+Loan Collateral             Type 2         Historical versions
+Fraud Alerts                N/A            Append-only event
+Exchange Rates              Snapshot       Daily append
+Holiday Calendar            Type 1         Update/overwrite
+Organization/Reference      Type 2*        Historical versions
+
+* Use Type 1 if the organization table is purely static reference data.
+
+
+===============================================================================
+STANDARD TYPE 2 METADATA
+===============================================================================
+
+For all Type 2 tables, use:
+
+    effective_from
+    effective_to
+    is_current
+
+For all tables loaded through Airflow, use:
+
+    batch_date
+    load_timestamp
+
+Recommended default values:
+
+    effective_from = batch_date
+    effective_to   = '9999-12-31'
+    is_current     = TRUE
+
+
+===============================================================================
+TYPE 2 CHANGE LOGIC
+===============================================================================
+
+When a record's tracked attributes have NOT changed:
+
+    Do nothing.
+
+When a record's tracked attributes HAVE changed:
+
+    1. Close the existing record:
+
+        effective_to = new_batch_date - 1 day
+        is_current = FALSE
+
+    2. Insert a new version:
+
+        effective_from = new_batch_date
+        effective_to = '9999-12-31'
+        is_current = TRUE
+
+
+Example:
+
+CUSTOMER_ID = CUST00005000
+
+Old:
+
+    customer_id       = CUST00005000
+    risk_rating       = LOW
+    customer_status   = ACTIVE
+    effective_from    = 2026-08-01
+    effective_to      = 2026-08-03
+    is_current        = FALSE
+
+New:
+
+    customer_id       = CUST00005000
+    risk_rating       = MEDIUM
+    customer_status   = ACTIVE
+    effective_from    = 2026-08-04
+    effective_to      = 9999-12-31
+    is_current        = TRUE
+
+
+===============================================================================
+IMPORTANT
+===============================================================================
+
+Do NOT treat these as SCD Type 2 columns:
+
+    batch_date
+    load_timestamp
+
+They are INGESTION METADATA.
+
+SCD Type 2 columns are:
+
+    effective_from
+    effective_to
+    is_current
+
+This distinction is important for your Airflow → Snowflake → Databricks
+→ dbt architecture.

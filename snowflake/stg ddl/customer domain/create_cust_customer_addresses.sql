@@ -1,0 +1,24 @@
+CREATE OR REPLACE TABLE ABC_BANK.STG.CUST_CUSTOMER_ADDRESSES
+(
+    ADDRESS_ID          VARCHAR(20)        NOT NULL,
+    CUSTOMER_ID         VARCHAR(20)        NOT NULL,
+
+    ADDRESS_TYPE        VARCHAR(20)        NOT NULL,
+
+    ADDRESS_LINE1       VARCHAR(200)       NOT NULL,
+    ADDRESS_LINE2       VARCHAR(200),
+
+    CITY                VARCHAR(100)       NOT NULL,
+    STATE               VARCHAR(100)       NOT NULL,
+    POSTAL_CODE         VARCHAR(15)        NOT NULL,
+    COUNTRY             VARCHAR(100)       NOT NULL,
+
+    IS_CURRENT          BOOLEAN            NOT NULL,
+
+    EFFECTIVE_DATE      DATE               NOT NULL,
+    EXPIRY_DATE         DATE,
+	BATCH_ID            TIMESTAMP_NTZ,
+	BATCH_DATE          DATE,
+	PIPELINE_RUN_ID		VARCHAR(20),
+	DATA_SOURCE			VARCHAR(50)
+);

@@ -1,0 +1,61 @@
+CREATE OR REPLACE TABLE ABC_BANK.AGG.BANK_ACCOUNTS
+(
+    ACCOUNT_ID              VARCHAR(20)        NOT NULL,
+    CUSTOMER_ID             VARCHAR(20)        NOT NULL,
+    BRANCH_ID               VARCHAR(20)        NOT NULL,
+
+    ACCOUNT_NUMBER          VARCHAR(20)        NOT NULL,
+
+    ACCOUNT_TYPE            VARCHAR(20)        NOT NULL,
+
+    CURRENCY                VARCHAR(3)         NOT NULL,
+
+    OPEN_DATE               DATE               NOT NULL,
+
+    CURRENT_BALANCE         NUMBER(18,2)       NOT NULL,
+
+    ACCOUNT_STATUS          VARCHAR(20)        NOT NULL,
+
+    CREATED_AT              TIMESTAMP_NTZ      DEFAULT CURRENT_TIMESTAMP(),
+    UPDATED_AT              TIMESTAMP_NTZ,
+    SOURCE_SYSTEM           VARCHAR(50)        DEFAULT 'Core Banking System',
+    BATCH_ID                VARCHAR(50),
+
+    CONSTRAINT PK_ACCOUNTS
+        PRIMARY KEY (ACCOUNT_ID),
+
+    CONSTRAINT UQ_ACCOUNT_NUMBER
+        UNIQUE (ACCOUNT_NUMBER),
+
+    CONSTRAINT FK_ACCOUNTS_CUSTOMERS
+        FOREIGN KEY (CUSTOMER_ID)
+        REFERENCES CUST_CUSTOMERS(CUSTOMER_ID),
+
+    CONSTRAINT FK_ACCOUNTS_BRANCHES
+        FOREIGN KEY (BRANCH_ID)
+        REFERENCES ORG_BRANCHES(BRANCH_ID),
+
+    CONSTRAINT CHK_ACCOUNT_TYPE
+        CHECK (UPPER(ACCOUNT_TYPE) IN
+        (
+            'SAVINGS',
+            'CURRENT',
+            'SALARY',
+            'FIXED DEPOSIT',
+            'RECURRING DEPOSIT',
+            'NRE',
+            'NRO'
+        )),
+
+    CONSTRAINT CHK_ACCOUNT_STATUS
+        CHECK (UPPER(ACCOUNT_STATUS) IN
+        (
+            'ACTIVE',
+            'DORMANT',
+            'CLOSED',
+            'FROZEN'
+        )),
+
+    CONSTRAINT CHK_CURRENT_BALANCE
+        CHECK (CURRENT_BALANCE >= 0)
+);

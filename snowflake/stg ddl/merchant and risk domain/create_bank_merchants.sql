@@ -1,0 +1,37 @@
+CREATE OR REPLACE TABLE ABC_BANK.STG.BANK_MERCHANTS
+(
+    MERCHANT_ID                VARCHAR(20)        NOT NULL,
+
+    MERCHANT_NAME              VARCHAR(150)       NOT NULL,
+
+    MERCHANT_CATEGORY          VARCHAR(50)        NOT NULL,
+
+    MERCHANT_TYPE		       VARCHAR(200),
+
+    CITY                       VARCHAR(100)       NOT NULL,
+
+    STATE                      VARCHAR(100)       NOT NULL,
+
+    COUNTRY                    VARCHAR(100)       NOT NULL,
+
+    MERCHANT_STATUS            VARCHAR(20)        NOT NULL,
+	
+	ACCEPTS_UPI				   VARCHAR(3),
+	
+	ACCEPTS_CARDS			   VARCHAR(3),
+	
+	AVG_TICKET_SIZE			   NUMBER(15,2),
+	
+	ONBOARDING_DATE			   DATE,
+
+    CREATED_AT                 TIMESTAMP_NTZ      DEFAULT CURRENT_TIMESTAMP(),
+
+    UPDATED_AT                 TIMESTAMP_NTZ,
+
+    SOURCE_SYSTEM              VARCHAR(50)        DEFAULT 'Enterprise System',
+
+    BATCH_ID                   TIMESTAMP_NTZ,
+	BATCH_DATE          	   DATE,
+	PIPELINE_RUN_ID			   VARCHAR(20),
+	DATA_SOURCE				   VARCHAR(50)
+);
