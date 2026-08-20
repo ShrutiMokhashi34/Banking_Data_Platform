@@ -1,0 +1,28 @@
+CREATE OR REPLACE TABLE banking_data_processing.silver.EXCHANGE_RATES
+(
+    RATE_DATE               DATE                NOT NULL,
+
+    CURRENCY                VARCHAR(50)          NOT NULL,
+
+    CURRENCY_SYMBOL         VARCHAR(10)         NOT NULL,
+
+    RATE_TO_INR             DECIMAL(18,6)        NOT NULL,
+
+    SOURCE                  VARCHAR(100)        NOT NULL,
+	
+	BASE_CURRENCY           VARCHAR(3),
+
+    CREATED_AT              TIMESTAMP_NTZ,
+
+    UPDATED_AT              TIMESTAMP_NTZ,
+
+    SOURCE_SYSTEM           VARCHAR(50),
+
+	BATCH_DATE         		DATE,
+	PIPELINE_RUN_ID			VARCHAR(100),
+	DATA_SOURCE				VARCHAR(50),
+	IS_CURRENT				BOOLEAN, 
+	EFFECTIVE_FROM			TIMESTAMP, 
+	EFFECTIVE_TO			TIMESTAMP, 
+	LOAD_TIMESTAMP			TIMESTAMP	
+);
