@@ -2,7 +2,7 @@ CREATE OR REPLACE TABLE ABC_BANK.STG.EXCHANGE_RATES
 (
     RATE_DATE               DATE                NOT NULL,
 
-    CURRENCY                VARCHAR(15)          NOT NULL,
+    CURRENCY                VARCHAR(50)          NOT NULL,
 
     CURRENCY_SYMBOL         VARCHAR(10)         NOT NULL,
 

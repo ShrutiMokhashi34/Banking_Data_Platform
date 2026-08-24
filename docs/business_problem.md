@@ -2,7 +2,7 @@
 
 ## Background
 
-ABC Global Bank operates across multiple countries and serves millions of customers.
+ABC Global Bank operates PAN India and serves millions of customers.
 
 Every day, data is generated from:
 
@@ -13,7 +13,7 @@ Every day, data is generated from:
 - Customer relationship management (CRM)
 - Branch operations
 
-The data is distributed across multiple operational systems, making reporting, fraud monitoring, and analytics difficult.
+The data is distributed across multiple operational systems, which makes reporting, fraud monitoring, and analytics complicated.
 
 ---
 
@@ -21,7 +21,7 @@ The data is distributed across multiple operational systems, making reporting, f
 
 Design and implement a modern cloud-based data platform that:
 
-- Ingests banking data automatically
+- Ingests banking data at a scheduled time everyday
 - Validates data quality
 - Processes raw data into analytics-ready datasets
 - Maintains historical customer records
