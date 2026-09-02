@@ -24,7 +24,7 @@ IMPORTANT:
 1. CUSTOMERS
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -43,7 +43,7 @@ COLUMNS TRACKED FOR CHANGES:
     risk_rating
     customer_status
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -62,7 +62,7 @@ NOT TYPICALLY UPDATED:
 2. CUSTOMER_ADDRESSES
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -83,7 +83,7 @@ COLUMNS TRACKED FOR CHANGES:
     effective_date
     expiry_date
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     scd_effective_from
     scd_effective_to
     scd_is_current
@@ -92,17 +92,12 @@ INGESTION METADATA:
     batch_date
     load_timestamp
 
-NOTE:
-    The existing effective_date and expiry_date represent the
-    business validity of the address. Keep them separate from the
-    SCD technical columns.
-
 
 ===============================================================================
 3. ACCOUNTS
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -118,7 +113,7 @@ COLUMNS TRACKED FOR CHANGES:
     minimum_balance
     account_currency
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -138,7 +133,7 @@ NOT TYPICALLY UPDATED:
 4. CARDS
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -152,7 +147,7 @@ COLUMNS TRACKED FOR CHANGES:
     expiry_date
     issue_date
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -164,7 +159,7 @@ INGESTION METADATA:
 NOT TYPICALLY UPDATED:
     card_id
     account_id
-    card_number/tokenized_identifier
+    card_number
     created_at
     source_system
 
@@ -173,8 +168,8 @@ NOT TYPICALLY UPDATED:
 5. TRANSACTIONS
 ===============================================================================
 
-SCD TYPE:
-    NOT APPLICABLE
+INGESTION STRATEGY:
+    APPEND ONLY
 
 TABLE TYPE:
     FACT / TRANSACTION
@@ -216,7 +211,7 @@ NOTE:
 6. BRANCHES
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -233,7 +228,7 @@ COLUMNS TRACKED FOR CHANGES:
     branch_status
     contact_information
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -247,7 +242,7 @@ INGESTION METADATA:
 7. EMPLOYEES
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -264,7 +259,7 @@ COLUMNS TRACKED FOR CHANGES:
     salary
     manager_id
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -282,7 +277,7 @@ NOTE:
 8. MERCHANTS
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -300,7 +295,7 @@ COLUMNS TRACKED FOR CHANGES:
     risk_category
     network
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -314,7 +309,7 @@ INGESTION METADATA:
 9. LOANS
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -329,7 +324,7 @@ COLUMNS TRACKED FOR CHANGES:
     loan_status
     disbursement_date
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -356,8 +351,8 @@ NOTE:
 10. LOAN_APPLICATIONS
 ===============================================================================
 
-SCD TYPE:
-    NOT APPLICABLE
+INGESTION STRATEGY:
+    APPEND ONLY
 
 TABLE TYPE:
     FACT / BUSINESS EVENT
@@ -397,8 +392,8 @@ NOTE:
 11. LOAN_REPAYMENTS
 ===============================================================================
 
-SCD TYPE:
-    NOT APPLICABLE
+INGESTION STRATEGY:
+    APPEND ONLY
 
 TABLE TYPE:
     FACT / TRANSACTION
@@ -432,7 +427,7 @@ DO NOT CREATE:
 12. LOAN_COLLATERAL
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2
 
 BUSINESS KEY:
@@ -443,7 +438,7 @@ COLUMNS TRACKED FOR CHANGES:
     asset_value
     valuation_date
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -467,8 +462,8 @@ NOTE:
 13. FRAUD_ALERTS
 ===============================================================================
 
-SCD TYPE:
-    NOT APPLICABLE
+INGESTION STRATEGY:
+    APPEND ONLY
 
 TABLE TYPE:
     EVENT / FACT
@@ -494,16 +489,13 @@ INGESTION METADATA:
     batch_date
     load_timestamp
 
-NOTE:
-    Every fraud alert is an event and should be retained.
-
 
 ===============================================================================
 14. EXCHANGE_RATES
 ===============================================================================
 
-SCD TYPE:
-    NOT APPLICABLE
+INGESTION STRATEGY:
+    APPEND ONLY
 
 TABLE TYPE:
     DAILY REFERENCE / SNAPSHOT
@@ -525,57 +517,13 @@ INGESTION METADATA:
     batch_date
     load_timestamp
 
-NOTE:
-    Exchange rates naturally represent values at a point in time.
-    Historical rates should be retained rather than overwritten.
-
-    Example:
-
-        2026-08-01 USD = 87.20
-        2026-08-02 USD = 87.35
-        2026-08-03 USD = 87.10
-
-
-===============================================================================
-15. HOLIDAY_CALENDAR
-===============================================================================
-
-SCD TYPE:
-    Type 1
-
-LOAD STRATEGY:
-    OVERWRITE / UPDATE
-
-BUSINESS KEY:
-    holiday_id
-
-COLUMNS UPDATED:
-    holiday_date
-    country
-    state
-    holiday_name
-    holiday_type
-
-SCD COLUMNS:
-    NONE
-
-INGESTION METADATA:
-    batch_date
-    load_timestamp
-
-NOTE:
-    Historical versions of a holiday name/type are generally not
-    important for the banking analytics use case.
-
-    If regulatory/audit requirements arise, this can be converted
-    to Type 2 later.
 
 
 ===============================================================================
 16. ORGANIZATION / REFERENCE TABLE
 ===============================================================================
 
-SCD TYPE:
+INGESTION STRATEGY:
     Type 2 WHERE BUSINESS HISTORY MATTERS
 
 BUSINESS KEY:
@@ -590,7 +538,7 @@ COLUMNS TRACKED FOR CHANGES:
     hierarchy attributes
     other business attributes
 
-SCD COLUMNS TO ADD:
+SCD COLUMNS TO TRACK UPDATES:
     effective_from
     effective_to
     is_current
@@ -599,17 +547,12 @@ INGESTION METADATA:
     batch_date
     load_timestamp
 
-NOTE:
-    If this table is only static reference data, Type 1 is sufficient.
-    If it represents organizational structures that change over time,
-    Type 2 is preferred.
-
 
 ===============================================================================
 SUMMARY
 ===============================================================================
 
-TABLE                       SCD TYPE       LOAD STRATEGY
+TABLE                       INGESTION STRATEGY       LOAD STRATEGY
 ---------------------------------------------------------------------------
 Customers                   Type 2         Historical versions
 Customer Addresses          Type 2         Historical versions
@@ -624,96 +567,5 @@ Loan Applications           N/A            Append-only event
 Loan Repayments             N/A            Append-only fact
 Loan Collateral             Type 2         Historical versions
 Fraud Alerts                N/A            Append-only event
-Exchange Rates              Snapshot       Daily append
 Holiday Calendar            Type 1         Update/overwrite
-Organization/Reference      Type 2*        Historical versions
-
-* Use Type 1 if the organization table is purely static reference data.
-
-
-===============================================================================
-STANDARD TYPE 2 METADATA
-===============================================================================
-
-For all Type 2 tables, use:
-
-    effective_from
-    effective_to
-    is_current
-
-For all tables loaded through Airflow, use:
-
-    batch_date
-    load_timestamp
-
-Recommended default values:
-
-    effective_from = batch_date
-    effective_to   = '9999-12-31'
-    is_current     = TRUE
-
-
-===============================================================================
-TYPE 2 CHANGE LOGIC
-===============================================================================
-
-When a record's tracked attributes have NOT changed:
-
-    Do nothing.
-
-When a record's tracked attributes HAVE changed:
-
-    1. Close the existing record:
-
-        effective_to = new_batch_date - 1 day
-        is_current = FALSE
-
-    2. Insert a new version:
-
-        effective_from = new_batch_date
-        effective_to = '9999-12-31'
-        is_current = TRUE
-
-
-Example:
-
-CUSTOMER_ID = CUST00005000
-
-Old:
-
-    customer_id       = CUST00005000
-    risk_rating       = LOW
-    customer_status   = ACTIVE
-    effective_from    = 2026-08-01
-    effective_to      = 2026-08-03
-    is_current        = FALSE
-
-New:
-
-    customer_id       = CUST00005000
-    risk_rating       = MEDIUM
-    customer_status   = ACTIVE
-    effective_from    = 2026-08-04
-    effective_to      = 9999-12-31
-    is_current        = TRUE
-
-
-===============================================================================
-IMPORTANT
-===============================================================================
-
-Do NOT treat these as SCD Type 2 columns:
-
-    batch_date
-    load_timestamp
-
-They are INGESTION METADATA.
-
-SCD Type 2 columns are:
-
-    effective_from
-    effective_to
-    is_current
-
-This distinction is important for your Airflow → Snowflake → Databricks
-→ dbt architecture.
+Organization/Reference      Type 2         Historical versions
