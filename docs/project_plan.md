@@ -5,13 +5,13 @@
 | 0     | Repository & Documentation |
 | 1     | Data Model Design          |
 | 2     | Synthetic Data Generation  |
-| 3     | Azure Data Lake Storage    |
+| 3     | Azure Delta Lake Storage   |
 | 4     | Databricks Bronze          |
 | 5     | Databricks Silver          |
 | 6     | Databricks Gold            |
 | 7     | Snowflake Analytics Tables |
-| 8     | dbt                        |
-| 9     | Airflow - Job Scheduling   |
-| 10    | Tableau Dashboards         |
-| 11    | Power BI Dashboards        |
+| 8     | Airflow - Job Scheduling   |
+| 9     | Tableau Dashboards         |
+| 10    | Power BI Dashboards        |
+| 11    | Google Agent Development   |
 | 12    | Pipeline Documentation     |

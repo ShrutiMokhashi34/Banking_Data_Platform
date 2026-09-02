@@ -7,25 +7,24 @@ cust_kyc              ├──→ DIM_CUSTOMER - done
 cust_addresses       ─┘
 
 bank_accounts        ─┐
-org_branches         ─┼──→ DIM_ACCOUNT - update needed to manager_name
+org_branches         ─┼──→ DIM_ACCOUNT - done
 cust_customers        |
 bank_cards            |
 bank_merchants       ─┘
 
 bank_transactions    ─┐
-bank_accounts        ─┼──→ FACT_TRANSACTIONS       |
+bank_accounts        ─┼──→ FACT_TRANSACTIONS       
 bank_merchants       ─┘
 
 loan_loans           ─┐
-cust_customers       ─┼──→ DIM_LOAN
-loan_applications	  |
+loan_applications    ─┼──→ DIM_LOAN - done
 loan_collateral		 ─┘
 
-loan_loans, loan_repayments     ───→ FACT_LOAN_REPAYMENTS
+loan_loans, loan_repayments     ───→ FACT_LOAN_REPAYMENTS - done
 
 org_employees, org_branches     ───→  DIM_EMPLOYEES - done
 
-bank_accounts,  fraud_alerts  ───→ FACT_FRAUD_ALERTS
+bank_accounts, cust_customers  fraud_alerts  ───→ FACT_FRAUD_ALERTS - done
 
 exchange_rates      ───→ DIM_EXCHANGE_RATES - done
 
