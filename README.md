@@ -16,27 +16,21 @@ The platform ingests banking data from multiple source systems, processes it usi
 - Apache Spark (PySpark)
 - Apache Airflow
 - Snowflake
-- dbt
+- Google Cloud Platform (GCP) and Cloud Run
+- Google ADK Kit
+- Firebase
+- React
 - SQL
 - Python
-- Tableau
-- Power BI
+- Data Studio
 - Git & GitHub
-
----
-
-## Project Architecture
-
-(To be added)
-
----
-
-## Repository Structure
-
-(To be added)
 
 ---
 
 ## Status
 
-🚧 Project under development
+Project Complete!!
+
+Live Application: https://bankingdataplatform.web.app
+Detailed Project Documentation: https://docs.google.com/document/d/1xvUdOWI-Qz5FylIGEO2BvV_nzCVMtPnNWYDW5BfER5M/edit?usp=sharing
+

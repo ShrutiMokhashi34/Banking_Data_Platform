@@ -10,7 +10,6 @@ The platform should:
 - Perform automated data quality checks
 - Process data using Medallion Architecture
 - Store curated data in Snowflake
-- Apply dbt transformations
 - Build executive dashboards
 - Build operational dashboards
 

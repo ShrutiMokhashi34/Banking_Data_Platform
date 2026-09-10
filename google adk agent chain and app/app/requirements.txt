@@ -1,0 +1,9 @@
+# Backend dependencies - Python 3.12
+fastapi
+uvicorn[standard]
+google-adk
+google-genai
+google-cloud-bigquery
+PyJWT
+bcrypt
+python-dotenv

@@ -5,10 +5,9 @@
 | Azure Data Lake Storage | Landing Zone |
 | Azure Databricks | Data Processing |
 | Snowflake | Data Warehouse for Analytics |
-| dbt | Data Modeling & Testing |
 | Airflow | Workflow Orchestration |
-| Tableau | Executive Dashboards |
-| Power BI | Operational Dashboards |
+| GCP | Agent Chain Development and App Development |
+| Data Studio | Executive Dashboards |
 | GitHub | Version Control |
 
 | Programming Language | Purpose |
