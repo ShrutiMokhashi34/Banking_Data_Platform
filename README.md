@@ -4,7 +4,7 @@
 
 This project demonstrates the design and implementation of an enterprise-scale Banking Data Platform using modern cloud and data engineering technologies.
 
-The platform ingests banking data from multiple source systems, processes it using a Medallion Architecture (Bronze, Silver, Gold), loads curated data into Snowflake, applies dbt transformations and testing, orchestrates workflows with Apache Airflow, and presents business insights through Tableau and Power BI dashboards.
+The platform ingests banking data from multiple source systems, processes it using a Medallion Architecture (Bronze, Silver, Gold) through Databricks, loads curated data into Snowflake, orchestrates workflows with Apache Airflow, and presents business insights through an application powered by a multi-agent chain created using Google ADK.
 
 ---
 
@@ -16,6 +16,7 @@ The platform ingests banking data from multiple source systems, processes it usi
 - Apache Spark (PySpark)
 - Apache Airflow
 - Snowflake
+- BigQuery
 - Google Cloud Platform (GCP) and Cloud Run
 - Google ADK Kit
 - Firebase

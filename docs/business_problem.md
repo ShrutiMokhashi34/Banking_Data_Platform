@@ -26,7 +26,7 @@ Design and implement a modern cloud-based data platform that:
 - Processes raw data into analytics-ready datasets
 - Maintains historical customer records
 - Supports fraud monitoring
-- Provides executive dashboards
+- Provides executive on-demand dashboards
 - Enables scalable reporting
 
 ---

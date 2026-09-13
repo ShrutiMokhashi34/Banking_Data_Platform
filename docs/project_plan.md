@@ -11,7 +11,6 @@
 | 6     | Databricks Gold            |
 | 7     | Snowflake Analytics Tables |
 | 8     | Airflow - Job Scheduling   |
-| 9     | Tableau Dashboards         |
-| 10    | Power BI Dashboards        |
-| 11    | Google Agent Development   |
-| 12    | Pipeline Documentation     |
+| 9     | BigQUery Data Transfer     |
+| 10    | Google Agent Chain Development   |
+| 11    | Pipeline Documentation     |
