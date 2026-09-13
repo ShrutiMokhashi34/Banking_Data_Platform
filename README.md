@@ -1,5 +1,15 @@
 # Enterprise Banking Data Platform
 
+## Status
+
+Project Complete!!
+
+Live Application: https://bankingdataplatform.web.app
+
+Detailed Project Documentation: https://docs.google.com/document/d/1xvUdOWI-Qz5FylIGEO2BvV_nzCVMtPnNWYDW5BfER5M/edit?usp=sharing
+
+---
+
 ## Project Overview
 
 This project demonstrates the design and implementation of an enterprise-scale Banking Data Platform using modern cloud and data engineering technologies.
@@ -28,11 +38,5 @@ The platform ingests banking data from multiple source systems, processes it usi
 
 ---
 
-## Status
 
-Project Complete!!
-
-Live Application: https://bankingdataplatform.web.app
-
-Detailed Project Documentation: https://docs.google.com/document/d/1xvUdOWI-Qz5FylIGEO2BvV_nzCVMtPnNWYDW5BfER5M/edit?usp=sharing
 
