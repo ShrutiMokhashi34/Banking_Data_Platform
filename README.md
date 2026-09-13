@@ -32,5 +32,6 @@ The platform ingests banking data from multiple source systems, processes it usi
 Project Complete!!
 
 Live Application: https://bankingdataplatform.web.app
+
 Detailed Project Documentation: https://docs.google.com/document/d/1xvUdOWI-Qz5FylIGEO2BvV_nzCVMtPnNWYDW5BfER5M/edit?usp=sharing
 
