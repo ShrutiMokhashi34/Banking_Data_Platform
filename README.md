@@ -9,6 +9,7 @@ Live Application: https://bankingdataplatform.web.app
 Detailed Project Documentation: https://docs.google.com/document/d/1xvUdOWI-Qz5FylIGEO2BvV_nzCVMtPnNWYDW5BfER5M/edit?usp=sharing
 
 Check out "ABC Bank Data Assistant: An End-to-End Banking Data Platform" by Shruti Mokhashi (Rank #58) on Google Patchamomma 2026!: https://patchamomma-273845608377.us-central1.run.app/
+
 ---
 
 ## Project Overview
